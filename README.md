@@ -20,7 +20,7 @@ master代表最新的版本。</p>
 <li>
 <p>DropOtherMinerals<br>
 為附加模組，非強制安裝。<br>
-用途：挖掘礦脈時，有機率性多掉出銅礦。</p>
+用途：挖掘礦脈時，有機率性額外掉出銅礦。</p>
 </li>
 <li>
 <p>HighestLevel<br>
@@ -30,7 +30,7 @@ master代表最新的版本。</p>
 <li>
 <p>PickUpBlocks<br>
 為附加模組，非強制安裝。<br>
-用途：製訂某些方塊可以被玩家撿起來帶回家。</p>
+用途：修改某些方塊可以被玩家撿起來帶回家。</p>
 </li>
 </ul>
 <p><strong>下載方法</strong>：先選擇左上角的版本（例如：master），再點擊右上角的「Code」綠色按鈕，再選擇「Download ZIP」就會立即下載了，下載回去的檔案名稱為BeyondAbilityInstitution-XXX.zip，再將你需要的模組目錄（例如：BEABIN）整個解壓縮到你的MOD目錄即可。</p>
