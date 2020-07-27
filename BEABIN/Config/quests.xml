@@ -1,0 +1,2488 @@
+<configs>
+	<!-- 18.4版的指令改變：
+	獎勵品使用 type="Item" 時, 如果道具是有品質設定, 使用 value="X" 是指定它的品質(1~6)
+	如果道具沒有品質設定只有數量, 使用 value="Y" 則是指定它的數量
+	-->
+	<append xpath="/quests">
+		<!-- 非常容易，容易，中等，困難，瘋狂
+		difficulty = (veryeasy, easy, medium, hard, insane )
+		-->
+		<!-- 收集地獄使者契約書的材料(協會任務) -->
+		<quest id="challenge_mission0001">
+			<property name="name_key" value="challenge_mission0001Name" />
+			<property name="subtitle_key" value="challenge_mission0001Subtitle" />
+			<property name="description_key" value="challenge_mission0001Offer" />
+			<property name="icon" value="ui_game_symbol_scrap" />
+			<property name="repeatable" value="true" /> <!-- 是否可重覆執行 -->
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0001Offer" />
+			<property name="difficulty" value="medium" /> <!-- 難易度 -->
+			<property name="shareable" value="true" /> <!-- 可與隊友分享 -->
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieBloodyMary" value="7" phase="3" />
+			<objective type="ZombieKill" id="zombieBloodyMary" value="5" phase="3" />
+
+			<reward type="Item" id="casinoCoin" value="100" /> <!-- 完成任務後的報酬 -->
+		</quest>
+		<!-- 德古拉的請託(協會任務) -->
+		<quest id="challenge_mission0002">
+			<property name="name_key" value="challenge_mission0002Name" />
+			<property name="subtitle_key" value="challenge_mission0002Subtitle" />
+			<property name="description_key" value="challenge_mission0002Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0002Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="animalDireWolf" value="7" phase="3" />
+			<action type="SpawnEnemy" id="animalWolfElementFlameBoss,animalWolfElementElectricBoss,animalWolfElementPoisonBoss,animalWolfElementNarcosisBoss,animalWolfElementDarkBoss,animalWolfElementColdBoss" value="1" phase="3" />
+			<objective type="AnimalKill" id="animalDireWolf" value="5" phase="3" />
+			
+			<reward type="Item" id="medicalVampireBloodBag" value="3" />
+		</quest>
+		<!-- 玉米實驗所的請託(一般任務) -->
+		<quest id="challenge_mission0003">
+			<property name="name_key" value="challenge_mission0003Name" />
+			<property name="subtitle_key" value="challenge_mission0003Subtitle" />
+			<property name="description_key" value="challenge_mission0003Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0003Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="animalBossGrace" value="5" phase="3" />
+			<objective type="AnimalKill" id="animalBossGrace" value="3" phase="3" />
+			
+			<reward type="Item" id="foodCropGraceCorn" value="3" />
+		</quest>
+		<!-- 特殊實驗室的請託(一般任務) -->
+		<quest id="challenge_mission0004">
+			<property name="name_key" value="challenge_mission0004Name" />
+			<property name="subtitle_key" value="challenge_mission0004Subtitle" />
+			<property name="description_key" value="challenge_mission0004Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0004Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieLabRadiated" value="7" phase="3" />
+			<action type="SpawnEnemy" id="zombieLabElementFlame,zombieLabElementElectric,zombieLabElementPoison,zombieLabElementNarcosis,zombieLabElementDark,zombieLabElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieLabRadiated" value="5" phase="3" />
+
+			<reward type="Item" id="medicalFirstAidKit" value="3" />
+		</quest>
+		<!-- 醫院院長的請託(一般任務) -->
+		<quest id="challenge_mission0005">
+			<property name="name_key" value="challenge_mission0005Name" />
+			<property name="subtitle_key" value="challenge_mission0005Subtitle" />
+			<property name="description_key" value="challenge_mission0005Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0005Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieNurseFeral" value="7" phase="3" />
+			<action type="SpawnEnemy" id="zombieNurseElementFlame,zombieNurseElementElectric,zombieNurseElementPoison,zombieNurseElementNarcosis,zombieNurseElementDark,zombieNurseElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieNurseFeral" value="5" phase="3" />
+
+			<reward type="Item" id="medicalFirstAidBandage" value="5" />
+		</quest>
+		<!-- 哈雷幫派的請託(一般任務) -->
+		<quest id="challenge_mission0006">
+			<property name="name_key" value="challenge_mission0006Name" />
+			<property name="subtitle_key" value="challenge_mission0006Subtitle" />
+			<property name="description_key" value="challenge_mission0006Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0006Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieBikerRadiated" value="12" phase="3" />
+			<action type="SpawnEnemy" id="zombieBikerElementFlame,zombieBikerElementElectric,zombieBikerElementPoison,zombieBikerElementNarcosis,zombieBikerElementDark,zombieBikerElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieBikerRadiated" value="10" phase="3" />
+			
+			<reward type="Item" id="vehicleMotorcyclePlaceable" value="1"/>
+			<reward type="Item" id="ammoGasCan" value="300"/>
+		</quest>
+		<!-- 建築公司的請託(一般任務) -->
+		<quest id="challenge_mission0007">
+			<property name="name_key" value="challenge_mission0007Name" />
+			<property name="subtitle_key" value="challenge_mission0007Subtitle" />
+			<property name="description_key" value="challenge_mission0007Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0007Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieUtilityWorkerFeral" value="7" phase="3" />
+			<action type="SpawnEnemy" id="zombieUtilityWorkerElementFlame,zombieUtilityWorkerElementElectric,zombieUtilityWorkerElementPoison,zombieUtilityWorkerElementNarcosis,zombieUtilityWorkerElementDark,zombieUtilityWorkerElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieUtilityWorkerFeral" value="5" phase="3" />
+			<requirement type="Holding" id="gunToolNailgun" phase="3"/>
+			
+			<reward type="LootItem" id="QuestRewardRandom01" value="1"/>
+		</quest>
+		<!-- 國安特勤的請託(一般任務) -->
+		<quest id="challenge_mission0008">
+			<property name="name_key" value="challenge_mission0008Name" />
+			<property name="subtitle_key" value="challenge_mission0008Subtitle" />
+			<property name="description_key" value="challenge_mission0008Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0008Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieSoldierRadiated" value="7" phase="3" />
+			<action type="SpawnEnemy" id="zombieSoldierElementFlame,zombieSoldierElementElectric,zombieSoldierElementPoison,zombieSoldierElementNarcosis,zombieSoldierElementDark,zombieSoldierElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieSoldierRadiated" value="5" phase="3" />
+			
+			<reward type="LootItem" id="QuestArmorRandom" />
+		</quest>
+		<!-- 特種警察的請託(一般任務) -->
+		<quest id="challenge_mission0009">
+			<property name="name_key" value="challenge_mission0009Name" />
+			<property name="subtitle_key" value="challenge_mission0009Subtitle" />
+			<property name="description_key" value="challenge_mission0009Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0009Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieFatCopRadiated" value="7" phase="3" />
+			<action type="SpawnEnemy" id="zombieFatCopElementFlameBoss,zombieFatCopElementElectricBoss,zombieFatCopElementPoisonBoss,zombieFatCopElementNarcosisBoss,zombieFatCopElementColdBoss" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieFatCopRadiated" value="5" phase="3" />
+			
+			<reward type="Item" id="gunRocketLauncher" value="6"/>
+			<reward type="Item" id="ammoRocketFrag" value="10"/>
+		</quest>
+		<!-- 消防隊的請託(一般任務) -->
+		<quest id="challenge_mission0010">
+			<property name="name_key" value="challenge_mission0010Name" />
+			<property name="subtitle_key" value="challenge_mission0010Subtitle" />
+			<property name="description_key" value="challenge_mission0010Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0010Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieBurnt" value="12" phase="3" />
+			<action type="SpawnEnemy" id="zombieBurntElementFlameBoss,zombieBurntElementElectricBoss,zombieBurntElementPoisonBoss,zombieBurntElementNarcosisBoss,zombieBurntElementDarkBoss,zombieBurntElementColdBoss" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieBurnt" value="10" phase="3" />
+			
+			<reward type="LootItem" id="QuestRewardRandom02" value="1"/>
+		</quest>
+		<!-- 脫衣酒吧的請託(一般任務) -->
+		<quest id="challenge_mission0011">
+			<property name="name_key" value="challenge_mission0011Name" />
+			<property name="subtitle_key" value="challenge_mission0011Subtitle" />
+			<property name="description_key" value="challenge_mission0011Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0011Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieStripperFeral" value="7" phase="3" />
+			<action type="SpawnEnemy" id="zombieStripperElementFlame,zombieStripperElementElectric,zombieStripperElementPoison,zombieStripperElementNarcosis,zombieStripperElementDark,zombieStripperElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieStripperFeral" value="5" phase="3" />
+			
+			<reward type="Item" id="advancedMineHubcap" value="5" />
+		</quest>
+		<!-- 商人的噪音抱怨(一般任務) -->
+		<quest id="challenge_mission0013">
+			<property name="name_key" value="challenge_mission0013Name" />
+			<property name="subtitle_key" value="challenge_mission0013Subtitle" />
+			<property name="description_key" value="challenge_mission0013Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0013Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamerRadiated" value="7" phase="3" />
+			<objective type="ZombieKill" id="zombieScreamerRadiated" value="5" phase="3" />
+			
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4" />
+			</objective>
+
+			<reward type="Item" id="casinoCoin" value="3000" />
+			<reward type="Item" id="apparelCigar" value="1" />
+		</quest>
+		<!-- 白色死神的試煉(限定任務) -->
+		<quest id="challenge_mission0014">
+			<property name="name_key" value="challenge_mission0014Name" />
+			<property name="subtitle_key" value="challenge_mission0014Subtitle" />
+			<property name="description_key" value="challenge_mission0014Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0014Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="250" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0014" value="OR" phase="1">
+				<requirement type="Holding" id="gunSMG5" />
+				<requirement type="Holding" id="gunHuntingRifle" />
+				<requirement type="Holding" id="gunMR10" />
+				<requirement type="Holding" id="gunAK47" />
+			</requirement>
+
+			<objective type="ZombieKill" value="250" phase="2"/>
+			<requirement type="Group" id="requirementGroupmission0014" value="OR" phase="2">
+				<requirement type="Holding" id="gunSMG5" />
+				<requirement type="Holding" id="gunHuntingRifle" />
+				<requirement type="Holding" id="gunMR10" />
+				<requirement type="Holding" id="gunAK47" />
+			</requirement>
+
+			<reward type="Item" id="gunSMG5" value="6" />
+			<reward type="Item" id="gunHuntingRifle" value="6" />
+			<reward type="Item" id="gunMR10" value="6" />
+			<reward type="Item" id="gunAK47" value="6" />
+			<reward type="Item" id="ammo9mmBulletBall" value="1000" />
+			<reward type="Item" id="ammo762mmBulletBall" value="1000" />
+		</quest>
+		<!-- 養蜂人的抱怨(一般任務) -->
+		<quest id="challenge_mission0015">
+			<property name="name_key" value="challenge_mission0015Name" />
+			<property name="subtitle_key" value="challenge_mission0015Subtitle" />
+			<property name="description_key" value="challenge_mission0015Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0015Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalBear" value="1"/>
+			<requirement type="Holding" id="meleeToolClawHammer"/>
+			
+			<reward type="Item" id="casinoCoin" value="3000" />
+			<reward type="Item" id="foodHoney" value="25" />
+		</quest>
+		<!-- 銀行的請託(一般任務) -->
+		<quest id="challenge_mission0016">
+			<property name="name_key" value="challenge_mission0016Name" />
+			<property name="subtitle_key" value="challenge_mission0016Subtitle" />
+			<property name="description_key" value="challenge_mission0016Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0016Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieBusinessManFeral" value="12" phase="3" />
+			<action type="SpawnEnemy" id="zombieBusinessManElementFlame,zombieBusinessManElementElectric,zombieBusinessManElementPoison,zombieBusinessManElementNarcosis,zombieBusinessManElementDark,zombieBusinessManElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieBusinessManFeral" value="10" phase="3" />
+			<requirement type="Group" id="requirementGroupmission0016" value="OR" phase="3">
+				<requirement type="Holding" id="meleeToolFireaxeIron" />
+				<requirement type="Holding" id="meleeToolFireaxeSteel" />
+			</requirement>
+
+			<reward type="Item" id="oldCash" value="3000" />
+		</quest>
+		<!-- 羅賓漢的仁慈1(系列任務) -->
+		<quest id="challenge_mission0012">
+			<property name="name_key" value="challenge_mission0012Name" />
+			<property name="subtitle_key" value="challenge_mission0012Subtitle" />
+			<property name="description_key" value="challenge_mission0012Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0012Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="false" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieBusinessManFeral" value="7" phase="3" />
+			<objective type="ZombieKill" id="zombieBusinessManFeral" value="5" phase="3" />
+			
+			<reward type="Item" id="casinoCoin" value="5000" />
+		</quest>
+		<!-- 羅賓漢的仁慈2(系列任務) -->
+		<quest id="challenge_mission0012_1">
+			<property name="name_key" value="challenge_mission0012_1Name" />
+			<property name="subtitle_key" value="challenge_mission0012_1Subtitle" />
+			<property name="description_key" value="challenge_mission0012_1Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0012_1Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="false" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieUtilityWorkerFeral" value="7" phase="3" />
+			<objective type="ZombieKill" id="zombieUtilityWorkerFeral" value="5" phase="3" />
+			
+			<reward type="Item" id="resourceScrapBrass" value="1000" />
+		</quest>
+		<!-- 命運女神的關注(系列任務) -->
+		<quest id="challenge_mission0017">
+			<property name="name_key" value="challenge_mission0017Name" />
+			<property name="subtitle_key" value="challenge_mission0017Subtitle" />
+			<property name="description_key" value="challenge_mission0017Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0017Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+	
+			<objective type="RandomGoto" value="500-600" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+			<reward type="Exp" value="1000000" />
+		</quest>
+		<!-- 命運女神的眷顧(系列任務) -->
+		<quest id="challenge_mission0017_1">
+			<property name="name_key" value="challenge_mission0017_1Name" />
+			<property name="subtitle_key" value="challenge_mission0017_1Subtitle" />
+			<property name="description_key" value="challenge_mission0017_1Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0017_1Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+	
+			<objective type="RandomGoto" value="500-600" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+			<reward type="SkillPoints" value="2" />
+		</quest>
+		<!-- 命運女神的調戲(系列任務) -->
+		<quest id="challenge_mission0017_2">
+			<property name="name_key" value="challenge_mission0017_2Name" />
+			<property name="subtitle_key" value="challenge_mission0017_2Subtitle" />
+			<property name="description_key" value="challenge_mission0017_2Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0017_2Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+	
+			<objective type="RandomGoto" value="500-600" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+			<reward type="Item" id="casinoCoin" value="10-10000" />
+		</quest>
+		<!-- 命運女神的試煉(系列任務) -->
+		<quest id="challenge_mission0017_3">
+			<property name="name_key" value="challenge_mission0017_3Name" />
+			<property name="subtitle_key" value="challenge_mission0017_3Subtitle" />
+			<property name="description_key" value="challenge_mission0017_3Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0017_3Offer" />
+			<property name="difficulty" value="insane" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="500-600" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieWightRadiated" value="30" phase="3" />
+			<action type="SpawnEnemy" id="animalZombieBear" value="30" phase="3" />
+			<action type="SpawnEnemy" id="zombieWightElementFlameBoss,zombieWightElementElectricBoss,zombieWightElementPoisonBoss,zombieWightElementNarcosisBoss,zombieWightElementDarkBoss,zombieWightElementColdBoss" value="3" phase="3" />
+			<objective type="ZombieKill" id="zombieWightRadiated" value="25" phase="3" />
+			<objective type="AnimalKill" id="animalZombieBear" value="25" phase="3" />
+			<requirement type="Group" id="requirementGroupmission0017_3" value="OR">
+				<requirement type="Holding" id="" phase="3"/>
+				<requirement type="Holding" id="meleeKnucklesLeather" phase="3"/>
+				<requirement type="Holding" id="meleeKnucklesIron" phase="3"/>
+				<requirement type="Holding" id="meleeKnucklesSteel" phase="3"/>
+			</requirement>
+
+			<reward type="Item" id="modArmorOnePunch" value="1" />
+		</quest>
+		<!-- 命運女神的偏愛(系列任務) -->
+		<quest id="challenge_mission0017_4">
+			<property name="name_key" value="challenge_mission0017_4Name" />
+			<property name="subtitle_key" value="challenge_mission0017_4Subtitle" />
+			<property name="description_key" value="challenge_mission0017_4Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0017_4Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+	
+			<objective type="ZombieKill" id="zombieNurse" value="1"/>
+
+			<reward type="Item" id="medicalFirstAidKit" value="10" />
+			<reward type="Item" id="medicalFirstAidBandage" value="20" />
+		</quest>
+		<!-- 命運女神的賞賜(系列任務) -->
+		<quest id="challenge_mission0017_5">
+			<property name="name_key" value="challenge_mission0017_5Name" />
+			<property name="subtitle_key" value="challenge_mission0017_5Subtitle" />
+			<property name="description_key" value="challenge_mission0017_5Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0017_5Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+	
+			<objective type="ZombieKill" id="zombieNurseFeral" value="1"/>
+
+			<reward type="Item" id="advancedFirstAidKit" value="10" />
+		</quest>
+		<!-- 煉油廠的請託(一般任務) -->
+		<quest id="challenge_mission0018">
+			<property name="name_key" value="challenge_mission0018Name" />
+			<property name="subtitle_key" value="challenge_mission0018Subtitle" />
+			<property name="description_key" value="challenge_mission0018Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0018Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieUtilityWorkerFeral" value="22" phase="3" />
+			<action type="SpawnEnemy" id="zombieUtilityWorkerElementFlame,zombieUtilityWorkerElementElectric,zombieUtilityWorkerElementPoison,zombieUtilityWorkerElementNarcosis,zombieUtilityWorkerElementDark,zombieUtilityWorkerElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieUtilityWorkerFeral" value="20" phase="3" />
+			
+			<reward type="Item" id="ammoGasCanBundle" value="1" />
+		</quest>
+		<!-- 滑板場的請託(一般任務) -->
+		<quest id="challenge_mission0019">
+			<property name="name_key" value="challenge_mission0019Name" />
+			<property name="subtitle_key" value="challenge_mission0019Subtitle" />
+			<property name="description_key" value="challenge_mission0019Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0019Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" id="zombieSkateboarderRadiated" value="10"/>
+
+			<reward type="Item" id="casinoCoin" value="5000" />
+		</quest>
+		<!-- 鬥狗場的請託(一般任務) -->
+		<quest id="challenge_mission0020">
+			<property name="name_key" value="challenge_mission0020Name" />
+			<property name="subtitle_key" value="challenge_mission0020Subtitle" />
+			<property name="description_key" value="challenge_mission0020Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0020Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" id="animalZombieDog" value="10"/>
+
+			<reward type="Item" id="casinoCoin" value="3000" />
+		</quest>
+		<!-- 熊酒吧的請託(一般任務) -->
+		<quest id="challenge_mission0021">
+			<property name="name_key" value="challenge_mission0021Name" />
+			<property name="subtitle_key" value="challenge_mission0021Subtitle" />
+			<property name="description_key" value="challenge_mission0021Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0021Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalZombieBear" value="2"/>
+
+			<reward type="Item" id="casinoCoin" value="5000" />
+		</quest>
+		<!-- 附近地主的請託(限定任務) -->
+		<quest id="challenge_mission0022">
+			<property name="name_key" value="challenge_mission0022Name" />
+			<property name="subtitle_key" value="challenge_mission0022Subtitle" />
+			<property name="description_key" value="challenge_mission0022Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0022Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieFarmerFeral" value="12" phase="3" />
+			<action type="SpawnEnemy" id="zombieFarmerElementFlame,zombieFarmerElementElectric,zombieFarmerElementPoison,zombieFarmerElementNarcosis,zombieFarmerElementDark,zombieFarmerElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieFarmerFeral" value="10" phase="3" />
+			<requirement type="Group" id="requirementGroupmission0022" value="OR">
+				<requirement type="Holding" id="meleeToolPickaxeIron" />
+				<requirement type="Holding" id="meleeToolPickaxeSteel" />
+			</requirement>
+			
+			<reward type="Item" id="meleeToolPickaxeSteel" value="6" />
+		</quest>
+		<!-- 附近學校的請託(連續任務) -->
+		<quest id="challenge_mission0023">
+			<property name="name_key" value="challenge_mission0023Name" />
+			<property name="subtitle_key" value="challenge_mission0023Subtitle" />
+			<property name="description_key" value="challenge_mission0023Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0023Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieFootballPlayer" value="17" phase="3" />
+			<action type="SpawnEnemy" id="zombieFootballPlayerElementFlame,zombieFootballPlayerElementElectric,zombieFootballPlayerElementPoison,zombieFootballPlayerElementNarcosis,zombieFootballPlayerElementDark,zombieFootballPlayerElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieFootballPlayer" value="15" phase="3" />
+			
+			<reward type="Item" id="modLongBarrelDeviceSchematic" value="1" />
+			<reward type="Quest" id="challenge_mission0023_1" />
+		</quest>
+		<quest id="challenge_mission0023_1">
+			<property name="name_key" value="challenge_mission0023_1Name" />
+			<property name="subtitle_key" value="challenge_mission0023_1Subtitle" />
+			<property name="description_key" value="challenge_mission0023_1Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0023_1Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieCheerleaderRadiated" value="32" phase="3" />
+			<action type="SpawnEnemy" id="zombieCheerleaderElementFlame,zombieCheerleaderElementElectric,zombieCheerleaderElementPoison,zombieCheerleaderElementNarcosis,zombieCheerleaderElementDark,zombieCheerleaderElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieCheerleaderRadiated" value="30" phase="3" />
+			
+			<reward type="Item" id="modHightCapacityMagazineDeviceSchematic" value="1" />
+		</quest>
+		<!-- 礦產公司的請託(連續任務) -->
+		<quest id="challenge_mission0024">
+			<property name="name_key" value="challenge_mission0024Name" />
+			<property name="subtitle_key" value="challenge_mission0024Subtitle" />
+			<property name="description_key" value="challenge_mission0024Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0024Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieUtilityWorkerFeral" value="10" phase="3" />
+			<action type="SpawnEnemy" id="zombieBusinessManFeral" value="4" phase="3" />
+			<action type="SpawnEnemy" id="zombieUtilityWorkerElementFlame,zombieUtilityWorkerElementElectric,zombieUtilityWorkerElementPoison,zombieUtilityWorkerElementNarcosis,zombieUtilityWorkerElementDark,zombieUtilityWorkerElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieUtilityWorkerFeral" value="8" phase="3" />
+			<objective type="ZombieKill" id="zombieBusinessManFeral" value="2" phase="3" />
+			
+			<requirement type="Holding" id="meleeToolPickaxeSteel" phase="3"/>
+			
+			<reward type="Item" id="resourceSilverNugget" value="100" />
+			<reward type="Quest" id="challenge_mission0024_1" />
+		</quest>
+		<quest id="challenge_mission0024_1">
+			<property name="name_key" value="challenge_mission0024_1Name" />
+			<property name="subtitle_key" value="challenge_mission0024_1Subtitle" />
+			<property name="description_key" value="challenge_mission0024_1Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0024_1Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieUtilityWorkerFeral" value="17" phase="3" />
+			<action type="SpawnEnemy" id="zombieBusinessManFeral" value="5" phase="3" />
+			<action type="SpawnEnemy" id="zombieNurseFeral" value="4" phase="3" />
+			<action type="SpawnEnemy" id="zombieUtilityWorkerElementFlame,zombieUtilityWorkerElementElectric,zombieUtilityWorkerElementPoison,zombieUtilityWorkerElementNarcosis,zombieUtilityWorkerElementDark,zombieUtilityWorkerElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieUtilityWorkerFeral" value="15" phase="3" />
+			<objective type="ZombieKill" id="zombieBusinessManFeral" value="3" phase="3" />
+			<objective type="ZombieKill" id="zombieNurseFeral" value="2" phase="3" />
+			
+			<requirement type="Holding" id="meleeToolPickaxeSteel" phase="3"/>
+			
+			<reward type="Item" id="resourceGoldNugget" value="100" />
+			<reward type="Quest" id="challenge_mission0024_2" />
+		</quest>
+		<quest id="challenge_mission0024_2">
+			<property name="name_key" value="challenge_mission0024_2Name" />
+			<property name="subtitle_key" value="challenge_mission0024_2Subtitle" />
+			<property name="description_key" value="challenge_mission0024_2Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0024_2Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="true" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieUtilityWorkerFeral" value="22" phase="3" />
+			<action type="SpawnEnemy" id="zombieBusinessManFeral" value="7" phase="3" />
+			<action type="SpawnEnemy" id="zombieNurseFeral" value="5" phase="3" />
+			<action type="SpawnEnemy" id="zombieLabRadiated" value="4" phase="3" />
+			<action type="SpawnEnemy" id="zombieUtilityWorkerElementFlame,zombieUtilityWorkerElementElectric,zombieUtilityWorkerElementPoison,zombieUtilityWorkerElementNarcosis,zombieUtilityWorkerElementDark,zombieUtilityWorkerElementCold" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieUtilityWorkerFeral" value="20" phase="3" />
+			<objective type="ZombieKill" id="zombieBusinessManFeral" value="5" phase="3" />
+			<objective type="ZombieKill" id="zombieNurseFeral" value="3" phase="3" />
+			<objective type="ZombieKill" id="zombieLabRadiated" value="2" phase="3" />
+			
+			<requirement type="Holding" id="meleeToolPickaxeSteel" phase="3"/>
+			
+			<reward type="Item" id="resourceRawDiamond" value="100" />
+		</quest>
+		<!-- 附近地主的抱怨(連續任務) -->
+		<quest id="challenge_mission0025">
+			<property name="name_key" value="challenge_mission0025Name" />
+			<property name="subtitle_key" value="challenge_mission0025Subtitle" />
+			<property name="description_key" value="challenge_mission0025Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0025Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalChicken" value="5"/><!-- 雞 -->
+			
+			<reward type="LootItem" id="QuestRewardRandom03" value="1"/>
+			<reward type="Quest" id="challenge_mission0025_1" />
+		</quest>
+		<quest id="challenge_mission0025_1">
+			<property name="name_key" value="challenge_mission0025_1Name" />
+			<property name="subtitle_key" value="challenge_mission0025_1Subtitle" />
+			<property name="description_key" value="challenge_mission0025_1Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0025_1Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalRabbit" value="5"/><!--兔子-->
+			
+			<reward type="LootItem" id="QuestRewardRandom04" value="1"/>
+			<reward type="Quest" id="challenge_mission0025_2" />
+		</quest>
+		<quest id="challenge_mission0025_2">
+			<property name="name_key" value="challenge_mission0025_2Name" />
+			<property name="subtitle_key" value="challenge_mission0025_2Subtitle" />
+			<property name="description_key" value="challenge_mission0025_2Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0025_2Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<!--<objective type="AnimalKill" id="animalSnake" value="5"/>-->
+			<objective type="ZombieKill" id="animalSnake" value="5"/><!-- 蛇 -->
+			
+			<reward type="LootItem" id="QuestRewardRandom05" value="1"/>
+			<reward type="Quest" id="challenge_mission0025_3" />
+		</quest>
+		<quest id="challenge_mission0025_3">
+			<property name="name_key" value="challenge_mission0025_3Name" />
+			<property name="subtitle_key" value="challenge_mission0025_3Subtitle" />
+			<property name="description_key" value="challenge_mission0025_3Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0025_3Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalBoar" value="5"/><!-- 野豬 -->
+			
+			<reward type="LootItem" id="QuestRewardRandom06" value="1"/>
+			<reward type="Quest" id="challenge_mission0025_4" />
+		</quest>
+		<quest id="challenge_mission0025_4">
+			<property name="name_key" value="challenge_mission0025_4Name" />
+			<property name="subtitle_key" value="challenge_mission0025_4Subtitle" />
+			<property name="description_key" value="challenge_mission0025_4Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0025_4Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalStag" value="5"/><!-- 公鹿 -->
+			<objective type="AnimalKill" id="animalDoe" value="5"/><!-- 母鹿 -->
+			
+			<reward type="Item" id="casinoCoin" value="3000" />
+			<reward type="Item" id="modMeleeTemperedBlade" value="1" />
+			<reward type="Item" id="modMeleeSerratedBlade" value="1" />
+			<reward type="LootItem" id="QuestRewardRandom07" value="1"/>
+			<reward type="LootItem" id="QuestRewardRandom08" value="1"/>
+			<reward type="Quest" id="challenge_mission0025_5" />
+		</quest>
+		<quest id="challenge_mission0025_5">
+			<property name="name_key" value="challenge_mission0025_5Name" />
+			<property name="subtitle_key" value="challenge_mission0025_5Subtitle" />
+			<property name="description_key" value="challenge_mission0025_5Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0025_5Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalWolf" value="5"/><!-- 普通狼 -->
+			
+			<reward type="Item" id="casinoCoin" value="5000" />
+			<reward type="Item" id="foodFishTacos" value="5" />
+			<reward type="Item" id="foodChiliDog" value="5" />
+			<reward type="Item" id="modMeleeTemperedBlade" value="1" />
+			<reward type="Item" id="modMeleeSerratedBlade" value="1" />
+			<reward type="Item" id="ammoArrowSteelAP" value="50" />
+			<reward type="Item" id="meleeToolKnifeIron" value="6" />
+			<reward type="Item" id="gunBowWooden" value="6" />
+			<reward type="Quest" id="challenge_mission0025_6" />
+		</quest>
+		<quest id="challenge_mission0025_6">
+			<property name="name_key" value="challenge_mission0025_6Name" />
+			<property name="subtitle_key" value="challenge_mission0025_6Subtitle" />
+			<property name="description_key" value="challenge_mission0025_6Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0025_6Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalDireWolf" value="5"/><!-- 狼王 -->
+			
+			<reward type="Item" id="casinoCoin" value="7500" />
+			<reward type="Item" id="foodFishTacos" value="5" />
+			<reward type="Item" id="foodChiliDog" value="5" />
+			<reward type="Item" id="foodShamChowder" value="5" />
+			<reward type="Item" id="modMeleeTemperedBlade" value="1" />
+			<reward type="Item" id="modMeleeSerratedBlade" value="1" />
+			<reward type="Item" id="ammoArrowFlaming" value="50" />
+			<reward type="Item" id="meleeToolKnifeIron" value="6" />
+			<reward type="LootItem" id="QuestRewardRandom09"/>
+			<reward type="Quest" id="challenge_mission0025_7" />
+		</quest>
+		<quest id="challenge_mission0025_7">
+			<property name="name_key" value="challenge_mission0025_7Name" />
+			<property name="subtitle_key" value="challenge_mission0025_7Subtitle" />
+			<property name="description_key" value="challenge_mission0025_7Offer" />
+			<property name="icon" value="ui_game_symbol_knife" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0025_7Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalBear" value="5"/><!-- 普通熊 -->
+			
+			<reward type="Item" id="casinoCoin" value="10000" />
+			<reward type="Item" id="foodFishTacos" value="5" />
+			<reward type="Item" id="foodChiliDog" value="5" />
+			<reward type="Item" id="foodShamChowder" value="5" />
+			<reward type="Item" id="foodHoboStew" value="5" />
+			<reward type="Item" id="modMeleeTemperedBlade" value="1" />
+			<reward type="Item" id="modMeleeSerratedBlade" value="1" />
+			<reward type="Item" id="ammoArrowFlaming" value="50" />
+			<reward type="Item" id="ammo762mmBulletBall" value="50" />
+			<reward type="Item" id="meleeToolKnifeIron" value="6" />
+			<reward type="LootItem" id="QuestRewardRandom09"/>
+			<reward type="LootItem" id="QuestRewardRandom10"/>
+		</quest>
+		<!-- 狩獵協會的請託(連續任務) -->
+		<quest id="challenge_mission0026">
+			<property name="name_key" value="challenge_mission0026Name" />
+			<property name="subtitle_key" value="challenge_mission0026Subtitle" />
+			<property name="description_key" value="challenge_mission0026Offer" />
+			<property name="icon" value="ui_game_symbol_map_cursor" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0026Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" id="animalZombieDog" value="5"/><!-- 殭屍狗, 被歸類在殭屍類型 -->
+			<requirement type="Holding" id="gunHuntingRifle"/>
+			
+			<reward type="Item" id="ammo9mmBulletBall" value="100" />
+			<reward type="LootItem" id="QuestRewardRandom11" value="1"/>
+			<reward type="Quest" id="challenge_mission0026_1" />
+		</quest>
+		<quest id="challenge_mission0026_1">
+			<property name="name_key" value="challenge_mission0026_1Name" />
+			<property name="subtitle_key" value="challenge_mission0026_1Subtitle" />
+			<property name="description_key" value="challenge_mission0026_1Offer" />
+			<property name="icon" value="ui_game_symbol_map_cursor" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0026_1Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="AnimalKill" id="animalZombieBear" value="5"/><!-- 殭屍熊 -->
+			<requirement type="Holding" id="gunHuntingRifle"/>
+			
+			<reward type="Item" id="ammo762mmBulletBall" value="100" />
+			<reward type="LootItem" id="QuestRewardRandom12" value="1"/>
+			<reward type="LootItem" id="QuestRewardRandom13" value="1"/>
+			<reward type="Quest" id="challenge_mission0026_2" />
+		</quest>
+		<quest id="challenge_mission0026_2">
+			<property name="name_key" value="challenge_mission0026_2Name" />
+			<property name="subtitle_key" value="challenge_mission0026_2Subtitle" />
+			<property name="description_key" value="challenge_mission0026_2Offer" />
+			<property name="icon" value="ui_game_symbol_map_cursor" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0026_2Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+			
+			<objective type="ZombieKill" id="animalZombieDog" value="5"/><!-- 殭屍狗, 被歸類在殭屍類型 -->
+			<objective type="AnimalKill" id="animalZombieBear" value="5"/><!-- 殭屍熊 -->
+			<requirement type="Holding" id="gunHuntingRifle"/>
+			
+			<reward type="Item" id="ammoShotgunSlug" value="100" />
+			<reward type="LootItem" id="QuestRewardRandom14"/>
+			<reward type="LootItem" id="QuestRewardRandom15"/>
+			<reward type="LootItem" id="QuestRewardRandom15"/>
+		</quest>
+		<!-- 縱火狂魔的試煉(限定任務) -->
+		<quest id="challenge_mission0027">
+			<property name="name_key" value="challenge_mission0027Name" />
+			<property name="subtitle_key" value="challenge_mission0027Subtitle" />
+			<property name="description_key" value="challenge_mission0027Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0027Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="30"/>
+			<requirement type="Holding" id="thrownAmmoMolotovCocktail" />
+
+			<reward type="Item" id="thrownAmmoMolotovCocktail" value="400" />
+		</quest>
+		<!-- 炸彈狂魔的試煉(限定任務) -->
+		<quest id="challenge_mission0028">
+			<property name="name_key" value="challenge_mission0028Name" />
+			<property name="subtitle_key" value="challenge_mission0028Subtitle" />
+			<property name="description_key" value="challenge_mission0028Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0028Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="30"/>
+			<requirement type="Group" id="requirementGroupmission0028" value="OR">
+				<requirement type="Holding" id="thrownAmmoPipeBomb" />
+				<requirement type="Holding" id="thrownDynamite" />
+			</requirement>
+
+			<reward type="Item" id="thrownAmmoPipeBomb" value="200" />
+			<reward type="Item" id="thrownDynamite" value="200" />
+		</quest>
+		<!-- 開膛手傑克的試煉(限定任務) -->
+		<quest id="challenge_mission0029">
+			<property name="name_key" value="challenge_mission0029Name" />
+			<property name="subtitle_key" value="challenge_mission0029Subtitle" />
+			<property name="description_key" value="challenge_mission0029Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0029Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" id="zombieStripperFeral" value="5"/>
+			<requirement type="Holding" id="meleeToolKnifeMachete" />
+
+			<reward type="Item" id="meleeToolKnifeMachete" value="6" />
+			<reward type="Item" id="modMeleeTemperedBlade" value="1" />
+			<reward type="Item" id="modMeleeSerratedBlade" value="1" />
+		</quest>
+		<!-- 德州電鋸殺人魔的試煉(限定任務) -->
+		<quest id="challenge_mission0030">
+			<property name="name_key" value="challenge_mission0030Name" />
+			<property name="subtitle_key" value="challenge_mission0030Subtitle" />
+			<property name="description_key" value="challenge_mission0030Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0030Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="30"/>
+			<requirement type="Holding" id="meleeToolChainsaw" />
+
+			<reward type="Item" id="meleeToolChainsaw" value="6" />
+			<reward type="Item" id="ammoGasCan" value="20" />
+		</quest>
+		<!-- 西部牛仔威廉邦尼的試煉(限定任務) -->
+		<quest id="challenge_mission0031">
+			<property name="name_key" value="challenge_mission0031Name" />
+			<property name="subtitle_key" value="challenge_mission0031Subtitle" />
+			<property name="description_key" value="challenge_mission0031Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0031Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+
+			<objective type="ZombieKill" id="zombieOldTimer" value="10"/>	
+			<objective type="ZombieKill" id="zombieOldTimerFeral" value="5"/>	
+			<objective type="ZombieKill" id="zombieOldTimerRadiated" value="5"/>	
+			<requirement type="Holding" id="gun44Magnum" />
+
+			<reward type="Item" id="gun44Magnum" value="6" />
+			<reward type="Item" id="ammo44MagnumBulletBall" value="100" />
+		</quest>
+		<!-- 光頭幫的請託(一般任務) -->
+		<quest id="challenge_mission0032">
+			<property name="name_key" value="challenge_mission0032Name" />
+			<property name="subtitle_key" value="challenge_mission0032Subtitle" />
+			<property name="description_key" value="challenge_mission0032Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0032Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="true" />
+
+			<objective type="ZombieKill" id="zombieBoe" value="20"/>
+			<requirement type="Group" id="requirementGroupmission0032" value="OR">
+				<requirement type="Holding" id="" phase="3"/>
+				<requirement type="Holding" id="meleeKnucklesLeather" phase="3"/>
+				<requirement type="Holding" id="meleeKnucklesIron" phase="3"/>
+				<requirement type="Holding" id="meleeKnucklesSteel" phase="3"/>
+			</requirement>
+
+			<reward type="Item" id="casinoCoin" value="5000" />
+		</quest>
+		<!-- 伐木場的請託(一般任務) -->
+		<quest id="challenge_mission0033">
+			<property name="name_key" value="challenge_mission0033Name" />
+			<property name="subtitle_key" value="challenge_mission0033Subtitle" />
+			<property name="description_key" value="challenge_mission0033Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0033Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+
+			<objective type="ZombieKill" id="zombieSnowFeral" value="10"/>	
+			<requirement type="Group" id="requirementGroupmission0033" value="OR">
+				<requirement type="Holding" id="meleeToolFireaxeIron" />
+				<requirement type="Holding" id="meleeToolFireaxeSteel" />
+			</requirement>
+
+			<reward type="Item" id="casinoCoin" value="5000" />
+		</quest>
+		<!-- 專業的建築工人(一般任務) -->
+		<quest id="challenge_mission0034">
+			<property name="name_key" value="challenge_mission0034Name" />
+			<property name="subtitle_key" value="challenge_mission0034Subtitle" />
+			<property name="description_key" value="challenge_mission0034Offer" />
+			<property name="icon" value="ui_game_symbol_quest" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0034Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="true" />
+
+			<objective type="BlockUpgrade" id="rConcreteBlock" value="100"/>
+
+			<reward type="Item" id="gunToolNailgun" value="6" />
+			<reward type="Item" id="casinoCoin" value="2000" />
+		</quest>
+		<!-- 食屍鬼的渴望(限定任務) -->
+		<quest id="challenge_mission0035">
+			<property name="name_key" value="challenge_mission0035Name" />
+			<property name="subtitle_key" value="challenge_mission0035Subtitle" />
+			<property name="description_key" value="challenge_mission0035Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0035Offer" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="shareable" value="true" />
+	
+			<objective type="FetchKeep" id="resourceBone" value="100" phase="1"/>
+			<objective type="FetchKeep" id="resourceAnimalFat" value="100" phase="1"/>
+			<objective type="FetchKeep" id="foodRottingFlesh" value="100" phase="1"/>
+
+			<reward type="Item" id="casinoCoin" value="1000" />
+			<reward type="Item" id="bookGhoulsBlessing" value="1" /><!-- 食屍鬼的祝福書 -->
+		</quest>
+		<!-- 亞馬遜女戰士的試煉(連續任務) -->
+		<quest id="challenge_mission0036">
+			<property name="name_key" value="challenge_mission0036Name" />
+			<property name="subtitle_key" value="challenge_mission0036Subtitle" />
+			<property name="description_key" value="challenge_mission0036Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0036Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="50" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0036" value="OR" phase="1">
+				<requirement type="Holding" id="gunBowPrimitive" />
+				<requirement type="Holding" id="gunBowWooden" />
+				<requirement type="Holding" id="gunBowCompound" />
+				</requirement>
+
+			<reward type="Item" id="ammoArrowStone" value="1000" />
+			<reward type="Quest" id="challenge_mission0036_1" />
+		</quest>
+		<quest id="challenge_mission0036_1">
+			<property name="name_key" value="challenge_mission0036_1Name" />
+			<property name="subtitle_key" value="challenge_mission0036_1Subtitle" />
+			<property name="description_key" value="challenge_mission0036_1Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0036_1Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="75" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0036" value="OR" phase="1">
+				<requirement type="Holding" id="gunBowPrimitive" />
+				<requirement type="Holding" id="gunBowWooden" />
+				<requirement type="Holding" id="gunBowCompound" />
+			</requirement>
+
+			<reward type="Item" id="ammoArrowStone" value="800" />
+			<reward type="Item" id="ammoArrowIron" value="150" />
+			<reward type="Item" id="ammoArrowSteelAP" value="50" />
+			<reward type="Quest" id="challenge_mission0036_2" />
+		</quest>
+		<quest id="challenge_mission0036_2">
+			<property name="name_key" value="challenge_mission0036_2Name" />
+			<property name="subtitle_key" value="challenge_mission0036_2Subtitle" />
+			<property name="description_key" value="challenge_mission0036_2Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0036_2Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="100" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0036" value="OR" phase="1">
+				<requirement type="Holding" id="gunBowPrimitive" />
+				<requirement type="Holding" id="gunBowWooden" />
+				<requirement type="Holding" id="gunBowCompound" />
+			</requirement>
+
+			<reward type="Item" id="ammoArrowStone" value="600" />
+			<reward type="Item" id="ammoArrowIron" value="300" />
+			<reward type="Item" id="ammoArrowSteelAP" value="100" />
+			<reward type="Quest" id="challenge_mission0036_3" />
+		</quest>
+		<quest id="challenge_mission0036_3">
+			<property name="name_key" value="challenge_mission0036_3Name" />
+			<property name="subtitle_key" value="challenge_mission0036_3Subtitle" />
+			<property name="description_key" value="challenge_mission0036_3Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0036_3Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="125" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0036" value="OR" phase="1">
+				<requirement type="Holding" id="gunBowPrimitive" />
+				<requirement type="Holding" id="gunBowWooden" />
+				<requirement type="Holding" id="gunBowCompound" />
+			</requirement>
+
+			<reward type="Item" id="ammoArrowStone" value="400" />
+			<reward type="Item" id="ammoArrowIron" value="400" />
+			<reward type="Item" id="ammoArrowSteelAP" value="200" />
+			<reward type="Quest" id="challenge_mission0036_4" />
+		</quest>
+		<quest id="challenge_mission0036_4">
+			<property name="name_key" value="challenge_mission0036_4Name" />
+			<property name="subtitle_key" value="challenge_mission0036_4Subtitle" />
+			<property name="description_key" value="challenge_mission0036_4Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0036_4Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="150" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0036" value="OR" phase="1">
+				<requirement type="Holding" id="gunBowPrimitive" />
+				<requirement type="Holding" id="gunBowWooden" />
+				<requirement type="Holding" id="gunBowCompound" />
+			</requirement>
+
+			<reward type="Item" id="ammoArrowStone" value="200" />
+			<reward type="Item" id="ammoArrowIron" value="500" />
+			<reward type="Item" id="ammoArrowSteelAP" value="300" />
+			<reward type="Quest" id="challenge_mission0036_5" />
+		</quest>
+		<quest id="challenge_mission0036_5">
+			<property name="name_key" value="challenge_mission0036_5Name" />
+			<property name="subtitle_key" value="challenge_mission0036_5Subtitle" />
+			<property name="description_key" value="challenge_mission0036_5Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0036_5Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="175" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0036" value="OR" phase="1">
+				<requirement type="Holding" id="gunBowPrimitive" />
+				<requirement type="Holding" id="gunBowWooden" />
+				<requirement type="Holding" id="gunBowCompound" />
+			</requirement>
+
+			<reward type="Item" id="ammoArrowIron" value="600" />
+			<reward type="Item" id="ammoArrowSteelAP" value="400" />
+			<reward type="Quest" id="challenge_mission0036_6" />
+		</quest>
+		<quest id="challenge_mission0036_6">
+			<property name="name_key" value="challenge_mission0036_6Name" />
+			<property name="subtitle_key" value="challenge_mission0036_6Subtitle" />
+			<property name="description_key" value="challenge_mission0036_6Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0036_6Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="200" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0036" value="OR" phase="1">
+				<requirement type="Holding" id="gunBowPrimitive" />
+				<requirement type="Holding" id="gunBowWooden" />
+				<requirement type="Holding" id="gunBowCompound" />
+			</requirement>
+
+			<reward type="Item" id="ammoArrowIron" value="400" />
+			<reward type="Item" id="ammoArrowSteelAP" value="500" />
+			<reward type="Item" id="ammoArrowFlaming" value="100" />
+			<reward type="Quest" id="challenge_mission0036_7" />
+		</quest>
+		<quest id="challenge_mission0036_7">
+			<property name="name_key" value="challenge_mission0036_7Name" />
+			<property name="subtitle_key" value="challenge_mission0036_7Subtitle" />
+			<property name="description_key" value="challenge_mission0036_7Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0036_7Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="225" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0036" value="OR" phase="1">
+				<requirement type="Holding" id="gunBowPrimitive" />
+				<requirement type="Holding" id="gunBowWooden" />
+				<requirement type="Holding" id="gunBowCompound" />
+			</requirement>
+
+			<reward type="Item" id="ammoArrowIron" value="200" />
+			<reward type="Item" id="ammoArrowSteelAP" value="600" />
+			<reward type="Item" id="ammoArrowFlaming" value="200" />
+			<reward type="Quest" id="challenge_mission0036_8" />
+		</quest>
+		<quest id="challenge_mission0036_8">
+			<property name="name_key" value="challenge_mission0036_8Name" />
+			<property name="subtitle_key" value="challenge_mission0036_8Subtitle" />
+			<property name="description_key" value="challenge_mission0036_8Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0036_8Offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true" />
+	
+			<objective type="ZombieKill" value="250" phase="1"/>
+			<requirement type="Group" id="requirementGroupmission0036" value="OR" phase="1">
+				<requirement type="Holding" id="gunBowPrimitive" />
+				<requirement type="Holding" id="gunBowWooden" />
+				<requirement type="Holding" id="gunBowCompound" />
+			</requirement>
+
+			<reward type="Item" id="modGunBowArrowRest" value="1" />
+			<reward type="Item" id="modGunCrippleEm" value="1" />
+			<reward type="Item" id="modGunBowPolymerString" value="1" />
+			<reward type="Item" id="modGunMeleeTheHunter" value="1" />
+		</quest>
+		<!-- 體驗收集各種素材的樂趣(連續任務) -->
+		<quest id="challenge_mission0037">
+			<property name="name_key" value="challenge_mission0037Name" />
+			<property name="subtitle_key" value="challenge_mission0037Subtitle" />
+			<property name="description_key" value="challenge_mission0037Offer" />
+			<property name="icon" value="ui_game_symbol_tree" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="offer_key" value="challenge_mission0037Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+			<!-- 分批執行的objective最多只能8個, 超過會出現錯誤 -->
+			<objective type="FetchKeep" id="resourceRockSmall" value="1000" phase="1"/>
+			<objective type="FetchKeep" id="resourceYuccaFibers" value="1000" phase="2"/>
+			<objective type="FetchKeep" id="resourceWood" value="1000" phase="3"/>
+			<objective type="FetchKeep" id="resourceCrushedSand" value="1000" phase="4"/>
+			<objective type="FetchKeep" id="resourceScrapIron" value="1000" phase="5"/>
+			<objective type="FetchKeep" id="resourceScrapPolymers" value="1000" phase="6"/>
+			<objective type="FetchKeep" id="resourceOilShale" value="1000" phase="7"/>
+			<objective type="FetchKeep" id="resourceScrapBrass" value="1000" phase="8"/>
+
+			<reward type="Exp" value="2500000"/>
+			<reward type="Quest" id="challenge_mission0037_1" />
+		</quest>
+		<quest id="challenge_mission0037_1">
+			<property name="name_key" value="challenge_mission0037_1Name" />
+			<property name="subtitle_key" value="challenge_mission0037_1Subtitle" />
+			<property name="description_key" value="challenge_mission0037_1Offer" />
+			<property name="icon" value="ui_game_symbol_tree" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="offer_key" value="challenge_mission0037_1Offer" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+
+			<objective type="FetchKeep" id="resourceScrapLead" value="1000" phase="1"/>
+			<objective type="FetchKeep" id="resourceClayLump" value="1000" phase="2"/>
+			<objective type="FetchKeep" id="foodEgg" value="100" phase="3"/>
+			<objective type="FetchKeep" id="resourceAnimalFat" value="100" phase="4"/>
+			<objective type="FetchKeep" id="resourceFeather" value="100" phase="5"/>
+			<objective type="FetchKeep" id="resourceBone" value="100" phase="6"/>
+			<objective type="FetchKeep" id="foodRottingFlesh" value="100" phase="7"/>
+			<objective type="FetchKeep" id="foodRawMeat" value="100" phase="8"/>
+
+			<reward type="Exp" value="2500000"/>
+		</quest>
+		<!-- 火的起源(協會任務) -->
+		<quest id="challenge_mission0038">
+			<property name="name_key" value="challenge_mission0038Name" />
+			<property name="subtitle_key" value="challenge_mission0038Subtitle" />
+			<property name="description_key" value="challenge_mission0038Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0038Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="false" />
+			<!-- 擊殺任何普通型火元素殭屍, 領導型火元素殭屍, BOSS級火元素殭屍 -->
+			<objective type="ZombieKill" id="zombieBoeElementFlame,zombieFootballPlayerElementFlame,zombieFemaleFatElementFlame,zombieJoeElementFlame,zombieBikerElementFlame,zombieBurntElementFlame,zombieBusinessManElementFlame,zombieFarmerElementFlame,zombieNurseElementFlame,zombieSnowElementFlame,zombieSpiderElementFlame,zombieUtilityWorkerElementFlame,zombieCheerleaderElementFlame,zombieSkateboarderElementFlame,zombieSoldierElementFlame,zombieArleneElementFlame,zombieLabElementFlame,zombieDarleneElementFlame,zombieFatHawaiianElementFlame,zombieMarleneElementFlame,zombieMoeElementFlame,zombieOldTimerElementFlame,zombieSteveElementFlame,zombieStripperElementFlame,zombieYoElementFlame" value="5"/>
+			<objective type="ZombieKill" id="zombieBoeElementFlameLeader,zombieFootballPlayerElementFlameLeader,zombieFemaleFatElementFlameLeader,zombieJoeElementFlameLeader,zombieBikerElementFlameLeader,zombieBurntElementFlameLeader,zombieBusinessManElementFlameLeader,zombieFarmerElementFlameLeader,zombieNurseElementFlameLeader,zombieSnowElementFlameLeader,zombieSpiderElementFlameLeader,zombieUtilityWorkerElementFlameLeader,zombieCheerleaderElementFlameLeader,zombieSkateboarderElementFlameLeader,zombieSoldierElementFlameLeader,zombieArleneElementFlameLeader,zombieLabElementFlameLeader,zombieDarleneElementFlameLeader,zombieFatHawaiianElementFlameLeader,zombieMarleneElementFlameLeader,zombieMoeElementFlameLeader,zombieOldTimerElementFlameLeader,zombieSteveElementFlameLeader,zombieStripperElementFlameLeader,zombieYoElementFlameLeader" value="3"/>
+			<objective type="ZombieKill" id="zombieFatCopElementFlameBoss,zombieWightElementFlameBoss,zombieBurntElementFlameBoss,zombieDemolitionElementFlameBoss" value="2"/>
+			
+			<reward type="Item" id="modBurnDeviceSchematic" value="1" />
+			<reward type="Item" id="resourceElementFire" value="10" />
+			<reward type="Item" id="resourceElementWind" value="10" />
+		</quest>
+		<!-- 突生的閃電(協會任務) -->
+		<quest id="challenge_mission0039">
+			<property name="name_key" value="challenge_mission0039Name" />
+			<property name="subtitle_key" value="challenge_mission0039Subtitle" />
+			<property name="description_key" value="challenge_mission0039Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0039Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="false" />
+			<!-- 擊殺任何普通型電元素殭屍, 領導型電元素殭屍, BOSS級電元素殭屍 -->
+			<objective type="ZombieKill" id="zombieBoeElementElectric,zombieFootballPlayerElementElectric,zombieFemaleFatElementElectric,zombieJoeElementElectric,zombieBikerElementElectric,zombieBurntElementElectric,zombieBusinessManElementElectric,zombieFarmerElementElectric,zombieNurseElementElectric,zombieSnowElementElectric,zombieSpiderElementElectric,zombieUtilityWorkerElementElectric,zombieCheerleaderElementElectric,zombieSkateboarderElementElectric,zombieSoldierElementElectric,zombieArleneElementElectric,zombieLabElementElectric,zombieDarleneElementElectric,zombieFatHawaiianElementElectric,zombieMarleneElementElectric,zombieMoeElementElectric,zombieOldTimerElementElectric,zombieSteveElementElectric,zombieStripperElementElectric,zombieYoElementElectric" value="5"/>
+			<objective type="ZombieKill" id="zombieBoeElementElectricLeader,zombieFootballPlayerElementElectricLeader,zombieFemaleFatElementElectricLeader,zombieJoeElementElectricLeader,zombieBikerElementElectricLeader,zombieBurntElementElectricLeader,zombieBusinessManElementElectricLeader,zombieFarmerElementElectricLeader,zombieNurseElementElectricLeader,zombieSnowElementElectricLeader,zombieSpiderElementElectricLeader,zombieUtilityWorkerElementElectricLeader,zombieCheerleaderElementElectricLeader,zombieSkateboarderElementElectricLeader,zombieSoldierElementElectricLeader,zombieArleneElementElectricLeader,zombieLabElementElectricLeader,zombieDarleneElementElectricLeader,zombieFatHawaiianElementElectricLeader,zombieMarleneElementElectricLeader,zombieMoeElementElectricLeader,zombieOldTimerElementElectricLeader,zombieSteveElementElectricLeader,zombieStripperElementElectricLeader,zombieYoElementElectricLeader" value="3"/>
+			<objective type="ZombieKill" id="zombieFatCopElementElectricBoss,zombieWightElementElectricBoss,zombieBurntElementElectricBoss,zombieDemolitionElementElectricBoss" value="2"/>
+			
+			<reward type="Item" id="modElectricShockDeviceSchematic" value="1" />
+			<reward type="Item" id="resourceElementLight" value="10" />
+			<reward type="Item" id="resourceElementWind" value="10" />
+		</quest>
+		<!-- 毒的影響(協會任務) -->
+		<quest id="challenge_mission0040">
+			<property name="name_key" value="challenge_mission0040Name" />
+			<property name="subtitle_key" value="challenge_mission0040Subtitle" />
+			<property name="description_key" value="challenge_mission0040Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0040Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="false" />
+			<!-- 擊殺任何普通型毒元素殭屍, 領導型毒元素殭屍, BOSS級毒元素殭屍 -->
+			<objective type="ZombieKill" id="zombieBoeElementPoison,zombieFootballPlayerElementPoison,zombieFemaleFatElementPoison,zombieJoeElementPoison,zombieBikerElementPoison,zombieBurntElementPoison,zombieBusinessManElementPoison,zombieFarmerElementPoison,zombieNurseElementPoison,zombieSnowElementPoison,zombieSpiderElementPoison,zombieUtilityWorkerElementPoison,zombieCheerleaderElementPoison,zombieSkateboarderElementPoison,zombieSoldierElementPoison,zombieArleneElementPoison,zombieLabElementPoison,zombieDarleneElementPoison,zombieFatHawaiianElementPoison,zombieMarleneElementPoison,zombieMoeElementPoison,zombieOldTimerElementPoison,zombieSteveElementPoison,zombieStripperElementPoison,zombieYoElementPoison" value="5"/>
+			<objective type="ZombieKill" id="zombieBoeElementPoisonLeader,zombieFootballPlayerElementPoisonLeader,zombieFemaleFatElementPoisonLeader,zombieJoeElementPoisonLeader,zombieBikerElementPoisonLeader,zombieBurntElementPoisonLeader,zombieBusinessManElementPoisonLeader,zombieFarmerElementPoisonLeader,zombieNurseElementPoisonLeader,zombieSnowElementPoisonLeader,zombieSpiderElementPoisonLeader,zombieUtilityWorkerElementPoisonLeader,zombieCheerleaderElementPoisonLeader,zombieSkateboarderElementPoisonLeader,zombieSoldierElementPoisonLeader,zombieArleneElementPoisonLeader,zombieLabElementPoisonLeader,zombieDarleneElementPoisonLeader,zombieFatHawaiianElementPoisonLeader,zombieMarleneElementPoisonLeader,zombieMoeElementPoisonLeader,zombieOldTimerElementPoisonLeader,zombieSteveElementPoisonLeader,zombieStripperElementPoisonLeader,zombieYoElementPoisonLeader" value="3"/>
+			<objective type="ZombieKill" id="zombieFatCopElementPoisonBoss,zombieWightElementPoisonBoss,zombieBurntElementPoisonBoss,zombieDemolitionElementPoisonBoss" value="2"/>
+			
+			<reward type="Item" id="modBloodlettingDeviceSchematic" value="1" />
+			<reward type="Item" id="resourceElementDark" value="10" />
+			<reward type="Item" id="resourceElementWind" value="10" />
+		</quest>
+		<!-- 昏睡的起因(協會任務) -->
+		<quest id="challenge_mission0041">
+			<property name="name_key" value="challenge_mission0041Name" />
+			<property name="subtitle_key" value="challenge_mission0041Subtitle" />
+			<property name="description_key" value="challenge_mission0041Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0041Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="false" />
+			<!-- 擊殺任何普通型麻醉元素殭屍, 領導型麻醉元素殭屍, BOSS級麻醉元素殭屍 -->
+			<objective type="ZombieKill" id="zombieBoeElementNarcosis,zombieFootballPlayerElementNarcosis,zombieFemaleFatElementNarcosis,zombieJoeElementNarcosis,zombieBikerElementNarcosis,zombieBurntElementNarcosis,zombieBusinessManElementNarcosis,zombieFarmerElementNarcosis,zombieNurseElementNarcosis,zombieSnowElementNarcosis,zombieSpiderElementNarcosis,zombieUtilityWorkerElementNarcosis,zombieCheerleaderElementNarcosis,zombieSkateboarderElementNarcosis,zombieSoldierElementNarcosis,zombieArleneElementNarcosis,zombieLabElementNarcosis,zombieDarleneElementNarcosis,zombieFatHawaiianElementNarcosis,zombieMarleneElementNarcosis,zombieMoeElementNarcosis,zombieOldTimerElementNarcosis,zombieSteveElementNarcosis,zombieStripperElementNarcosis,zombieYoElementNarcosis" value="5"/>
+			<objective type="ZombieKill" id="zombieBoeElementNarcosisLeader,zombieFootballPlayerElementNarcosisLeader,zombieFemaleFatElementNarcosisLeader,zombieJoeElementNarcosisLeader,zombieBikerElementNarcosisLeader,zombieBurntElementNarcosisLeader,zombieBusinessManElementNarcosisLeader,zombieFarmerElementNarcosisLeader,zombieNurseElementNarcosisLeader,zombieSnowElementNarcosisLeader,zombieSpiderElementNarcosisLeader,zombieUtilityWorkerElementNarcosisLeader,zombieCheerleaderElementNarcosisLeader,zombieSkateboarderElementNarcosisLeader,zombieSoldierElementNarcosisLeader,zombieArleneElementNarcosisLeader,zombieLabElementNarcosisLeader,zombieDarleneElementNarcosisLeader,zombieFatHawaiianElementNarcosisLeader,zombieMarleneElementNarcosisLeader,zombieMoeElementNarcosisLeader,zombieOldTimerElementNarcosisLeader,zombieSteveElementNarcosisLeader,zombieStripperElementNarcosisLeader,zombieYoElementNarcosisLeader" value="3"/>
+			<objective type="ZombieKill" id="zombieFatCopElementNarcosisBoss,zombieWightElementNarcosisBoss,zombieBurntElementNarcosisBoss,zombieDemolitionElementNarcosisBoss" value="2"/>
+			
+			<reward type="Item" id="modAnesthesiaDeviceSchematic" value="1" />
+			<reward type="Item" id="resourceElementEarth" value="10" />
+			<reward type="Item" id="resourceElementDark" value="10" />
+		</quest>
+		<!-- 突然暴斃的原因(協會任務) -->
+		<quest id="challenge_mission0042">
+			<property name="name_key" value="challenge_mission0042Name" />
+			<property name="subtitle_key" value="challenge_mission0042Subtitle" />
+			<property name="description_key" value="challenge_mission0042Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0042Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="false" />
+			<!-- 擊殺任何普通型勾魂元素殭屍, 領導型勾魂元素殭屍, BOSS級勾魂元素殭屍 -->
+			<objective type="ZombieKill" id="zombieBoeElementDark,zombieFootballPlayerElementDark,zombieFemaleFatElementDark,zombieJoeElementDark,zombieBikerElementDark,zombieBurntElementDark,zombieBusinessManElementDark,zombieFarmerElementDark,zombieNurseElementDark,zombieSnowElementDark,zombieSpiderElementDark,zombieUtilityWorkerElementDark,zombieCheerleaderElementDark,zombieSkateboarderElementDark,zombieSoldierElementDark,zombieArleneElementDark,zombieLabElementDark,zombieDarleneElementDark,zombieFatHawaiianElementDark,zombieMarleneElementDark,zombieMoeElementDark,zombieOldTimerElementDark,zombieSteveElementDark,zombieStripperElementDark,zombieYoElementDark" value="5"/>
+			<objective type="ZombieKill" id="zombieBoeElementDarkLeader,zombieFootballPlayerElementDarkLeader,zombieFemaleFatElementDarkLeader,zombieJoeElementDarkLeader,zombieBikerElementDarkLeader,zombieBurntElementDarkLeader,zombieBusinessManElementDarkLeader,zombieFarmerElementDarkLeader,zombieNurseElementDarkLeader,zombieSnowElementDarkLeader,zombieSpiderElementDarkLeader,zombieUtilityWorkerElementDarkLeader,zombieCheerleaderElementDarkLeader,zombieSkateboarderElementDarkLeader,zombieSoldierElementDarkLeader,zombieArleneElementDarkLeader,zombieLabElementDarkLeader,zombieDarleneElementDarkLeader,zombieFatHawaiianElementDarkLeader,zombieMarleneElementDarkLeader,zombieMoeElementDarkLeader,zombieOldTimerElementDarkLeader,zombieSteveElementDarkLeader,zombieStripperElementDarkLeader,zombieYoElementDarkLeader" value="3"/>
+			<objective type="ZombieKill" id="zombieFatCopElementDarkBoss,zombieWightElementDarkBoss,zombieBurntElementDarkBoss,zombieDemolitionElementDarkBoss" value="2"/>
+			
+			<reward type="Item" id="modHolyLightDeviceSchematic" value="1" />
+			<reward type="Item" id="resourceElementLight" value="10" />
+			<reward type="Item" id="resourceElementWind" value="10" />
+		</quest>
+		<!-- 結霜的起因(協會任務) -->
+		<quest id="challenge_mission0043">
+			<property name="name_key" value="challenge_mission0043Name" />
+			<property name="subtitle_key" value="challenge_mission0043Subtitle" />
+			<property name="description_key" value="challenge_mission0043Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0043Offer" />
+			<property name="difficulty" value="hard" />
+			<property name="shareable" value="false" />
+			<!-- 擊殺任何普通型水元素殭屍, 領導型水元素殭屍, BOSS級水元素殭屍 -->
+			<objective type="ZombieKill" id="zombieBoeElementCold,zombieFootballPlayerElementCold,zombieFemaleFatElementCold,zombieJoeElementCold,zombieBikerElementCold,zombieBurntElementCold,zombieBusinessManElementCold,zombieFarmerElementCold,zombieNurseElementCold,zombieSnowElementCold,zombieSpiderElementCold,zombieUtilityWorkerElementCold,zombieCheerleaderElementCold,zombieSkateboarderElementCold,zombieSoldierElementCold,zombieArleneElementCold,zombieLabElementCold,zombieDarleneElementCold,zombieFatHawaiianElementCold,zombieMarleneElementCold,zombieMoeElementCold,zombieOldTimerElementCold,zombieSteveElementCold,zombieStripperElementCold,zombieYoElementCold" value="5"/>
+			<objective type="ZombieKill" id="zombieBoeElementColdLeader,zombieFootballPlayerElementColdLeader,zombieFemaleFatElementColdLeader,zombieJoeElementColdLeader,zombieBikerElementColdLeader,zombieBurntElementColdLeader,zombieBusinessManElementColdLeader,zombieFarmerElementColdLeader,zombieNurseElementColdLeader,zombieSnowElementColdLeader,zombieSpiderElementColdLeader,zombieUtilityWorkerElementColdLeader,zombieCheerleaderElementColdLeader,zombieSkateboarderElementColdLeader,zombieSoldierElementColdLeader,zombieArleneElementColdLeader,zombieLabElementColdLeader,zombieDarleneElementColdLeader,zombieFatHawaiianElementColdLeader,zombieMarleneElementColdLeader,zombieMoeElementColdLeader,zombieOldTimerElementColdLeader,zombieSteveElementColdLeader,zombieStripperElementColdLeader,zombieYoElementColdLeader" value="3"/>
+			<objective type="ZombieKill" id="zombieFatCopElementColdBoss,zombieWightElementColdBoss,zombieBurntElementColdBoss,zombieDemolitionElementColdBoss" value="2"/>
+			
+			<reward type="Item" id="modFrostBiteDeviceSchematic" value="1" />
+			<reward type="Item" id="resourceElementEarth" value="10" />
+			<reward type="Item" id="resourceElementWater" value="10" />
+		</quest>
+		<!-- 六首領的動向(協會任務) -->
+		<quest id="challenge_mission0044">
+			<property name="name_key" value="challenge_mission0044Name" />
+			<property name="subtitle_key" value="challenge_mission0044Subtitle" />
+			<property name="description_key" value="challenge_mission0044Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0044Offer" />
+			<property name="difficulty" value="insane" />
+			<property name="shareable" value="false" />
+	
+			<objective type="RandomGoto" value="50-100" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieBoeElementFlame,zombieFootballPlayerElementFlame,zombieFemaleFatElementFlame,zombieJoeElementFlame,zombieBikerElementFlame,zombieBurntElementFlame,zombieBusinessManElementFlame,zombieFarmerElementFlame,zombieNurseElementFlame,zombieSnowElementFlame,zombieSpiderElementFlame,zombieUtilityWorkerElementFlame,zombieCheerleaderElementFlame,zombieSkateboarderElementFlame,zombieSoldierElementFlame,zombieArleneElementFlame,zombieLabElementFlame,zombieDarleneElementFlame,zombieFatHawaiianElementFlame,zombieMarleneElementFlame,zombieMoeElementFlame,zombieOldTimerElementFlame,zombieSteveElementFlame,zombieStripperElementFlame,zombieYoElementFlame" value="2" phase="3"/>
+			<action type="SpawnEnemy" id="zombieBoeElementFlameLeader,zombieFootballPlayerElementFlameLeader,zombieFemaleFatElementFlameLeader,zombieJoeElementFlameLeader,zombieBikerElementFlameLeader,zombieBurntElementFlameLeader,zombieBusinessManElementFlameLeader,zombieFarmerElementFlameLeader,zombieNurseElementFlameLeader,zombieSnowElementFlameLeader,zombieSpiderElementFlameLeader,zombieUtilityWorkerElementFlameLeader,zombieCheerleaderElementFlameLeader,zombieSkateboarderElementFlameLeader,zombieSoldierElementFlameLeader,zombieArleneElementFlameLeader,zombieLabElementFlameLeader,zombieDarleneElementFlameLeader,zombieFatHawaiianElementFlameLeader,zombieMarleneElementFlameLeader,zombieMoeElementFlameLeader,zombieOldTimerElementFlameLeader,zombieSteveElementFlameLeader,zombieStripperElementFlameLeader,zombieYoElementFlameLeader" value="2" phase="3"/>
+			<action type="SpawnEnemy" id="zombieFatCopElementFlameBoss,zombieWightElementFlameBoss,zombieBurntElementFlameBoss,zombieDemolitionElementFlameBoss" value="2" phase="3"/>
+			<objective type="ZombieKill" id="zombieBoeElementFlame,zombieFootballPlayerElementFlame,zombieFemaleFatElementFlame,zombieJoeElementFlame,zombieBikerElementFlame,zombieBurntElementFlame,zombieBusinessManElementFlame,zombieFarmerElementFlame,zombieNurseElementFlame,zombieSnowElementFlame,zombieSpiderElementFlame,zombieUtilityWorkerElementFlame,zombieCheerleaderElementFlame,zombieSkateboarderElementFlame,zombieSoldierElementFlame,zombieArleneElementFlame,zombieLabElementFlame,zombieDarleneElementFlame,zombieFatHawaiianElementFlame,zombieMarleneElementFlame,zombieMoeElementFlame,zombieOldTimerElementFlame,zombieSteveElementFlame,zombieStripperElementFlame,zombieYoElementFlame" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieBoeElementFlameLeader,zombieFootballPlayerElementFlameLeader,zombieFemaleFatElementFlameLeader,zombieJoeElementFlameLeader,zombieBikerElementFlameLeader,zombieBurntElementFlameLeader,zombieBusinessManElementFlameLeader,zombieFarmerElementFlameLeader,zombieNurseElementFlameLeader,zombieSnowElementFlameLeader,zombieSpiderElementFlameLeader,zombieUtilityWorkerElementFlameLeader,zombieCheerleaderElementFlameLeader,zombieSkateboarderElementFlameLeader,zombieSoldierElementFlameLeader,zombieArleneElementFlameLeader,zombieLabElementFlameLeader,zombieDarleneElementFlameLeader,zombieFatHawaiianElementFlameLeader,zombieMarleneElementFlameLeader,zombieMoeElementFlameLeader,zombieOldTimerElementFlameLeader,zombieSteveElementFlameLeader,zombieStripperElementFlameLeader,zombieYoElementFlameLeader" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieFatCopElementFlameBoss,zombieWightElementFlameBoss,zombieBurntElementFlameBoss,zombieDemolitionElementFlameBoss" value="1" phase="3" />
+
+			<action type="SpawnEnemy" id="zombieBoeElementElectric,zombieFootballPlayerElementElectric,zombieFemaleFatElementElectric,zombieJoeElementElectric,zombieBikerElementElectric,zombieBurntElementElectric,zombieBusinessManElementElectric,zombieFarmerElementElectric,zombieNurseElementElectric,zombieSnowElementElectric,zombieSpiderElementElectric,zombieUtilityWorkerElementElectric,zombieCheerleaderElementElectric,zombieSkateboarderElementElectric,zombieSoldierElementElectric,zombieArleneElementElectric,zombieLabElementElectric,zombieDarleneElementElectric,zombieFatHawaiianElementElectric,zombieMarleneElementElectric,zombieMoeElementElectric,zombieOldTimerElementElectric,zombieSteveElementElectric,zombieStripperElementElectric,zombieYoElementElectric" value="2" phase="4"/>
+			<action type="SpawnEnemy" id="zombieBoeElementElectricLeader,zombieFootballPlayerElementElectricLeader,zombieFemaleFatElementElectricLeader,zombieJoeElementElectricLeader,zombieBikerElementElectricLeader,zombieBurntElementElectricLeader,zombieBusinessManElementElectricLeader,zombieFarmerElementElectricLeader,zombieNurseElementElectricLeader,zombieSnowElementElectricLeader,zombieSpiderElementElectricLeader,zombieUtilityWorkerElementElectricLeader,zombieCheerleaderElementElectricLeader,zombieSkateboarderElementElectricLeader,zombieSoldierElementElectricLeader,zombieArleneElementElectricLeader,zombieLabElementElectricLeader,zombieDarleneElementElectricLeader,zombieFatHawaiianElementElectricLeader,zombieMarleneElementElectricLeader,zombieMoeElementElectricLeader,zombieOldTimerElementElectricLeader,zombieSteveElementElectricLeader,zombieStripperElementElectricLeader,zombieYoElementElectricLeader" value="2" phase="4"/>
+			<action type="SpawnEnemy" id="zombieFatCopElementElectricBoss,zombieWightElementElectricBoss,zombieBurntElementElectricBoss,zombieDemolitionElementElectricBoss" value="2" phase="4"/>
+			<objective type="ZombieKill" id="zombieBoeElementElectric,zombieFootballPlayerElementElectric,zombieFemaleFatElementElectric,zombieJoeElementElectric,zombieBikerElementElectric,zombieBurntElementElectric,zombieBusinessManElementElectric,zombieFarmerElementElectric,zombieNurseElementElectric,zombieSnowElementElectric,zombieSpiderElementElectric,zombieUtilityWorkerElementElectric,zombieCheerleaderElementElectric,zombieSkateboarderElementElectric,zombieSoldierElementElectric,zombieArleneElementElectric,zombieLabElementElectric,zombieDarleneElementElectric,zombieFatHawaiianElementElectric,zombieMarleneElementElectric,zombieMoeElementElectric,zombieOldTimerElementElectric,zombieSteveElementElectric,zombieStripperElementElectric,zombieYoElementElectric" value="1" phase="4" />
+			<objective type="ZombieKill" id="zombieBoeElementElectricLeader,zombieFootballPlayerElementElectricLeader,zombieFemaleFatElementElectricLeader,zombieJoeElementElectricLeader,zombieBikerElementElectricLeader,zombieBurntElementElectricLeader,zombieBusinessManElementElectricLeader,zombieFarmerElementElectricLeader,zombieNurseElementElectricLeader,zombieSnowElementElectricLeader,zombieSpiderElementElectricLeader,zombieUtilityWorkerElementElectricLeader,zombieCheerleaderElementElectricLeader,zombieSkateboarderElementElectricLeader,zombieSoldierElementElectricLeader,zombieArleneElementElectricLeader,zombieLabElementElectricLeader,zombieDarleneElementElectricLeader,zombieFatHawaiianElementElectricLeader,zombieMarleneElementElectricLeader,zombieMoeElementElectricLeader,zombieOldTimerElementElectricLeader,zombieSteveElementElectricLeader,zombieStripperElementElectricLeader,zombieYoElementElectricLeader" value="1" phase="4" />
+			<objective type="ZombieKill" id="zombieFatCopElementElectricBoss,zombieWightElementElectricBoss,zombieBurntElementElectricBoss,zombieDemolitionElementElectricBoss" value="1" phase="4" />
+
+			<reward type="Item" id="casinoCoin" value="5000" />
+			<reward type="Quest" id="challenge_mission0044_1" />
+		</quest>
+		<quest id="challenge_mission0044_1">
+			<property name="name_key" value="challenge_mission0044_1Name" />
+			<property name="subtitle_key" value="challenge_mission0044_1Subtitle" />
+			<property name="description_key" value="challenge_mission0044_1Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0044_1Offer" />
+			<property name="difficulty" value="insane" />
+			<property name="shareable" value="false" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieBoeElementPoison,zombieFootballPlayerElementPoison,zombieFemaleFatElementPoison,zombieJoeElementPoison,zombieBikerElementPoison,zombieBurntElementPoison,zombieBusinessManElementPoison,zombieFarmerElementPoison,zombieNurseElementPoison,zombieSnowElementPoison,zombieSpiderElementPoison,zombieUtilityWorkerElementPoison,zombieCheerleaderElementPoison,zombieSkateboarderElementPoison,zombieSoldierElementPoison,zombieArleneElementPoison,zombieLabElementPoison,zombieDarleneElementPoison,zombieFatHawaiianElementPoison,zombieMarleneElementPoison,zombieMoeElementPoison,zombieOldTimerElementPoison,zombieSteveElementPoison,zombieStripperElementPoison,zombieYoElementPoison" value="2" phase="3"/>
+			<action type="SpawnEnemy" id="zombieBoeElementPoisonLeader,zombieFootballPlayerElementPoisonLeader,zombieFemaleFatElementPoisonLeader,zombieJoeElementPoisonLeader,zombieBikerElementPoisonLeader,zombieBurntElementPoisonLeader,zombieBusinessManElementPoisonLeader,zombieFarmerElementPoisonLeader,zombieNurseElementPoisonLeader,zombieSnowElementPoisonLeader,zombieSpiderElementPoisonLeader,zombieUtilityWorkerElementPoisonLeader,zombieCheerleaderElementPoisonLeader,zombieSkateboarderElementPoisonLeader,zombieSoldierElementPoisonLeader,zombieArleneElementPoisonLeader,zombieLabElementPoisonLeader,zombieDarleneElementPoisonLeader,zombieFatHawaiianElementPoisonLeader,zombieMarleneElementPoisonLeader,zombieMoeElementPoisonLeader,zombieOldTimerElementPoisonLeader,zombieSteveElementPoisonLeader,zombieStripperElementPoisonLeader,zombieYoElementPoisonLeader" value="2" phase="3"/>
+			<action type="SpawnEnemy" id="zombieFatCopElementPoisonBoss,zombieWightElementPoisonBoss,zombieBurntElementPoisonBoss,zombieDemolitionElementPoisonBoss" value="2" phase="3"/>
+			<objective type="ZombieKill" id="zombieBoeElementPoison,zombieFootballPlayerElementPoison,zombieFemaleFatElementPoison,zombieJoeElementPoison,zombieBikerElementPoison,zombieBurntElementPoison,zombieBusinessManElementPoison,zombieFarmerElementPoison,zombieNurseElementPoison,zombieSnowElementPoison,zombieSpiderElementPoison,zombieUtilityWorkerElementPoison,zombieCheerleaderElementPoison,zombieSkateboarderElementPoison,zombieSoldierElementPoison,zombieArleneElementPoison,zombieLabElementPoison,zombieDarleneElementPoison,zombieFatHawaiianElementPoison,zombieMarleneElementPoison,zombieMoeElementPoison,zombieOldTimerElementPoison,zombieSteveElementPoison,zombieStripperElementPoison,zombieYoElementPoison" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieBoeElementPoisonLeader,zombieFootballPlayerElementPoisonLeader,zombieFemaleFatElementPoisonLeader,zombieJoeElementPoisonLeader,zombieBikerElementPoisonLeader,zombieBurntElementPoisonLeader,zombieBusinessManElementPoisonLeader,zombieFarmerElementPoisonLeader,zombieNurseElementPoisonLeader,zombieSnowElementPoisonLeader,zombieSpiderElementPoisonLeader,zombieUtilityWorkerElementPoisonLeader,zombieCheerleaderElementPoisonLeader,zombieSkateboarderElementPoisonLeader,zombieSoldierElementPoisonLeader,zombieArleneElementPoisonLeader,zombieLabElementPoisonLeader,zombieDarleneElementPoisonLeader,zombieFatHawaiianElementPoisonLeader,zombieMarleneElementPoisonLeader,zombieMoeElementPoisonLeader,zombieOldTimerElementPoisonLeader,zombieSteveElementPoisonLeader,zombieStripperElementPoisonLeader,zombieYoElementPoisonLeader" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieFatCopElementPoisonBoss,zombieWightElementPoisonBoss,zombieBurntElementPoisonBoss,zombieDemolitionElementPoisonBoss" value="1" phase="3" />
+
+			<action type="SpawnEnemy" id="zombieBoeElementNarcosis,zombieFootballPlayerElementNarcosis,zombieFemaleFatElementNarcosis,zombieJoeElementNarcosis,zombieBikerElementNarcosis,zombieBurntElementNarcosis,zombieBusinessManElementNarcosis,zombieFarmerElementNarcosis,zombieNurseElementNarcosis,zombieSnowElementNarcosis,zombieSpiderElementNarcosis,zombieUtilityWorkerElementNarcosis,zombieCheerleaderElementNarcosis,zombieSkateboarderElementNarcosis,zombieSoldierElementNarcosis,zombieArleneElementNarcosis,zombieLabElementNarcosis,zombieDarleneElementNarcosis,zombieFatHawaiianElementNarcosis,zombieMarleneElementNarcosis,zombieMoeElementNarcosis,zombieOldTimerElementNarcosis,zombieSteveElementNarcosis,zombieStripperElementNarcosis,zombieYoElementNarcosis" value="2" phase="4"/>
+			<action type="SpawnEnemy" id="zombieBoeElementNarcosisLeader,zombieFootballPlayerElementNarcosisLeader,zombieFemaleFatElementNarcosisLeader,zombieJoeElementNarcosisLeader,zombieBikerElementNarcosisLeader,zombieBurntElementNarcosisLeader,zombieBusinessManElementNarcosisLeader,zombieFarmerElementNarcosisLeader,zombieNurseElementNarcosisLeader,zombieSnowElementNarcosisLeader,zombieSpiderElementNarcosisLeader,zombieUtilityWorkerElementNarcosisLeader,zombieCheerleaderElementNarcosisLeader,zombieSkateboarderElementNarcosisLeader,zombieSoldierElementNarcosisLeader,zombieArleneElementNarcosisLeader,zombieLabElementNarcosisLeader,zombieDarleneElementNarcosisLeader,zombieFatHawaiianElementNarcosisLeader,zombieMarleneElementNarcosisLeader,zombieMoeElementNarcosisLeader,zombieOldTimerElementNarcosisLeader,zombieSteveElementNarcosisLeader,zombieStripperElementNarcosisLeader,zombieYoElementNarcosisLeader" value="2" phase="4"/>
+			<action type="SpawnEnemy" id="zombieFatCopElementNarcosisBoss,zombieWightElementNarcosisBoss,zombieBurntElementNarcosisBoss,zombieDemolitionElementNarcosisBoss" value="2" phase="4"/>
+			<objective type="ZombieKill" id="zombieBoeElementNarcosis,zombieFootballPlayerElementNarcosis,zombieFemaleFatElementNarcosis,zombieJoeElementNarcosis,zombieBikerElementNarcosis,zombieBurntElementNarcosis,zombieBusinessManElementNarcosis,zombieFarmerElementNarcosis,zombieNurseElementNarcosis,zombieSnowElementNarcosis,zombieSpiderElementNarcosis,zombieUtilityWorkerElementNarcosis,zombieCheerleaderElementNarcosis,zombieSkateboarderElementNarcosis,zombieSoldierElementNarcosis,zombieArleneElementNarcosis,zombieLabElementNarcosis,zombieDarleneElementNarcosis,zombieFatHawaiianElementNarcosis,zombieMarleneElementNarcosis,zombieMoeElementNarcosis,zombieOldTimerElementNarcosis,zombieSteveElementNarcosis,zombieStripperElementNarcosis,zombieYoElementNarcosis" value="1" phase="4" />
+			<objective type="ZombieKill" id="zombieBoeElementNarcosisLeader,zombieFootballPlayerElementNarcosisLeader,zombieFemaleFatElementNarcosisLeader,zombieJoeElementNarcosisLeader,zombieBikerElementNarcosisLeader,zombieBurntElementNarcosisLeader,zombieBusinessManElementNarcosisLeader,zombieFarmerElementNarcosisLeader,zombieNurseElementNarcosisLeader,zombieSnowElementNarcosisLeader,zombieSpiderElementNarcosisLeader,zombieUtilityWorkerElementNarcosisLeader,zombieCheerleaderElementNarcosisLeader,zombieSkateboarderElementNarcosisLeader,zombieSoldierElementNarcosisLeader,zombieArleneElementNarcosisLeader,zombieLabElementNarcosisLeader,zombieDarleneElementNarcosisLeader,zombieFatHawaiianElementNarcosisLeader,zombieMarleneElementNarcosisLeader,zombieMoeElementNarcosisLeader,zombieOldTimerElementNarcosisLeader,zombieSteveElementNarcosisLeader,zombieStripperElementNarcosisLeader,zombieYoElementNarcosisLeader" value="1" phase="4" />
+			<objective type="ZombieKill" id="zombieFatCopElementNarcosisBoss,zombieWightElementNarcosisBoss,zombieBurntElementNarcosisBoss,zombieDemolitionElementNarcosisBoss" value="1" phase="4" />
+
+			<reward type="Item" id="casinoCoin" value="5000" />
+			<reward type="Quest" id="challenge_mission0044_2" />
+		</quest>
+		<quest id="challenge_mission0044_2">
+			<property name="name_key" value="challenge_mission0044_2Name" />
+			<property name="subtitle_key" value="challenge_mission0044_2Subtitle" />
+			<property name="description_key" value="challenge_mission0044_2Offer" />
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0044_2Offer" />
+			<property name="difficulty" value="insane" />
+			<property name="shareable" value="false" />
+	
+			<objective type="RandomGoto" value="30-50" phase="1">
+				<property name="completion_distance" value="50" />
+			</objective>
+	
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create" />
+				<property name="phase" value="2" />
+			</objective>
+	
+			<action type="SpawnEnemy" id="zombieBoeElementDark,zombieFootballPlayerElementDark,zombieFemaleFatElementDark,zombieJoeElementDark,zombieBikerElementDark,zombieBurntElementDark,zombieBusinessManElementDark,zombieFarmerElementDark,zombieNurseElementDark,zombieSnowElementDark,zombieSpiderElementDark,zombieUtilityWorkerElementDark,zombieCheerleaderElementDark,zombieSkateboarderElementDark,zombieSoldierElementDark,zombieArleneElementDark,zombieLabElementDark,zombieDarleneElementDark,zombieFatHawaiianElementDark,zombieMarleneElementDark,zombieMoeElementDark,zombieOldTimerElementDark,zombieSteveElementDark,zombieStripperElementDark,zombieYoElementDark" value="2" phase="3"/>
+			<action type="SpawnEnemy" id="zombieBoeElementDarkLeader,zombieFootballPlayerElementDarkLeader,zombieFemaleFatElementDarkLeader,zombieJoeElementDarkLeader,zombieBikerElementDarkLeader,zombieBurntElementDarkLeader,zombieBusinessManElementDarkLeader,zombieFarmerElementDarkLeader,zombieNurseElementDarkLeader,zombieSnowElementDarkLeader,zombieSpiderElementDarkLeader,zombieUtilityWorkerElementDarkLeader,zombieCheerleaderElementDarkLeader,zombieSkateboarderElementDarkLeader,zombieSoldierElementDarkLeader,zombieArleneElementDarkLeader,zombieLabElementDarkLeader,zombieDarleneElementDarkLeader,zombieFatHawaiianElementDarkLeader,zombieMarleneElementDarkLeader,zombieMoeElementDarkLeader,zombieOldTimerElementDarkLeader,zombieSteveElementDarkLeader,zombieStripperElementDarkLeader,zombieYoElementDarkLeader" value="2" phase="3"/>
+			<action type="SpawnEnemy" id="zombieFatCopElementDarkBoss,zombieWightElementDarkBoss,zombieBurntElementDarkBoss,zombieDemolitionElementDarkBoss" value="2" phase="3"/>
+			<objective type="ZombieKill" id="zombieBoeElementDark,zombieFootballPlayerElementDark,zombieFemaleFatElementDark,zombieJoeElementDark,zombieBikerElementDark,zombieBurntElementDark,zombieBusinessManElementDark,zombieFarmerElementDark,zombieNurseElementDark,zombieSnowElementDark,zombieSpiderElementDark,zombieUtilityWorkerElementDark,zombieCheerleaderElementDark,zombieSkateboarderElementDark,zombieSoldierElementDark,zombieArleneElementDark,zombieLabElementDark,zombieDarleneElementDark,zombieFatHawaiianElementDark,zombieMarleneElementDark,zombieMoeElementDark,zombieOldTimerElementDark,zombieSteveElementDark,zombieStripperElementDark,zombieYoElementDark" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieBoeElementDarkLeader,zombieFootballPlayerElementDarkLeader,zombieFemaleFatElementDarkLeader,zombieJoeElementDarkLeader,zombieBikerElementDarkLeader,zombieBurntElementDarkLeader,zombieBusinessManElementDarkLeader,zombieFarmerElementDarkLeader,zombieNurseElementDarkLeader,zombieSnowElementDarkLeader,zombieSpiderElementDarkLeader,zombieUtilityWorkerElementDarkLeader,zombieCheerleaderElementDarkLeader,zombieSkateboarderElementDarkLeader,zombieSoldierElementDarkLeader,zombieArleneElementDarkLeader,zombieLabElementDarkLeader,zombieDarleneElementDarkLeader,zombieFatHawaiianElementDarkLeader,zombieMarleneElementDarkLeader,zombieMoeElementDarkLeader,zombieOldTimerElementDarkLeader,zombieSteveElementDarkLeader,zombieStripperElementDarkLeader,zombieYoElementDarkLeader" value="1" phase="3" />
+			<objective type="ZombieKill" id="zombieFatCopElementDarkBoss,zombieWightElementDarkBoss,zombieBurntElementDarkBoss,zombieDemolitionElementDarkBoss" value="1" phase="3" />
+
+			<action type="SpawnEnemy" id="zombieBoeElementCold,zombieFootballPlayerElementCold,zombieFemaleFatElementCold,zombieJoeElementCold,zombieBikerElementCold,zombieBurntElementCold,zombieBusinessManElementCold,zombieFarmerElementCold,zombieNurseElementCold,zombieSnowElementCold,zombieSpiderElementCold,zombieUtilityWorkerElementCold,zombieCheerleaderElementCold,zombieSkateboarderElementCold,zombieSoldierElementCold,zombieArleneElementCold,zombieLabElementCold,zombieDarleneElementCold,zombieFatHawaiianElementCold,zombieMarleneElementCold,zombieMoeElementCold,zombieOldTimerElementCold,zombieSteveElementCold,zombieStripperElementCold,zombieYoElementCold" value="2" phase="4"/>
+			<action type="SpawnEnemy" id="zombieBoeElementColdLeader,zombieFootballPlayerElementColdLeader,zombieFemaleFatElementColdLeader,zombieJoeElementColdLeader,zombieBikerElementColdLeader,zombieBurntElementColdLeader,zombieBusinessManElementColdLeader,zombieFarmerElementColdLeader,zombieNurseElementColdLeader,zombieSnowElementColdLeader,zombieSpiderElementColdLeader,zombieUtilityWorkerElementColdLeader,zombieCheerleaderElementColdLeader,zombieSkateboarderElementColdLeader,zombieSoldierElementColdLeader,zombieArleneElementColdLeader,zombieLabElementColdLeader,zombieDarleneElementColdLeader,zombieFatHawaiianElementColdLeader,zombieMarleneElementColdLeader,zombieMoeElementColdLeader,zombieOldTimerElementColdLeader,zombieSteveElementColdLeader,zombieStripperElementColdLeader,zombieYoElementColdLeader" value="2" phase="4"/>
+			<action type="SpawnEnemy" id="zombieFatCopElementColdBoss,zombieWightElementColdBoss,zombieBurntElementColdBoss,zombieDemolitionElementColdBoss" value="2" phase="4"/>
+			<objective type="ZombieKill" id="zombieBoeElementCold,zombieFootballPlayerElementCold,zombieFemaleFatElementCold,zombieJoeElementCold,zombieBikerElementCold,zombieBurntElementCold,zombieBusinessManElementCold,zombieFarmerElementCold,zombieNurseElementCold,zombieSnowElementCold,zombieSpiderElementCold,zombieUtilityWorkerElementCold,zombieCheerleaderElementCold,zombieSkateboarderElementCold,zombieSoldierElementCold,zombieArleneElementCold,zombieLabElementCold,zombieDarleneElementCold,zombieFatHawaiianElementCold,zombieMarleneElementCold,zombieMoeElementCold,zombieOldTimerElementCold,zombieSteveElementCold,zombieStripperElementCold,zombieYoElementCold" value="1" phase="4" />
+			<objective type="ZombieKill" id="zombieBoeElementColdLeader,zombieFootballPlayerElementColdLeader,zombieFemaleFatElementColdLeader,zombieJoeElementColdLeader,zombieBikerElementColdLeader,zombieBurntElementColdLeader,zombieBusinessManElementColdLeader,zombieFarmerElementColdLeader,zombieNurseElementColdLeader,zombieSnowElementColdLeader,zombieSpiderElementColdLeader,zombieUtilityWorkerElementColdLeader,zombieCheerleaderElementColdLeader,zombieSkateboarderElementColdLeader,zombieSoldierElementColdLeader,zombieArleneElementColdLeader,zombieLabElementColdLeader,zombieDarleneElementColdLeader,zombieFatHawaiianElementColdLeader,zombieMarleneElementColdLeader,zombieMoeElementColdLeader,zombieOldTimerElementColdLeader,zombieSteveElementColdLeader,zombieStripperElementColdLeader,zombieYoElementColdLeader" value="1" phase="4" />
+			<objective type="ZombieKill" id="zombieFatCopElementColdBoss,zombieWightElementColdBoss,zombieBurntElementColdBoss,zombieDemolitionElementColdBoss" value="1" phase="4" />
+
+			<reward type="LootItem" id="QuestRewardRandom16" value="1"/>
+		</quest>
+		<!-- 來自異世界的神秘協會的渴望(限定任務) -->
+		<quest id="challenge_mission0045">
+			<property name="name_key" value="challenge_mission0045Name" />
+			<property name="subtitle_key" value="challenge_mission0045Subtitle" />
+			<property name="description_key" value="challenge_mission0045Offer" />
+			<property name="icon" value="ui_game_symbol_scrap" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="challenge_mission0045Offer" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="shareable" value="false" />
+	
+			<objective type="FetchKeep" id="medicalDecayBloodBag" value="100" />
+			<reward type="Item" id="drinkNauseaPotion" value="3" />
+		</quest>
+	</append>
+	<!-- 樂透彩專用 -->
+	<append xpath="/quests">
+		<quest id="tticketLottery_01">
+			<property name="name_key" value="tticketLottery_01Name" />
+			<property name="subtitle_key" value="tticketLottery_01Subtitle" />
+			<property name="description_key" value="tticketLottery_01Offer" />
+			<property name="icon" value="ui_game_symbol_barter" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="offer_key" value="tticketLottery_01Offer" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="shareable" value="false" />
+	
+			<reward type="Item" id="casinoCoin" value="1-10000" />
+		</quest>
+	</append>
+	<!-- 自動生成6級道具專用任務 -->
+	<append xpath="/quests">
+		<!-- 鐵棒 -->
+		<quest id="quest_crafting0001">
+			<property name="group_name_key" value="quest_crafting0001"/>
+			<property name="name_key" value="quest_crafting0001"/>
+			<property name="subtitle_key" value="quest_crafting0001_subtitle"/>
+			<property name="description_key" value="quest_crafting0001_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0001_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="50" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="2" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="2" phase="1"/>
+			<objective type="Fetch" id="meleeClubIronSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeClubIron" value="6" />
+		</quest>
+		<!-- 鐵鎚 -->
+		<quest id="quest_crafting0002">
+			<property name="group_name_key" value="quest_crafting0002"/>
+			<property name="name_key" value="quest_crafting0002"/>
+			<property name="subtitle_key" value="quest_crafting0002_subtitle"/>
+			<property name="description_key" value="quest_crafting0002_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0002_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="50" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="meleeToolSledgehammerIronSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+			
+			<reward type="Item" id="meleeToolSledgehammerIron" value="6" />
+		</quest>
+		<!-- 鋼鎚 -->
+		<quest id="quest_crafting0003">
+			<property name="group_name_key" value="quest_crafting0003"/>
+			<property name="name_key" value="quest_crafting0003"/>
+			<property name="subtitle_key" value="quest_crafting0003_subtitle"/>
+			<property name="description_key" value="quest_crafting0003_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0003_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="meleeToolSledgehammerSteelSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeToolSledgehammerSteel" value="6" />
+		</quest>
+		<!-- 獵刀 -->
+		<quest id="quest_crafting0004">
+			<property name="group_name_key" value="quest_crafting0004"/>
+			<property name="name_key" value="quest_crafting0004"/>
+			<property name="subtitle_key" value="quest_crafting0004_subtitle"/>
+			<property name="description_key" value="quest_crafting0004_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0004_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="20" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="10" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="meleeToolKnifeIronSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeToolKnifeIron" value="6" />
+		</quest>
+		<!-- 開山刀 -->
+		<quest id="quest_crafting0005">
+			<property name="group_name_key" value="quest_crafting0005"/>
+			<property name="name_key" value="quest_crafting0005"/>
+			<property name="subtitle_key" value="quest_crafting0005_subtitle"/>
+			<property name="description_key" value="quest_crafting0005_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0005_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="meleeToolKnifeMacheteSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeToolKnifeMachete" value="6" />
+		</quest>
+		<!-- 致暈棍 -->
+		<quest id="quest_crafting0006">
+			<property name="group_name_key" value="quest_crafting0006"/>
+			<property name="name_key" value="quest_crafting0006"/>
+			<property name="subtitle_key" value="quest_crafting0006_subtitle"/>
+			<property name="description_key" value="quest_crafting0006_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0006_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="12" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceElectricParts" value="5" phase="1"/>
+			<objective type="Fetch" id="meleeStunBatonSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeStunBaton" value="6" />
+		</quest>
+		<!-- 山羊鎚 -->
+		<quest id="quest_crafting0007">
+			<property name="group_name_key" value="quest_crafting0007"/>
+			<property name="name_key" value="quest_crafting0007"/>
+			<property name="subtitle_key" value="quest_crafting0007_subtitle"/>
+			<property name="description_key" value="quest_crafting0007_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0007_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="50" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="2" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="2" phase="1"/>
+			<objective type="Fetch" id="meleeToolIronSetSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeToolClawHammer" value="6" />
+		</quest>
+		<!-- 鋼鎬 -->
+		<quest id="quest_crafting0008">
+			<property name="group_name_key" value="quest_crafting0008"/>
+			<property name="name_key" value="quest_crafting0008"/>
+			<property name="subtitle_key" value="quest_crafting0008_subtitle"/>
+			<property name="description_key" value="quest_crafting0008_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0008_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="meleeToolSteelSetSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeToolPickaxeSteel" value="6" />
+		</quest>
+		<!-- 扳手 -->
+		<quest id="quest_crafting0009">
+			<property name="group_name_key" value="quest_crafting0009"/>
+			<property name="name_key" value="quest_crafting0009"/>
+			<property name="subtitle_key" value="quest_crafting0009_subtitle"/>
+			<property name="description_key" value="quest_crafting0009_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0009_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="30" phase="1"/>
+			<objective type="Fetch" id="resourceMechanicalParts" value="10" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="meleeToolWrenchSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeToolWrench" value="6" />
+		</quest>
+		<!-- 電鑽 -->
+		<quest id="quest_crafting0010">
+			<property name="group_name_key" value="quest_crafting0010"/>
+			<property name="name_key" value="quest_crafting0010"/>
+			<property name="subtitle_key" value="quest_crafting0010_subtitle"/>
+			<property name="description_key" value="quest_crafting0010_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0010_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="vehicleBicycleHandlebars" value="1" phase="1"/>
+			<objective type="Fetch" id="smallEngine" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceForgedSteel" value="25" phase="1"/>
+			<objective type="Fetch" id="meleeToolAugerSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeToolAuger" value="6" />
+		</quest>
+		<!-- 電鋸 -->
+		<quest id="quest_crafting0011">
+			<property name="group_name_key" value="quest_crafting0011"/>
+			<property name="name_key" value="quest_crafting0011"/>
+			<property name="subtitle_key" value="quest_crafting0011_subtitle"/>
+			<property name="description_key" value="quest_crafting0011_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0011_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="vehicleBicycleHandlebars" value="1" phase="1"/>
+			<objective type="Fetch" id="smallEngine" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceForgedSteel" value="25" phase="1"/>
+			<objective type="Fetch" id="meleeToolChainsawSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeToolChainsaw" value="6" />
+		</quest>
+		<!-- 鐵矛 -->
+		<quest id="quest_crafting0012">
+			<property name="group_name_key" value="quest_crafting0012"/>
+			<property name="name_key" value="quest_crafting0012"/>
+			<property name="subtitle_key" value="quest_crafting0012_subtitle"/>
+			<property name="description_key" value="quest_crafting0012_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0012_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="40" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="meleeThrownSpearIronSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeThrownSpearIron" value="6" />
+		</quest>
+		<!-- 鋼矛 -->
+		<quest id="quest_crafting0013">
+			<property name="group_name_key" value="quest_crafting0013"/>
+			<property name="name_key" value="quest_crafting0013"/>
+			<property name="subtitle_key" value="quest_crafting0013_subtitle"/>
+			<property name="description_key" value="quest_crafting0013_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0013_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="meleeThrownSpearSteelSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeThrownSpearSteel" value="6" />
+		</quest>
+		<!-- 鐵指節 -->
+		<quest id="quest_crafting0014">
+			<property name="group_name_key" value="quest_crafting0014"/>
+			<property name="name_key" value="quest_crafting0014"/>
+			<property name="subtitle_key" value="quest_crafting0014_subtitle"/>
+			<property name="description_key" value="quest_crafting0014_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0014_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="30" phase="1"/>
+			<objective type="Fetch" id="resourceMechanicalParts" value="10" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="meleeKnucklesIronSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeKnucklesIron" value="6" />
+		</quest>
+		<!-- 鋼指節 -->
+		<quest id="quest_crafting0015">
+			<property name="group_name_key" value="quest_crafting0015"/>
+			<property name="name_key" value="quest_crafting0015"/>
+			<property name="subtitle_key" value="quest_crafting0015_subtitle"/>
+			<property name="description_key" value="quest_crafting0015_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0015_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="meleeKnucklesSteelSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="meleeKnucklesSteel" value="6" />
+		</quest>
+		<!-- 複合弓 -->
+		<quest id="quest_crafting0016">
+			<property name="group_name_key" value="quest_crafting0016"/>
+			<property name="name_key" value="quest_crafting0016"/>
+			<property name="subtitle_key" value="quest_crafting0016_subtitle"/>
+			<property name="description_key" value="quest_crafting0016_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0016_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceScrapPolymers" value="62" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="12" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="12" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="25" phase="1"/>
+			<objective type="Fetch" id="gunBowCompoundSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunBowCompound" value="6" />
+		</quest>
+		<!-- 鐵十字弓 -->
+		<quest id="quest_crafting0017">
+			<property name="group_name_key" value="quest_crafting0017"/>
+			<property name="name_key" value="quest_crafting0017"/>
+			<property name="subtitle_key" value="quest_crafting0017_subtitle"/>
+			<property name="description_key" value="quest_crafting0017_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0017_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="37" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceWood" value="50" phase="1"/>
+			<objective type="Fetch" id="gunCrossbowIronSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunCrossbowIron" value="6" />
+		</quest>
+		<!-- 複合十字弓 -->
+		<quest id="quest_crafting0018">
+			<property name="group_name_key" value="quest_crafting0018"/>
+			<property name="name_key" value="quest_crafting0018"/>
+			<property name="subtitle_key" value="quest_crafting0018_subtitle"/>
+			<property name="description_key" value="quest_crafting0018_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0018_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="37" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="50" phase="1"/>
+			<objective type="Fetch" id="gunCrossbowCompoundSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunCrossbowCompound" value="6" />
+		</quest>
+		<!-- 9mm手槍 -->
+		<quest id="quest_crafting0019">
+			<property name="group_name_key" value="quest_crafting0019"/>
+			<property name="name_key" value="quest_crafting0019"/>
+			<property name="subtitle_key" value="quest_crafting0019_subtitle"/>
+			<property name="description_key" value="quest_crafting0019_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0019_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="12" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="5" phase="1"/>
+			<objective type="Fetch" id="gunPistolSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunPistol" value="6" />
+		</quest>
+		<!-- 點44麥格農 -->
+		<quest id="quest_crafting0020">
+			<property name="group_name_key" value="quest_crafting0020"/>
+			<property name="name_key" value="quest_crafting0020"/>
+			<property name="subtitle_key" value="quest_crafting0020_subtitle"/>
+			<property name="description_key" value="quest_crafting0020_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0020_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="50" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="30" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="12" phase="1"/>
+			<objective type="Fetch" id="gun44MagnumSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gun44Magnum" value="6" />
+		</quest>
+		<!-- 衝鋒槍 -->
+		<quest id="quest_crafting0021">
+			<property name="group_name_key" value="quest_crafting0021"/>
+			<property name="name_key" value="quest_crafting0021"/>
+			<property name="subtitle_key" value="quest_crafting0021_subtitle"/>
+			<property name="description_key" value="quest_crafting0021_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0021_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="7" phase="1"/>
+			<objective type="Fetch" id="gunSMG5Schematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunSMG5" value="6" />
+		</quest>
+		<!-- 雙管散彈槍 -->
+		<quest id="quest_crafting0022">
+			<property name="group_name_key" value="quest_crafting0022"/>
+			<property name="name_key" value="quest_crafting0022"/>
+			<property name="subtitle_key" value="quest_crafting0022_subtitle"/>
+			<property name="description_key" value="quest_crafting0022_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0022_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="5" phase="1"/>
+			<objective type="Fetch" id="gunDoubleBarrelShotgunSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunDoubleBarrelShotgun" value="6" />
+		</quest>
+		<!-- 泵式散彈槍 -->
+		<quest id="quest_crafting0023">
+			<property name="group_name_key" value="quest_crafting0023"/>
+			<property name="name_key" value="quest_crafting0023"/>
+			<property name="subtitle_key" value="quest_crafting0023_subtitle"/>
+			<property name="description_key" value="quest_crafting0023_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0023_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="37" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="50" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="7" phase="1"/>
+			<objective type="Fetch" id="gunPumpShotgunSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunPumpShotgun" value="6" />
+		</quest>
+		<!-- AK47步槍 -->
+		<quest id="quest_crafting0024">
+			<property name="group_name_key" value="quest_crafting0024"/>
+			<property name="name_key" value="quest_crafting0024"/>
+			<property name="subtitle_key" value="quest_crafting0024_subtitle"/>
+			<property name="description_key" value="quest_crafting0024_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0024_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="5" phase="1"/>
+			<objective type="Fetch" id="gunAK47Schematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunAK47" value="6" />
+		</quest>
+		<!-- 獵槍 -->
+		<quest id="quest_crafting0025">
+			<property name="group_name_key" value="quest_crafting0025"/>
+			<property name="name_key" value="quest_crafting0025"/>
+			<property name="subtitle_key" value="quest_crafting0025_subtitle"/>
+			<property name="description_key" value="quest_crafting0025_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0025_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="5" phase="1"/>
+			<objective type="Fetch" id="gunHuntingRifleSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunHuntingRifle" value="6" />
+		</quest>
+		<!-- 狙擊槍 -->
+		<quest id="quest_crafting0026">
+			<property name="group_name_key" value="quest_crafting0026"/>
+			<property name="name_key" value="quest_crafting0026"/>
+			<property name="subtitle_key" value="quest_crafting0026_subtitle"/>
+			<property name="description_key" value="quest_crafting0026_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0026_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="37" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="50" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="25" phase="1"/>
+			<objective type="Fetch" id="gunMR10Schematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunMR10" value="6" />
+		</quest>
+		<!-- 火箭砲 -->
+		<quest id="quest_crafting0027">
+			<property name="group_name_key" value="quest_crafting0027"/>
+			<property name="name_key" value="quest_crafting0027"/>
+			<property name="subtitle_key" value="quest_crafting0027_subtitle"/>
+			<property name="description_key" value="quest_crafting0027_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0027_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="50" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="7" phase="1"/>
+			<objective type="Fetch" id="resourceElectricParts" value="12" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="7" phase="1"/>
+			<objective type="Fetch" id="gunRocketLauncherSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunRocketLauncher" value="6" />
+		</quest>
+		<!-- 垃圾砲 -->
+		<quest id="quest_crafting0028">
+			<property name="group_name_key" value="quest_crafting0028"/>
+			<property name="name_key" value="quest_crafting0028"/>
+			<property name="subtitle_key" value="quest_crafting0028_subtitle"/>
+			<property name="description_key" value="quest_crafting0028_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0028_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="100" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceSpring" value="25" phase="1"/>
+			<objective type="Fetch" id="gunJunkTurretSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="100" phase="1"/>
+
+			<reward type="Item" id="gunJunkTurret" value="6" />
+		</quest>
+		<!-- 皮製防具 -->
+		<quest id="quest_crafting0029">
+			<property name="group_name_key" value="quest_crafting0029"/>
+			<property name="name_key" value="quest_crafting0029"/>
+			<property name="subtitle_key" value="quest_crafting0029_subtitle"/>
+			<property name="description_key" value="quest_crafting0029_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0029_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceLeather" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceSewingKit" value="6" phase="1"/>
+			<objective type="Fetch" id="armorLeatherSetSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="150" phase="1"/>
+
+			<reward type="Item" id="armorLeatherHood" value="6" />
+			<reward type="Item" id="armorLeatherChest" value="6" />
+			<reward type="Item" id="armorLeatherGloves" value="6" />
+			<reward type="Item" id="armorLeatherPants" value="6" />
+			<reward type="Item" id="armorLeatherBoots" value="6" />
+		</quest>
+		<!-- 軍用防具 -->
+		<quest id="quest_crafting0030">
+			<property name="group_name_key" value="quest_crafting0030"/>
+			<property name="name_key" value="quest_crafting0030"/>
+			<property name="subtitle_key" value="quest_crafting0030_subtitle"/>
+			<property name="description_key" value="quest_crafting0030_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0030_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceMilitaryFiber" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceScrapPolymers" value="10" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceSewingKit" value="10" phase="1"/>
+			<objective type="Fetch" id="armorMilitarySetSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="200" phase="1"/>
+
+			<reward type="Item" id="armorMilitaryHelmet" value="6" />
+			<reward type="Item" id="armorMilitaryVest" value="6" />
+			<reward type="Item" id="armorMilitaryGloves" value="6" />
+			<reward type="Item" id="armorMilitaryLegs" value="6" />
+			<reward type="Item" id="armorMilitaryBoots" value="6" />
+		</quest>
+		<!-- 鐵製防具 -->
+		<quest id="quest_crafting0031">
+			<property name="group_name_key" value="quest_crafting0031"/>
+			<property name="name_key" value="quest_crafting0031"/>
+			<property name="subtitle_key" value="quest_crafting0031_subtitle"/>
+			<property name="description_key" value="quest_crafting0031_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0031_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedIron" value="75" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="25" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="5" phase="1"/>
+			<objective type="Fetch" id="resourceSewingKit" value="5" phase="1"/>
+			<objective type="Fetch" id="armorIronSetSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="250" phase="1"/>
+
+			<reward type="Item" id="armorIronHelmet" value="6" />
+			<reward type="Item" id="armorIronChest" value="6" />
+			<reward type="Item" id="armorIronGloves" value="6" />
+			<reward type="Item" id="armorIronLegs" value="6" />
+			<reward type="Item" id="armorIronBoots" value="6" />
+		</quest>
+		<!-- 鋼製防具 -->
+		<quest id="quest_crafting0032">
+			<property name="group_name_key" value="quest_crafting0032"/>
+			<property name="name_key" value="quest_crafting0032"/>
+			<property name="subtitle_key" value="quest_crafting0032_subtitle"/>
+			<property name="description_key" value="quest_crafting0032_description"/>
+			<property name="icon" value="ui_game_symbol_workbench"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="repeatable" value="true" />
+			<property name="offer_key" value="quest_crafting0032_offer"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="Fetch" id="resourceForgedSteel" value="50" phase="1"/>
+			<objective type="Fetch" id="resourceLeather" value="10" phase="1"/>
+			<objective type="Fetch" id="resourceDuctTape" value="10" phase="1"/>
+			<objective type="Fetch" id="resourceSewingKit" value="10" phase="1"/>
+			<objective type="Fetch" id="armorSteelSetSchematic" value="1" phase="1"/>
+			<objective type="Fetch" id="resourceElementUranium" value="500" phase="1"/>
+
+			<reward type="Item" id="armorSteelHelmet" value="6" />
+			<reward type="Item" id="armorSteelChest" value="6" />
+			<reward type="Item" id="armorSteelGloves" value="6" />
+			<reward type="Item" id="armorSteelLegs" value="6" />
+			<reward type="Item" id="armorSteelBoots" value="6" />
+		</quest>
+	</append>
+</configs>

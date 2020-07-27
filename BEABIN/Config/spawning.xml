@@ -1,0 +1,45 @@
+<configs>
+	<!-- 城市 -->
+	<append xpath="/spawning/biome[@name='city']">
+		<spawn maxcount="2" respawndelay="2" time="Day" entitygroup="ZombiesElementAll" />
+		<spawn maxcount="3" respawndelay="3" time="Night" entitygroup="ZombiesElementNight" />
+	</append>
+	<!-- 荒廢的城市 -->
+	<append xpath="/spawning/biome[@name='city_wasteland']">
+		<spawn maxcount="1" respawndelay="2" time="Day" entitygroup="ZombiesElementAll" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="ZombiesElementFatCopBoss" spawnDeadChance="0.1"/>
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="ZombiesElementWastelandNight" />
+	</append>
+	<!-- 荒地中心 -->
+	<append xpath="/spawning/biome[@name='wasteland_hub']">
+		<spawn maxcount="2" respawndelay="2" time="Day" entitygroup="ZombiesElementWasteland" />
+		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="ZombiesElementWastelandNight" />
+		<spawn maxcount="1" respawndelay="10" time="Any" entitygroup="ZombiesElementWightBoss" spawnDeadChance="0.1"/>
+	</append>
+	<!-- 松樹森林 -->
+	<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="1" respawndelay="3" time="Day" entitygroup="ZombiesElementAll" />
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="ZombiesElementNight" />
+	</append>
+	<!-- 沙漠 -->
+	<append xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="1" respawndelay="3" time="Any" entitygroup="ZombiesElementAll" />
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="ZombiesElementNight" />
+	</append>
+	<!-- 荒地 -->
+	<append xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="1" respawndelay="2" time="Day" entitygroup="ZombiesElementAll" />
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="ZombiesElementWastelandNight" />
+		<!--<spawn maxcount="1" respawndelay="9" time="Any" entitygroup="ZombiesElementDemolitionBoss" spawnDeadChance="0.1"/>-->
+	</append>
+	<!-- 燒焦的森林 -->
+	<append xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn maxcount="1" respawndelay="2" time="Day" entitygroup="ZombiesElementBurntForest" />
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="ZombiesElementNight" />
+	</append>
+	<!-- 雪地 -->
+	<append xpath="/spawning/biome[@name='snow']">
+		<spawn maxcount="1" respawndelay="3" time="Any" entitygroup="ZombiesElementSnow" />
+		<spawn maxcount="1" respawndelay="3" time="Night" entitygroup="ZombiesElementNight" />
+	</append>
+</configs>

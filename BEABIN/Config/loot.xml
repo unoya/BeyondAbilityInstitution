@@ -1,0 +1,713 @@
+<configs>
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+		<!-- 元素子彈群 -->
+		<lootgroup name="ElementBulletFX" count="2">
+			<item name="ammoElectricShockBullet" count="1,5"/>
+			<item name="ammoFlameBullet" count="1,5"/>
+			<item name="ammoBloodlettingBullet" count="1,5"/>
+			<item name="ammoNarcosisBullet" count="1,5"/>
+			<item name="ammoHolyLightBullet" count="1,5"/>
+			<item name="ammoIceBiteBullet" count="1,5"/>
+		</lootgroup>
+		<!-- 元素模組藍圖 -->
+		<lootgroup name="ElementModSchematic" count="1">
+			<item name="modBurnDeviceSchematic" count="1"/>
+			<item name="modElectricShockDeviceSchematic" count="1"/>
+			<item name="modBloodlettingDeviceSchematic" count="1"/>
+			<item name="modAnesthesiaDeviceSchematic" count="1"/>
+			<item name="modHolyLightDeviceSchematic" count="1"/>
+			<item name="modFrostBiteDeviceSchematic" count="1"/>
+		</lootgroup>
+		<!-- 其他強化型道具藍圖 -->
+		<lootgroup name="advancedItemsSchematic" count="2">
+			<item name="meleeThrownElementWarSpearSchematic" count="1"/>
+			<item name="elementExplosionStoneSchematic" count="1"/>
+			<item name="advancedBladeTrapSchematic" count="1"/>
+			<item name="advancedElecFencepostSchematic" count="1"/>
+			<item name="advancedWoodLogSpikeSchematic" count="1"/>
+			<item name="advancedBarbedWireSheetSchematic" count="1"/>
+			<item name="advancedBarbedFenceSchematic" count="1"/>
+			<item name="advancedSpikesBarbedFenceSchematic" count="1"/>
+			<item name="advancedSteelSpikesBarbedFenceSchematic" count="1"/>
+			<item name="advancedElectricPressureplateSchematic" count="1"/>
+			<item name="advancedFlamePressureplateSchematic" count="1"/>
+			<item name="advancedMineHubcapSchematic" count="1"/>
+			<item name="advancedElectricMineHubcapSchematic" count="1"/>
+			<item name="advancedFlameMineHubcapSchematic" count="1"/>
+			<item name="advancedPosionMineHubcapSchematic" count="1"/>
+			<item name="advancedThrownAmmoPipeBombSchematic" count="1"/>
+		</lootgroup>
+		<!-- 元素模組 -->
+		<lootgroup name="ElementMods" count="1">
+			<item name="modBurnDevice" count="1"/>
+			<item name="modElectricShockDevice" count="1"/>
+			<item name="modBloodlettingDevice" count="1"/>
+			<item name="modAnesthesiaDevice" count="1"/>
+			<item name="modHolyLightDevice" count="1"/>
+			<item name="modFrostBiteDevice" count="1"/>
+		</lootgroup>
+		<!-- 槍類擴充模組藍圖 -->
+		<lootgroup name="GunClassSchematic" count="1">
+			<item name="modHightCapacityMagazineDeviceSchematic" count="1"/>
+			<item name="modLongBarrelDeviceSchematic" count="1"/>
+			<item name="modDisintegrationDeviceSchematic" count="1"/>
+			<item name="modNightEagleDeviceSchematic" count="1"/>
+		</lootgroup>
+		<!-- 槍類擴充模組 -->
+		<lootgroup name="GunClassMods" count="1">
+			<item name="modHightCapacityMagazineDevice" count="1"/>
+			<item name="modLongBarrelDevice" count="1"/>
+			<item name="modDisintegrationDevice" count="1"/>
+			<item name="modNightEagleDevice" count="1"/>
+		</lootgroup>
+		<!-- 電動工具類模組 -->
+		<lootgroup name="MotoToolsMods" count="1">
+			<item name="modMechanicalHand" count="1"/>
+		</lootgroup>
+		<!-- 電動工具類模組藍圖 -->
+		<lootgroup name="MotoToolsSchematic" count="1">
+			<item name="modMechanicalHandSchematic" count="1"/>
+		</lootgroup>
+		<!-- 強化型藥品 -->
+		<lootgroup name="advancedDrug" count="1">
+			<item name="advancedFirstAidKit" count="0,5"/>
+			<item name="drinkJarEyeOfTheNightSpirit" count="0,3"/><!-- 夜靈之眼 -->
+			<item name="advancedFirstAidKitSchematic" count="0,1"/><!-- 強化型醫療箱藍圖 -->
+			<item name="drinkTrollBlood" count="1,5" prob="0.05"/><!-- 巨魔血液 -->
+			<item name="drinkFleshShieldPotion" count="0,10" prob="0.01"/><!-- 血肉護盾藥水 -->
+		</lootgroup>
+		<!-- 服飾-眼鏡類 -->
+		<lootgroup name="ApparelGlasses" count="2">
+			<item name="apparelNotCoolGlasses" count="0,1" prob=".1"/>
+			<item name="modGlassesPotentialAbilityCharm" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityEloquent" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityPerception" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityStrength" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityFortitude" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityAgility" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityIntellect" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityEndureHumiliation" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityWild" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityNoGainsWithoutPains" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilitySilent" count="0,1" prob=".05"/>
+			<item name="modGlassesPotentialAbilityTantra" count="0,1" prob=".05"/>
+		</lootgroup>
+		<!-- 元素石碑 -->
+		<lootgroup name="ElementStele" count="1">
+			<item name="flameHeraldryStele" count="1" prob="0.5"/><!-- 火紋石碑 -->
+			<item name="thunderHeraldryStele" count="1" prob="0.5"/><!-- 雷紋石碑 -->
+			<item name="bloodMarksStele" count="1" prob="0.5"/><!-- 血痕石碑 -->
+			<item name="deepSleepStele" count="1" prob="0.5"/><!-- 沈睡石碑 -->
+			<item name="cleanSoulStele" count="1" prob="0.5"/><!-- 淨靈石碑 -->
+			<item name="iceHeraldryStele" count="1" prob="0.5"/><!-- 霜紋石碑 -->
+			<item name="flameHeraldryProliferationStele" count="1" prob="0.01"/><!-- 火紋擴散石碑 -->
+			<item name="thunderHeraldryProliferationStele" count="1" prob="0.01"/><!-- 雷紋擴散石碑 -->
+			<item name="bloodMarksProliferationStele" count="1" prob="0.01"/><!-- 血痕擴散石碑 -->
+			<item name="cleanSoulProliferationStele" count="1" prob="0.01"/><!-- 淨靈擴散石碑 -->
+			<item name="iceHeraldryProliferationStele" count="1" prob="0.01"/><!-- 霜紋擴散石碑 -->
+			<item name="flameHeraldryAntiphasicDetonateStele" count="1" prob="0.03"/><!-- 反噬火紋石碑 -->
+			<item name="thunderHeraldryAntiphasicDetonateStele" count="1" prob="0.03"/><!-- 反噬雷紋石碑 -->
+			<item name="bloodMarksAntiphasicDetonateStele" count="1" prob="0.03"/><!-- 反噬血痕石碑 -->
+			<item name="deepSleepAntiphasicDetonateStele" count="1" prob="0.03"/><!-- 反噬沈睡石碑 -->
+			<item name="cleanSoulAntiphasicDetonateStele" count="1" prob="0.03"/><!-- 反噬淨靈石碑 -->
+			<item name="iceHeraldryAntiphasicDetonateStele" count="1" prob="0.03"/><!-- 反噬霜紋石碑 -->
+			<item name="perceptionStele" count="1" prob="0.01"/><!-- 感知石碑 -->
+			<item name="strengthStele" count="1" prob="0.01"/><!-- 力量石碑 -->
+			<item name="fortitudeStele" count="1" prob="0.01"/><!-- 堅毅石碑 -->
+			<item name="agilityStele" count="1" prob="0.01"/><!-- 敏捷石碑 -->
+			<item name="intellectStele" count="1" prob="0.01"/><!-- 智力石碑 -->
+		</lootgroup>
+		<!-- 任務指定送其中一個:六級的防具 -->
+		<lootgroup name="QuestArmorRandom" count="3">
+			<item name="armorLeatherHood" quality="6"/>
+			<item name="armorLeatherChest" quality="6"/>
+			<item name="armorLeatherGloves" quality="6"/>
+			<item name="armorLeatherPants" quality="6"/>
+			<item name="armorLeatherBoots" quality="6"/>
+			<item name="armorMilitaryHelmet" quality="6"/>
+			<item name="armorMilitaryVest" quality="6"/>
+			<item name="armorMilitaryGloves" quality="6"/>
+			<item name="armorMilitaryLegs" quality="6"/>
+			<item name="armorMilitaryBoots" quality="6"/>
+			<item name="armorScrapHelmet" quality="6"/>
+			<item name="armorScrapChest" quality="6"/>
+			<item name="armorScrapGloves" quality="6"/>
+			<item name="armorScrapLegs" quality="6"/>
+			<item name="armorScrapBoots" quality="6"/>
+			<item name="armorIronHelmet" quality="6"/>
+			<item name="armorIronChest" quality="6"/>
+			<item name="armorIronGloves" quality="6"/>
+			<item name="armorIronLegs" quality="6"/>
+			<item name="armorIronBoots" quality="6"/>
+			<item name="armorSteelHelmet" quality="6"/>
+			<item name="armorSteelChest" quality="6"/>
+			<item name="armorSteelGloves" quality="6"/>
+			<item name="armorSteelLegs" quality="6"/>
+			<item name="armorSteelBoots" quality="6"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:六級的工具 -->
+		<lootgroup name="QuestRewardRandom01" count="1">
+			<item name="meleeToolShovelSteel" quality="6"/>
+			<item name="meleeToolFireaxeSteel" quality="6"/>
+			<item name="meleeToolPickaxeSteel" quality="6"/>
+			<item name="meleeToolSledgehammerSteel" quality="6"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:六級的電鑽或電鋸 -->
+		<lootgroup name="QuestRewardRandom02" count="1">
+			<item name="meleeToolAuger" quality="6"/>
+			<item name="meleeToolChainsaw" quality="6"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:培根雞蛋,煮熟的肉 -->
+		<lootgroup name="QuestRewardRandom03" count="1">
+			<item name="foodBaconAndEggs" count="5"/>
+			<item name="foodBoiledMeat" count="5"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:藍莓餡餅,蔬菜湯 -->
+		<lootgroup name="QuestRewardRandom04" count="1">
+			<item name="foodBlueberryPie" count="5"/>
+			<item name="foodVegetableStew" count="5"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:燉肉,牛排馬鈴薯 -->
+		<lootgroup name="QuestRewardRandom05" count="1">
+			<item name="foodMeatStew" count="5"/>
+			<item name="foodSteakAndPotato" count="5"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:假濃湯,雜蔬湯 -->
+		<lootgroup name="QuestRewardRandom06" count="1">
+			<item name="foodShamChowder" count="5"/>
+			<item name="foodHoboStew" count="5"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:魚炸玉米餅,辣椒熱狗 -->
+		<lootgroup name="QuestRewardRandom07" count="1">
+			<item name="foodFishTacos" count="5"/>
+			<item name="foodChiliDog" count="5"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:獵刀,開山刀 -->
+		<lootgroup name="QuestRewardRandom08" count="1">
+			<item name="meleeToolKnifeIron" quality="6"/>
+			<item name="meleeToolKnifeMachete" quality="6"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:複合弓,複合十字弓 -->
+		<lootgroup name="QuestRewardRandom09" count="1">
+			<item name="gunBowCompound" quality="6"/>
+			<item name="gunCrossbowCompound" quality="6"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:獵槍,狙擊槍 -->
+		<lootgroup name="QuestRewardRandom10" count="1">
+			<item name="gunHuntingRifle" quality="6"/>
+			<item name="gunMR10" quality="6"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個: 延伸槍管, 槍口制動器, 靜音槍管-->
+		<lootgroup name="QuestRewardRandom11" count="1">
+			<item name="modGunBarrelExtender"/>
+			<item name="modGunMuzzleBrake"/>
+			<item name="modGunSoundSuppressorSilencer"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:紅外線瞄準器,槍械照明燈 -->
+		<lootgroup name="QuestRewardRandom12" count="1">
+			<item name="modGunLaserSight"/>
+			<item name="modGunFlashlight"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:放大鏡2倍,放大鏡4倍,放大鏡8倍,反光鏡 -->
+		<lootgroup name="QuestRewardRandom13" count="1">
+			<item name="modGunScopeSmall"/>
+			<item name="modGunScopeMedium"/>
+			<item name="modGunScopeLarge"/>
+			<item name="modGunReflexSight"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:半自動射擊,三發點放, 全自動射擊 -->
+		<lootgroup name="QuestRewardRandom14" count="1">
+			<item name="modGunTriggerGroupSemi"/>
+			<item name="modGunTriggerGroupBurst3"/>
+			<item name="modGunTriggerGroupAutomatic"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:彈簧槍管,雙腳架,前握把,三角握把,擴充彈匣 -->
+		<lootgroup name="QuestRewardRandom15" count="1">
+			<item name="modGunRodAndSpring"/>
+			<item name="modGunBipod"/>
+			<item name="modGunForegrip"/>
+			<item name="modGunRetractingStock"/>
+			<item name="modGunMagazineExtender"/>
+		</lootgroup>
+		<!-- 任務指定送其中一個:魔抗之心模組 -->
+		<lootgroup name="QuestRewardRandom16" count="1">
+			<item name="modArmorAntiMagicHeartBurn"/>
+			<item name="modArmorAntiMagicHeartLightning"/>
+			<item name="modArmorAntiMagicHeartPoisonMist"/>
+			<item name="modArmorAntiMagicHeartIntoxicated"/>
+			<item name="modArmorAntiMagicHeartSentenceToDeath"/>
+			<item name="modArmorAntiMagicHeartFrozen"/>
+		</lootgroup>
+	</insertBefore>
+	<!-- 常規子彈群組 -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoRegularGunslinger']">
+		<item group="ElementBulletFX" prob="0.05"/>
+	</append>
+	<!-- 進階子彈群組 -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoAdvancedGunslinger']">
+		<item group="ElementBulletFX" prob="0.05"/>
+	</append>
+	<!-- 二級武器群組 -->
+	<append xpath="/lootcontainers/lootgroup[@name='modGunT2']">
+		<item group="ElementMods" prob="0.01"/>
+	</append>
+	<!-- 三級武器群組 -->
+	<append xpath="/lootcontainers/lootgroup[@name='modGunT3']">
+		<item group="GunClassMods" prob="0.01"/>
+	</append>
+	<!-- 服飾,眼部 -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupApparelFaceCover']">
+		<item group="ApparelGlasses"/>
+	</append>
+	<!-- 任務獎勵的藍圖 -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestSchematics']">
+		<item group="ElementModSchematic"/>
+		<item group="GunClassSchematic"/>
+		<item group="advancedItemsSchematic"/>
+		<item group="MotoToolsSchematic"/>
+	</append>
+	<!-- 模組藍圖(通用) -->
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsCommon']">
+		<item group="MotoToolsSchematic"/>
+	</append>
+	<!-- 二級近戰系模組 -->
+	<append xpath="/lootcontainers/lootgroup[@name='modMeleeT2']">
+		<item group="MotoToolsMods" prob="0.01"/>
+		<item name="modVampireDevice" prob="0.02"/><!-- 吸血模組 -->
+	</append>
+	<!-- 書櫃(通用) -->
+	<append xpath="/lootcontainers/lootgroup[@name='commonBooks']">
+		<item group="ElementModSchematic" prob="0.05"/>
+		<item group="GunClassSchematic" prob="0.1"/>
+		<item group="advancedItemsSchematic" prob="0.1"/><!-- 強化型道具的藍圖 -->
+		<item name="bookHyakuretsukenAoyi" count="1,10" prob="0.10"/><!-- 百烈拳奧義書 -->
+	</append>
+	<!-- 背包 -->
+	<append xpath="/lootcontainers/lootgroup[@name='backpacks/survival']">
+		<item group="ElementMods" prob="0.01"/>
+		<item group="GunClassMods" prob="0.01"/>
+	</append>
+	<!-- 郵箱 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='14']">
+		<item group="ElementBulletFX" prob="0.05"/>
+		<item name="bookHyakuretsukenAoyi" count="1,10" prob="0.05"/><!-- 百烈拳奧義書 -->
+	</append>
+	<!-- 軍用彈藥箱 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='40']">
+		<item group="ElementModSchematic" prob="0.02"/>
+		<item group="GunClassSchematic" prob="0.02"/>
+		<item name="elementExplosionStone" count="1,3" prob="0.05"/><!-- 元素石頭炸彈 -->
+	</append>
+	<!-- 不安全的堅硬箱或槍櫃 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='42']">
+		<item group="ElementModSchematic" prob="0.02"/>
+		<item group="GunClassSchematic" prob="0.02"/>
+		<item name="meleeThrownElementWarSpear" prob="0.03"/><!-- 元素型戰矛 -->
+		<item name="elementExplosionStone" count="1,3" prob="0.05"/><!-- 元素石頭炸彈 -->
+	</append>
+	<!-- 儲物櫃 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='43']">
+		<item name="meleeThrownElementWarSpear" prob="0.03"/><!-- 元素型戰矛 -->
+		<item name="elementExplosionStone" count="1,3" prob="0.05"/><!-- 元素石頭炸彈 -->
+	</append>
+	<!-- 文件櫃 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='44']">
+		<item name="bookHyakuretsukenAoyi" count="1,10" prob="0.05"/><!-- 百烈拳奧義書 -->
+	</append>
+	<!-- 小武器背包 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='100']">
+		<item group="ElementMods" prob="0.01"/>
+		<item group="GunClassMods" prob="0.01"/>
+		<item name="meleeToolRamboKnife" prob="0.05"/><!-- 藍波刀 -->
+		<item name="meleeToolCurseKnife" prob="0.01"/><!-- 詛咒刀 -->
+		<item name="elementExplosionStone" count="1" prob="0.05"/><!-- 元素石頭炸彈 -->
+	</append>
+	<!-- 大武器背包 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='101']">
+		<item group="ElementMods" prob="0.01"/>
+		<item group="GunClassMods" prob="0.02"/>
+		<item name="meleeThrownElementWarSpear" prob="0.1"/><!-- 元素型戰矛 -->
+		<item name="elementExplosionStone" count="1,3" prob="0.05"/><!-- 元素石頭炸彈 -->
+	</append>
+	<!-- 風化的背包, 運動背包, 行李袋 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='9']">
+		<item group="ElementBulletFX" prob="0.05"/>
+		<item name="meleeToolRamboKnife" prob="0.05"/><!-- 藍波刀 -->
+		<item name="meleeToolCurseKnife" prob="0.01"/><!-- 詛咒刀 -->
+		<item name="elementExplosionStone" count="1,2" prob="0.08"/><!-- 元素石頭炸彈 -->
+		<item name="modApparelSuperKineticEnergyDriver" prob="0.01"/><!-- 超動能驅動器 -->
+		<item group="ElementStele" prob="0.03"/><!-- 元素石碑 -->
+</append>
+	<!-- 小錢包 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='48']">
+		<item group="ElementBulletFX" prob="0.5"/>
+	</append>
+	<!-- 強化型藥品 -->
+	<append xpath="/lootcontainers/lootgroup[@name='junk']">
+		<item group="advancedDrug" prob="0.5"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='medicine']">
+		<item group="advancedDrug" prob="0.5"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='airdropMedicine']">
+		<item group="advancedDrug" prob="0.5"/>
+	</append>
+	<!-- 獵豹速度藥水, 只出現在食物箱(cntLootCrateShamway) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='59']">
+		<item name="drinkCheetahSpeed" count="1,5" prob="0.05"/>
+	</append>
+	<!-- 建築材料運輸箱(cntLootCrateConstructionSupplies) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='88']">
+		<item name="immortalTorch" prob="0.1"/><!-- 不滅火把 -->
+		<item name="advancedThrownAmmoPipeBomb" count="1,10" prob="0.05"/><!-- 強化型雷管炸彈 -->
+	</append>
+	<!-- 垃圾堆(cntTrashPile01~09) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='10']">
+		<item name="ammoElectricShockBullet" count="0,3" prob="0.1"/>
+		<item name="ammoFlameBullet" count="0,3" prob="0.1"/>
+		<item name="ammoBloodlettingBullet" count="0,3" prob="0.1"/>
+		<item name="ammoNarcosisBullet" count="0,3" prob="0.1"/>
+		<item name="ammoHolyLightBullet" count="0,3" prob="0.1"/>
+		<item name="ammoIceBiteBullet" count="0,3" prob="0.1"/>
+		<item name="modApparelSuperKineticEnergyDriver" count="0,1" prob="0.01"/><!-- 超動能驅動器 -->
+		<item group="ElementStele" prob="0.03"/><!-- 元素石碑 -->
+	</append>
+	<!-- 垃圾桶(cntTrash_can01) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='16']">
+		<item name="ammoElectricShockBullet" count="0,3" prob="0.1"/>
+		<item name="ammoFlameBullet" count="0,3" prob="0.1"/>
+		<item name="ammoBloodlettingBullet" count="0,3" prob="0.1"/>
+		<item name="ammoNarcosisBullet" count="0,3" prob="0.1"/>
+		<item name="ammoHolyLightBullet" count="0,3" prob="0.1"/>
+		<item name="ammoIceBiteBullet" count="0,3" prob="0.1"/>
+		<item group="ElementStele" prob="0.03"/><!-- 元素石碑 -->
+	</append>
+	<!-- 大型垃圾清運箱(cntDumpster) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='66']">
+		<item name="ammoElectricShockBullet" count="0,10" prob="0.1"/>
+		<item name="ammoFlameBullet" count="0,10" prob="0.1"/>
+		<item name="ammoBloodlettingBullet" count="0,10" prob="0.1"/>
+		<item name="ammoNarcosisBullet" count="0,10" prob="0.1"/>
+		<item name="ammoHolyLightBullet" count="0,10" prob="0.1"/>
+		<item name="ammoIceBiteBullet" count="0,10" prob="0.1"/>
+		<item group="ElementStele" prob="0.03"/><!-- 元素石碑 -->
+	</append>
+	<!-- 內建任務的藏寶箱 -->
+	<append xpath="/lootcontainers/lootcontainer[@id='61']">
+		<item name="modArmorFireDragonHeart" count="0,1" prob="0.05"/><!-- 火龍之心模組 -->
+		<item name="modArmorThunderWrath" count="0,1" prob="0.05"/><!-- 雷霆之怒模組 -->
+		<item name="immortalTorch" prob="0.1"/><!-- 不滅火把 -->
+		<item name="drinkJarEchoOfFear" prob="0.1"/><!-- 恐懼回聲藥水 -->
+		<item name="advancedThrownAmmoPipeBomb" count="1,10" prob="0.05"/><!-- 強化型雷管炸彈 -->
+		<item name="bookHyakuretsukenAoyi" count="1,10" prob="0.05"/><!-- 百烈拳奧義書 -->
+	</append>
+	<!-- 有屍塊的浴缸(cntBathTubGore) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='37']">
+		<item name="foodBodyPartsOfVictims" count="4,10" prob="4"/>
+	</append>
+	<!-- 現代冰箱(cntFridgeStainlessSteel), 複古冰箱(cntRetroFridgeVer1Closed) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='47']">
+		<item name="foodBodyPartsOfVictims" count="4,10" prob="0.5"/>
+	</append>
+	<!-- 烤爐(cntStoveOldVer1Closed), 牆內爐(cntWallOven) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='5']">
+		<item name="foodBodyPartsOfVictims" count="4,10" prob="1.2"/>
+	</append>
+	<!-- 燃氣烤爐(cntGasGrillClosed) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='75']">
+		<item name="foodBodyPartsOfVictims" count="4,10" prob="0.5"/>
+	</append>
+	<!-- 微波爐(cntMicrowaveOvenVer1Closed) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='21']">
+		<item name="foodBodyPartsOfVictims" count="4,10" prob="0.5"/>
+	</append>
+	<!-- 櫥櫃(cntCabinetBottomRandomLootHelper), (cntCupboardCabinetRedTopLootHelper), (cntCabinetOldBottomLootHelper) -->
+	<append xpath="/lootcontainers/lootcontainer[@id='17']">
+		<item name="drinkElementProtectionPotionSimple" count="1,2" prob="0.1"/>
+		<item name="drinkElementProtectionPotionNormal" count="1,2" prob="0.09"/>
+		<item name="drinkElementProtectionPotionEnhanced" count="1,2" prob="0.08"/>
+		<item name="drinkElementProtectionPotionDiverse" count="1,2" prob="0.07"/>
+		<item name="drinkElementProtectionPotionExtreme" count="1,2" prob="0.06"/>
+		<item name="drinkFleshShieldPotion" count="1,2" prob="0.05"/>
+	</append>
+
+	<!-- 將自訂的任務圖紙加到隨機任務圖紙清單裡 -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+		<item name="qc_mission0001" count="0,5" prob="0.3"/><!-- 尋找地獄使者契約書的材料(協會任務) -->
+		<item name="qc_mission0002" count="0,5" prob="0.3"/><!-- 德古拉的請託(協會任務) -->
+		<item name="qc_mission0003" count="0,2" prob="0.05"/><!-- 玉米實驗所請託(一般任務) -->
+		<item name="qc_mission0004" count="0,2" prob="0.05"/><!-- 特殊實驗室的請託(一般任務) -->
+		<item name="qc_mission0005" count="0,2" prob="0.05"/><!-- 醫院院長的請託(一般任務) -->
+		<item name="qc_mission0006" count="0,2" prob="0.05"/><!-- 哈雷幫派的請託(一般任務) -->
+		<item name="qc_mission0007" count="0,2" prob="0.05"/><!-- 建築公司的請託(一般任務) -->
+		<item name="qc_mission0008" count="0,2" prob="0.05"/><!-- 國安特勤的請託(一般任務) -->
+		<item name="qc_mission0009" count="0,2" prob="0.05"/><!-- 特種警察的請託(一般任務) -->
+		<item name="qc_mission0010" count="0,2" prob="0.05"/><!-- 消防隊的請託(一般任務) -->
+		<item name="qc_mission0011" count="0,2" prob="0.05"/><!-- 脫衣酒吧的請託(一般任務) -->
+		<item name="qc_mission0012" count="0,2" prob="0.02"/><!-- 羅賓漢的仁慈1(系列任務) -->
+		<item name="qc_mission0012_1" count="0,2" prob="0.02"/><!-- 羅賓漢的仁慈2(系列任務) -->
+		<item name="qc_mission0013" count="0,2" prob="0.05"/><!-- 商人的噪音抱怨(一般任務) -->
+		<item name="qc_mission0014" count="0,2" prob="0.03"/><!-- 白色死神的試煉(限定任務) -->
+		<item name="qc_mission0015" count="0,2" prob="0.05"/><!-- 養蜂人的抱怨(一般任務) -->
+		<item name="qc_mission0016" count="0,2" prob="0.05"/><!-- 銀行的請託(一般任務) -->
+		<item name="qc_mission0017" count="0,2" prob="0.02"/><!-- 命運女神的關注(系列任務) -->
+		<item name="qc_mission0017_1" count="0,2" prob="0.02"/><!-- 命運女神的眷顧(系列任務) -->
+		<item name="qc_mission0017_2" count="0,2" prob="0.02"/><!-- 命運女神的調戲(系列任務) -->
+		<item name="qc_mission0017_3" count="0,2" prob="0.02"/><!-- 命運女神的試煉(系列任務) -->
+		<item name="qc_mission0017_4" count="0,2" prob="0.02"/><!-- 命運女神的偏愛(系列任務) -->
+		<item name="qc_mission0017_5" count="0,2" prob="0.02"/><!-- 命運女神的賞賜(系列任務) -->
+		<item name="qc_mission0018" count="0,2" prob="0.05"/><!-- 煉油廠的請託(一般任務) -->
+		<item name="qc_mission0019" count="0,2" prob="0.05"/><!-- 滑板場的請託(一般任務) -->
+		<item name="qc_mission0020" count="0,2" prob="0.05"/><!-- 鬥狗場的請託(一般任務) -->
+		<item name="qc_mission0021" count="0,2" prob="0.05"/><!-- 熊酒吧的請託(一般任務) -->
+		<item name="qc_mission0022" count="0,2" prob="0.03"/><!-- 附近地主的請託(限定任務) -->
+		<item name="qc_mission0023" count="0,2" prob="0.04"/><!-- 附近學校的請託(連續性任務) -->
+		<item name="qc_mission0024" count="0,2" prob="0.04"/><!-- 礦產公司的請託(連續性任務) -->
+		<item name="qc_mission0025" count="0,2" prob="0.04"/><!-- 附近地主的抱怨(連續性任務) -->
+		<item name="qc_mission0026" count="0,2" prob="0.04"/><!-- 狩獵協會的請託(連續性任務) -->
+		<item name="qc_mission0027" count="0,2" prob="0.03"/><!-- 縱火狂魔的試煉(限定任務) -->
+		<item name="qc_mission0028" count="0,2" prob="0.03"/><!-- 炸彈狂魔的試煉(限定任務) -->
+		<item name="qc_mission0029" count="0,2" prob="0.03"/><!-- 開膛手傑克的試煉(限定任務) -->
+		<item name="qc_mission0030" count="0,2" prob="0.03"/><!-- 德州電鋸殺人魔的試煉(限定任務) -->
+		<item name="qc_mission0031" count="0,2" prob="0.03"/><!-- 西部牛仔威廉邦尼的試煉(限定任務) -->
+		<item name="qc_mission0032" count="0,2" prob="0.05"/><!-- 光頭幫的請託(一般任務) -->
+		<item name="qc_mission0033" count="0,2" prob="0.05"/><!-- 伐木場的請託(一般任務) -->
+		<item name="qc_mission0034" count="0,2" prob="0.05"/><!-- 專業的建築工人(一般任務) -->
+		<item name="qc_mission0035" count="0,2" prob="0.03"/><!-- 食屍鬼的渴望(限定任務) -->
+		<item name="qc_mission0036" count="0,2" prob="0.04"/><!-- 亞馬遜女戰士的試煉(連續性任務) -->
+		<item name="qc_mission0037" count="0,2" prob="0.04"/><!-- 體驗收集各種素材的樂趣(連續性任務) -->
+		<item name="qc_mission0038" count="0,2" prob="0.01"/><!-- 火的起源(協會任務) -->
+		<item name="qc_mission0039" count="0,2" prob="0.01"/><!-- 突生的閃電(協會任務) -->
+		<item name="qc_mission0040" count="0,2" prob="0.01"/><!-- 毒的影響(協會任務) -->
+		<item name="qc_mission0041" count="0,2" prob="0.01"/><!-- 昏睡的起因(協會任務) -->
+		<item name="qc_mission0042" count="0,2" prob="0.01"/><!-- 突然暴斃的原因(協會任務) -->
+		<item name="qc_mission0043" count="0,2" prob="0.01"/><!-- 結霜的起因(協會任務) -->
+		<item name="qc_mission0044" count="0,2" prob="0.01"/><!-- 六首領的動向(協會任務) -->
+		<item name="qc_mission0045" count="0,2" prob="0.03"/><!-- 來自異世界的神秘協會的渴望(限定任務) -->
+	</append>
+	<!-- 自訂的戰利包掉落內容 -->
+	<append xpath="/lootcontainers">
+		<!-- 火 -->
+		<lootcontainer id="500" count="6,17" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+			<item name="modBurnDeviceSchematic" count="0,1" prob="0.08"/>
+			<item name="advancedFlamePressureplateSchematic" count="0,1" prob="0.05"/>
+			<item name="advancedFlameMineHubcapSchematic" count="0,1" prob="0.05"/>
+			<item name="casinoCoin" count="10,1000" prob="0.3"/>
+			<item name="oldCash" count="250,1000" prob="1.5"/>
+			<item name="resourceAcid" count="0,5" prob="1.2"/>
+			<item name="resourceWood" count="0,500" prob="1.2"/>
+			<item name="resourceRockSmall" count="0,500" prob="1.2"/>
+			<item name="resourceForgedSteel" count="0,500" prob="1.2"/>
+			<item name="resourceForgedIron" count="0,500" prob="1.2"/>
+			<item name="resourceScrapIron" count="0,500" prob="1.2"/>
+			<item name="resourceOilShale" count="0,500" prob="1.2"/>
+			<item name="resourceSnowBall" count="0,500" prob="1.2"/>
+			<item name="resourceScrapBrass" count="0,500" prob="1.2"/>
+			<item name="resourceScrapLead" count="0,500" prob="1.2"/>
+			<item name="resourceClayLump" count="0,500" prob="1.2"/>
+			<item name="resourceCement" count="0,500" prob="1.2"/>
+			<item name="resourceCoal" count="0,500" prob="1.2"/>
+			<item name="resourcePotassiumNitratePowder" count="0,500" prob="1.2"/>
+			<item name="resourceElementFire" count="0,50" prob="0.5"/>
+			<item name="resourceElementWater" count="0,50" prob="0.5"/>
+			<item name="resourceElementEarth" count="0,50" prob="0.5"/>
+			<item name="resourceElementWind" count="0,50" prob="0.5"/>
+			<item name="resourceElementLight" count="0,50" prob="0.5"/>
+			<item name="resourceElementDark" count="0,50" prob="0.5"/>
+			<item name="resourceElementUranium" count="0,50" prob="0.5"/>
+			<item name="ammoFlameBullet" count="1000" prob="0.1"/>
+			<item name="meleeWeaponSledgehammerJudge" count="0,1" prob="0.1"/>
+		</lootcontainer>
+		<!-- 電 -->
+		<lootcontainer id="501" count="6,17" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+			<item name="modElectricShockDeviceSchematic" count="0,1" prob="0.08"/>
+			<item name="advancedElectricPressureplateSchematic" count="0,1" prob="0.05"/>
+			<item name="advancedElectricMineHubcapSchematic" count="0,1" prob="0.05"/>
+			<item name="casinoCoin" count="10,1000" prob="0.3"/>
+			<item name="oldCash" count="250,1000" prob="1.5"/>
+			<item name="resourceAcid" count="0,5" prob="1.2"/>
+			<item name="resourceWood" count="0,500" prob="1.2"/>
+			<item name="resourceRockSmall" count="0,500" prob="1.2"/>
+			<item name="resourceForgedSteel" count="0,500" prob="1.2"/>
+			<item name="resourceForgedIron" count="0,500" prob="1.2"/>
+			<item name="resourceScrapIron" count="0,500" prob="1.2"/>
+			<item name="resourceOilShale" count="0,500" prob="1.2"/>
+			<item name="resourceSnowBall" count="0,500" prob="1.2"/>
+			<item name="resourceScrapBrass" count="0,500" prob="1.2"/>
+			<item name="resourceScrapLead" count="0,500" prob="1.2"/>
+			<item name="resourceClayLump" count="0,500" prob="1.2"/>
+			<item name="resourceCement" count="0,500" prob="1.2"/>
+			<item name="resourceCoal" count="0,500" prob="1.2"/>
+			<item name="resourcePotassiumNitratePowder" count="0,500" prob="1.2"/>
+			<item name="resourceElementFire" count="0,50" prob="0.5"/>
+			<item name="resourceElementWater" count="0,50" prob="0.5"/>
+			<item name="resourceElementEarth" count="0,50" prob="0.5"/>
+			<item name="resourceElementWind" count="0,50" prob="0.5"/>
+			<item name="resourceElementLight" count="0,50" prob="0.5"/>
+			<item name="resourceElementDark" count="0,50" prob="0.5"/>
+			<item name="resourceElementUranium" count="0,50" prob="0.5"/>
+			<item name="ammoElectricShockBullet" count="1000" prob="0.1"/>
+			<item name="meleeWeaponSledgehammerJudge" count="0,1" prob="0.1"/>
+		</lootcontainer>
+		<!-- 毒 -->
+		<lootcontainer id="502" count="6,17" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+			<item name="modBloodlettingDeviceSchematic" count="0,1" prob="0.08"/>
+			<item name="advancedPosionMineHubcapSchematic" count="0,1" prob="0.05"/>
+			<item name="casinoCoin" count="10,1000" prob="0.3"/>
+			<item name="oldCash" count="250,1000" prob="1.5"/>
+			<item name="resourceAcid" count="0,5" prob="1.2"/>
+			<item name="resourceWood" count="0,500" prob="1.2"/>
+			<item name="resourceRockSmall" count="0,500" prob="1.2"/>
+			<item name="resourceForgedSteel" count="0,500" prob="1.2"/>
+			<item name="resourceForgedIron" count="0,500" prob="1.2"/>
+			<item name="resourceScrapIron" count="0,500" prob="1.2"/>
+			<item name="resourceOilShale" count="0,500" prob="1.2"/>
+			<item name="resourceSnowBall" count="0,500" prob="1.2"/>
+			<item name="resourceScrapBrass" count="0,500" prob="1.2"/>
+			<item name="resourceScrapLead" count="0,500" prob="1.2"/>
+			<item name="resourceClayLump" count="0,500" prob="1.2"/>
+			<item name="resourceCement" count="0,500" prob="1.2"/>
+			<item name="resourceCoal" count="0,500" prob="1.2"/>
+			<item name="resourcePotassiumNitratePowder" count="0,500" prob="1.2"/>
+			<item name="resourceElementFire" count="0,50" prob="0.5"/>
+			<item name="resourceElementWater" count="0,50" prob="0.5"/>
+			<item name="resourceElementEarth" count="0,50" prob="0.5"/>
+			<item name="resourceElementWind" count="0,50" prob="0.5"/>
+			<item name="resourceElementLight" count="0,50" prob="0.5"/>
+			<item name="resourceElementDark" count="0,50" prob="0.5"/>
+			<item name="resourceElementUranium" count="0,50" prob="0.5"/>
+			<item name="ammoBloodlettingBullet" count="1000" prob="0.1"/>
+			<item name="meleeWeaponSledgehammerJudge" count="0,1" prob="0.1"/>
+		</lootcontainer>
+		<!-- 麻醉 -->
+		<lootcontainer id="503" count="6,17" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+			<item name="modAnesthesiaDeviceSchematic" count="0,1" prob="0.08"/>
+			<item name="casinoCoin" count="10,1000" prob="0.3"/>
+			<item name="oldCash" count="250,1000" prob="1.5"/>
+			<item name="resourceAcid" count="0,5" prob="1.2"/>
+			<item name="resourceWood" count="0,500" prob="1.2"/>
+			<item name="resourceRockSmall" count="0,500" prob="1.2"/>
+			<item name="resourceForgedSteel" count="0,500" prob="1.2"/>
+			<item name="resourceForgedIron" count="0,500" prob="1.2"/>
+			<item name="resourceScrapIron" count="0,500" prob="1.2"/>
+			<item name="resourceOilShale" count="0,500" prob="1.2"/>
+			<item name="resourceSnowBall" count="0,500" prob="1.2"/>
+			<item name="resourceScrapBrass" count="0,500" prob="1.2"/>
+			<item name="resourceScrapLead" count="0,500" prob="1.2"/>
+			<item name="resourceClayLump" count="0,500" prob="1.2"/>
+			<item name="resourceCement" count="0,500" prob="1.2"/>
+			<item name="resourceCoal" count="0,500" prob="1.2"/>
+			<item name="resourcePotassiumNitratePowder" count="0,500" prob="1.2"/>
+			<item name="resourceElementFire" count="0,50" prob="0.5"/>
+			<item name="resourceElementWater" count="0,50" prob="0.5"/>
+			<item name="resourceElementEarth" count="0,50" prob="0.5"/>
+			<item name="resourceElementWind" count="0,50" prob="0.5"/>
+			<item name="resourceElementLight" count="0,50" prob="0.5"/>
+			<item name="resourceElementDark" count="0,50" prob="0.5"/>
+			<item name="resourceElementUranium" count="0,50" prob="0.5"/>
+			<item name="ammoNarcosisBullet" count="1000" prob="0.1"/>
+			<item name="meleeWeaponSledgehammerJudge" count="0,1" prob="0.1"/>
+		</lootcontainer>
+		<!-- 勾魂 -->
+		<lootcontainer id="504" count="6,17" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+			<item name="modHolyLightDeviceSchematic" count="0,1" prob="0.08"/>
+			<item name="casinoCoin" count="10,1000" prob="0.3"/>
+			<item name="oldCash" count="250,1000" prob="1.5"/>
+			<item name="resourceAcid" count="0,5" prob="1.2"/>
+			<item name="resourceWood" count="0,500" prob="1.2"/>
+			<item name="resourceRockSmall" count="0,500" prob="1.2"/>
+			<item name="resourceForgedSteel" count="0,500" prob="1.2"/>
+			<item name="resourceForgedIron" count="0,500" prob="1.2"/>
+			<item name="resourceScrapIron" count="0,500" prob="1.2"/>
+			<item name="resourceOilShale" count="0,500" prob="1.2"/>
+			<item name="resourceSnowBall" count="0,500" prob="1.2"/>
+			<item name="resourceScrapBrass" count="0,500" prob="1.2"/>
+			<item name="resourceScrapLead" count="0,500" prob="1.2"/>
+			<item name="resourceClayLump" count="0,500" prob="1.2"/>
+			<item name="resourceCement" count="0,500" prob="1.2"/>
+			<item name="resourceCoal" count="0,500" prob="1.2"/>
+			<item name="resourcePotassiumNitratePowder" count="0,500" prob="1.2"/>
+			<item name="resourceElementFire" count="0,50" prob="0.5"/>
+			<item name="resourceElementWater" count="0,50" prob="0.5"/>
+			<item name="resourceElementEarth" count="0,50" prob="0.5"/>
+			<item name="resourceElementWind" count="0,50" prob="0.5"/>
+			<item name="resourceElementLight" count="0,50" prob="0.5"/>
+			<item name="resourceElementDark" count="0,50" prob="0.5"/>
+			<item name="resourceElementUranium" count="0,50" prob="0.5"/>
+			<item name="ammoHolyLightBullet" count="1000" prob="0.1"/>
+			<item name="meleeWeaponSledgehammerJudge" count="0,1" prob="0.1"/>
+		</lootcontainer>
+		<!-- 冰凍 -->
+		<lootcontainer id="505" count="6,17" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+			<item name="modFrostBiteDeviceSchematic" count="0,1" prob="0.08"/>
+			<item name="casinoCoin" count="10,1000" prob="0.3"/>
+			<item name="oldCash" count="250,1000" prob="1.5"/>
+			<item name="resourceAcid" count="0,5" prob="1.2"/>
+			<item name="resourceWood" count="0,500" prob="1.2"/>
+			<item name="resourceRockSmall" count="0,500" prob="1.2"/>
+			<item name="resourceForgedSteel" count="0,500" prob="1.2"/>
+			<item name="resourceForgedIron" count="0,500" prob="1.2"/>
+			<item name="resourceScrapIron" count="0,500" prob="1.2"/>
+			<item name="resourceOilShale" count="0,500" prob="1.2"/>
+			<item name="resourceSnowBall" count="0,500" prob="1.2"/>
+			<item name="resourceScrapBrass" count="0,500" prob="1.2"/>
+			<item name="resourceScrapLead" count="0,500" prob="1.2"/>
+			<item name="resourceClayLump" count="0,500" prob="1.2"/>
+			<item name="resourceCement" count="0,500" prob="1.2"/>
+			<item name="resourceCoal" count="0,500" prob="1.2"/>
+			<item name="resourcePotassiumNitratePowder" count="0,500" prob="1.2"/>
+			<item name="resourceElementFire" count="0,50" prob="0.5"/>
+			<item name="resourceElementWater" count="0,50" prob="0.5"/>
+			<item name="resourceElementEarth" count="0,50" prob="0.5"/>
+			<item name="resourceElementWind" count="0,50" prob="0.5"/>
+			<item name="resourceElementLight" count="0,50" prob="0.5"/>
+			<item name="resourceElementDark" count="0,50" prob="0.5"/>
+			<item name="resourceElementUranium" count="0,50" prob="0.5"/>
+			<item name="ammoIceBiteBullet" count="1000" prob="0.1"/>
+			<item name="meleeWeaponSledgehammerJudge" count="0,1" prob="0.1"/>
+		</lootcontainer>
+		<!-- 咒降 -->
+		<lootcontainer id="506" count="6,17" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+			<item name="modHolyLightDeviceSchematic" count="0,1" prob="0.08"/>
+			<item name="casinoCoin" count="10,1000" prob="0.3"/>
+			<item name="oldCash" count="250,1000" prob="1.5"/>
+			<item name="resourceAcid" count="0,5" prob="1.2"/>
+			<item name="resourceWood" count="0,500" prob="1.2"/>
+			<item name="resourceRockSmall" count="0,500" prob="1.2"/>
+			<item name="resourceForgedSteel" count="0,500" prob="1.2"/>
+			<item name="resourceForgedIron" count="0,500" prob="1.2"/>
+			<item name="resourceScrapIron" count="0,500" prob="1.2"/>
+			<item name="resourceOilShale" count="0,500" prob="1.2"/>
+			<item name="resourceSnowBall" count="0,500" prob="1.2"/>
+			<item name="resourceScrapBrass" count="0,500" prob="1.2"/>
+			<item name="resourceScrapLead" count="0,500" prob="1.2"/>
+			<item name="resourceClayLump" count="0,500" prob="1.2"/>
+			<item name="resourceCement" count="0,500" prob="1.2"/>
+			<item name="resourceCoal" count="0,500" prob="1.2"/>
+			<item name="resourcePotassiumNitratePowder" count="0,500" prob="1.2"/>
+			<item name="resourceElementFire" count="0,70" prob="0.5"/>
+			<item name="resourceElementWater" count="0,70" prob="0.5"/>
+			<item name="resourceElementEarth" count="0,70" prob="0.5"/>
+			<item name="resourceElementWind" count="0,70" prob="0.5"/>
+			<item name="resourceElementLight" count="0,70" prob="0.5"/>
+			<item name="resourceElementDark" count="0,70" prob="0.5"/>
+			<item name="resourceElementUranium" count="0,70" prob="0.5"/>
+			<item name="ammoHolyLightBullet" count="1000" prob="0.1"/>
+			<item name="meleeWeaponSledgehammerJudge" count="0,1" prob="0.1"/>
+		</lootcontainer>
+	</append>
+	<!-- 自訂的大容量儲存箱 -->
+	<append xpath="/lootcontainers">
+		<lootcontainer id="600" size="12,10" destroy_on_close="false" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe">
+		</lootcontainer>
+	</append>
+	<!-- 為了配合超大容量鋼鐵儲存箱的查詢, 一定要做這個調整 -->
+	<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">12,10</set>
+	<!-- 調整有屍塊的浴缸、現代冰箱、烤爐和牆內爐、燃氣烤爐、微波爐、櫥櫃的道具掉落數量 -->
+	<set xpath="/lootcontainers/lootcontainer[@id='5']/@count">1,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='17']/@count">1,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='21']/@count">1,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='37']/@count">1,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='47']/@count">1,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='75']/@count">1,5</set>
+</configs>

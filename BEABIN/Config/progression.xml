@@ -1,0 +1,1183 @@
+<configs>
+	<append xpath="/progression/attributes">
+		<!-- 總節點，元素之護 -->
+		<attribute name="attElementResist" name_key="attElementResistName" desc_key="attElementResistDesc" icon="ui_game_symbol_skills" min_level="0" max_level="20" base_skill_point_cost="2" cost_multiplier_per_level="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="140" desc_key="reqERLevel140"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="170" desc_key="reqERLevel170"/></level_requirements>
+			<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="200" desc_key="reqERLevel200"/></level_requirements>
+			<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="250" desc_key="reqERLevel250"/></level_requirements>
+			<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="300" desc_key="reqERLevel300"/></level_requirements>
+			<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="350" desc_key="reqERLevel350"/></level_requirements>
+			<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="400" desc_key="reqERLevel400"/></level_requirements>
+			<level_requirements level="11"><requirement name="PlayerLevel" target="self" operation="GTE" value="450" desc_key="reqERLevel450"/></level_requirements>
+			<level_requirements level="12"><requirement name="PlayerLevel" target="self" operation="GTE" value="500" desc_key="reqERLevel500"/></level_requirements>
+			<level_requirements level="13"><requirement name="PlayerLevel" target="self" operation="GTE" value="550" desc_key="reqERLevel550"/></level_requirements>
+			<level_requirements level="14"><requirement name="PlayerLevel" target="self" operation="GTE" value="600" desc_key="reqERLevel600"/></level_requirements>
+			<level_requirements level="15"><requirement name="PlayerLevel" target="self" operation="GTE" value="650" desc_key="reqERLevel650"/></level_requirements>
+			<level_requirements level="16"><requirement name="PlayerLevel" target="self" operation="GTE" value="700" desc_key="reqERLevel700"/></level_requirements>
+			<level_requirements level="17"><requirement name="PlayerLevel" target="self" operation="GTE" value="750" desc_key="reqERLevel750"/></level_requirements>
+			<level_requirements level="18"><requirement name="PlayerLevel" target="self" operation="GTE" value="800" desc_key="reqERLevel800"/></level_requirements>
+			<level_requirements level="19"><requirement name="PlayerLevel" target="self" operation="GTE" value="850" desc_key="reqERLevel850"/></level_requirements>
+			<level_requirements level="20"><requirement name="PlayerLevel" target="self" operation="GTE" value="900" desc_key="reqERLevel900"/></level_requirements>
+			
+			<effect_group>
+				<!-- 增加最大血量, 最大水分, 最大耐力, 攻擊速度 -->
+				<passive_effect name="HealthMax" operation="base_add" level="1,20" value="100,2000"/>
+				<passive_effect name="HealthLossMaxMult" operation="perc_add" level="1,20" value="0.1,2"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" level="1,20" value="0.1,2"/>
+				<passive_effect name="WaterMax" operation="base_add" level="1,20" value="100,2000"/>
+				<passive_effect name="StaminaMax" operation="base_add" level="1,20" value="100,2000"/>
+				<passive_effect name="StaminaLossMaxMult" operation="perc_add" level="1,20" value="0.1,2"/>
+				<passive_effect name="StaminaChangeOT" operation="base_add" level="1,20" value="0.1,2"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,20" value="0.01,0.5"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="attElementResistRank1Desc" long_desc_key="attElementResistRank1LongDesc"/>
+				<effect_description level="2" desc_key="attElementResistRank2Desc" long_desc_key="attElementResistRank2LongDesc"/>
+				<effect_description level="3" desc_key="attElementResistRank3Desc" long_desc_key="attElementResistRank3LongDesc"/>
+				<effect_description level="4" desc_key="attElementResistRank4Desc" long_desc_key="attElementResistRank4LongDesc"/>
+				<effect_description level="5" desc_key="attElementResistRank5Desc" long_desc_key="attElementResistRank5LongDesc"/>
+				<effect_description level="6" desc_key="attElementResistRank6Desc" long_desc_key="attElementResistRank6LongDesc"/>
+				<effect_description level="7" desc_key="attElementResistRank7Desc" long_desc_key="attElementResistRank7LongDesc"/>
+				<effect_description level="8" desc_key="attElementResistRank8Desc" long_desc_key="attElementResistRank8LongDesc"/>
+				<effect_description level="9" desc_key="attElementResistRank9Desc" long_desc_key="attElementResistRank9LongDesc"/>
+				<effect_description level="10" desc_key="attElementResistRank10Desc" long_desc_key="attElementResistRank10LongDesc"/>
+				<effect_description level="11" desc_key="attElementResistRank11Desc" long_desc_key="attElementResistRank11LongDesc"/>
+				<effect_description level="12" desc_key="attElementResistRank12Desc" long_desc_key="attElementResistRank12LongDesc"/>
+				<effect_description level="13" desc_key="attElementResistRank13Desc" long_desc_key="attElementResistRank13LongDesc"/>
+				<effect_description level="14" desc_key="attElementResistRank14Desc" long_desc_key="attElementResistRank14LongDesc"/>
+				<effect_description level="15" desc_key="attElementResistRank15Desc" long_desc_key="attElementResistRank15LongDesc"/>
+				<effect_description level="16" desc_key="attElementResistRank16Desc" long_desc_key="attElementResistRank16LongDesc"/>
+				<effect_description level="17" desc_key="attElementResistRank17Desc" long_desc_key="attElementResistRank17LongDesc"/>
+				<effect_description level="18" desc_key="attElementResistRank18Desc" long_desc_key="attElementResistRank18LongDesc"/>
+				<effect_description level="19" desc_key="attElementResistRank19Desc" long_desc_key="attElementResistRank19LongDesc"/>
+				<effect_description level="20" desc_key="attElementResistRank20Desc" long_desc_key="attElementResistRank20LongDesc"/>
+			</effect_group>
+		</attribute>
+	</append>
+	<!-- 技能分類標題 -->
+	<append xpath="/progression/skills">
+		<!-- 改變體質 -->
+		<skill name="skillChangePhysique" parent="attElementResist" name_key="skillChangePhysiqueName" desc_key="skillChangePhysiqueDesc" icon="ui_game_symbol_muscle"><effect_group/></skill>
+		<!-- 蝕化 -->
+		<skill name="skillEclipse" parent="attElementResist" name_key="skillEclipseName" desc_key="skillEclipseDesc" icon="ui_game_symbol_death"><effect_group/></skill>
+		<!-- 苦行僧 -->
+		<skill name="skillAscetic" parent="attElementResist" name_key="skillAsceticName" desc_key="skillAsceticDesc" icon="ui_game_symbol_boxer"><effect_group/></skill>
+		<!-- 破壞美學 -->
+		<skill name="skillDestructiveAesthetics" parent="attElementResist" name_key="skillDestructiveAestheticsName" desc_key="skillDestructiveAestheticsDesc" icon="ui_game_symbol_explosion"><effect_group/></skill>
+		<!-- 融合飛躍技術 -->
+		<skill name="skillFusionLeapTechnology" parent="attElementResist" name_key="skillFusionLeapTechnologyName" desc_key="skillFusionLeapTechnologyDesc" icon="ui_game_symbol_book"><effect_group/></skill>
+	</append>
+	<!-- 主元素傷害的技能 -->
+	<append xpath="/progression/perks">
+		<!-- 火弱化技能 -->
+		<perk name="perkFireElement" parent="attElementResist" name_key="perkFireElementName" desc_key="perkFireElementDesc" icon="ui_game_symbol_fire" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="200" desc_key="reqERLevel200"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkFireElementRank1Desc" long_desc_key="perkFireElementRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkFireElementRank2Desc" long_desc_key="perkFireElementRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkFireElementRank3Desc" long_desc_key="perkFireElementRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkFireElementRank4Desc" long_desc_key="perkFireElementRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkFireElementRank5Desc" long_desc_key="perkFireElementRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 電弱化技能 -->
+		<perk name="perkElectricElement" parent="attElementResist" name_key="perkElectricElementName" desc_key="perkElectricElementDesc" icon="ui_game_symbol_electric_power" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="200" desc_key="reqERLevel200"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkElectricElementRank1Desc" long_desc_key="perkElectricElementRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkElectricElementRank2Desc" long_desc_key="perkElectricElementRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkElectricElementRank3Desc" long_desc_key="perkElectricElementRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkElectricElementRank4Desc" long_desc_key="perkElectricElementRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkElectricElementRank5Desc" long_desc_key="perkElectricElementRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 創傷技能 -->
+		<perk name="perkTrauma" parent="attElementResist" name_key="perkTraumaName" desc_key="perkTraumaDesc" icon="ui_game_symbol_critical" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="200" desc_key="reqERLevel200"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkTraumaRank1Desc" long_desc_key="perkTraumaRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkTraumaRank2Desc" long_desc_key="perkTraumaRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkTraumaRank3Desc" long_desc_key="perkTraumaRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkTraumaRank4Desc" long_desc_key="perkTraumaRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkTraumaRank5Desc" long_desc_key="perkTraumaRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 麻醉技能 -->
+		<perk name="perkNarcosis" parent="attElementResist" name_key="perkNarcosisName" desc_key="perkNarcosisDesc" icon="ui_game_symbol_death" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="200" desc_key="reqERLevel200"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkNarcosisRank1Desc" long_desc_key="perkNarcosisRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkNarcosisRank2Desc" long_desc_key="perkNarcosisRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkNarcosisRank3Desc" long_desc_key="perkNarcosisRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkNarcosisRank4Desc" long_desc_key="perkNarcosisRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkNarcosisRank5Desc" long_desc_key="perkNarcosisRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 淨靈技能 -->
+		<perk name="perkHolyLight" parent="attElementResist" name_key="perkHolyLightName" desc_key="perkHolyLightDesc" icon="ui_game_symbol_hot" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="200" desc_key="reqERLevel200"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkHolyLightRank1Desc" long_desc_key="perkHolyLightRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkHolyLightRank2Desc" long_desc_key="perkHolyLightRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkHolyLightRank3Desc" long_desc_key="perkHolyLightRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkHolyLightRank4Desc" long_desc_key="perkHolyLightRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkHolyLightRank5Desc" long_desc_key="perkHolyLightRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 霜咬技能 -->
+		<perk name="perkIceBite" parent="attElementResist" name_key="perkIceBiteName" desc_key="perkIceBiteDesc" icon="ui_game_symbol_splint" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="200" desc_key="reqERLevel200"/></level_requirements>
+			<!--
+			<effect_group>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffSlowDown1">
+					<requirement name="ProgressionLevel" progression_name="perkIceBite" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffSlowDown2">
+					<requirement name="ProgressionLevel" progression_name="perkIceBite" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffSlowDown3">
+					<requirement name="ProgressionLevel" progression_name="perkIceBite" operation="Equals" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffSlowDown4">
+					<requirement name="ProgressionLevel" progression_name="perkIceBite" operation="Equals" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffSlowDown5">
+					<requirement name="ProgressionLevel" progression_name="perkIceBite" operation="Equals" value="5"/>
+				</triggered_effect>
+			</effect_group>
+			-->
+			<effect_group>
+				<effect_description level="1" desc_key="perkIceBiteRank1Desc" long_desc_key="perkIceBiteRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkIceBiteRank2Desc" long_desc_key="perkIceBiteRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkIceBiteRank3Desc" long_desc_key="perkIceBiteRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkIceBiteRank4Desc" long_desc_key="perkIceBiteRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkIceBiteRank5Desc" long_desc_key="perkIceBiteRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 元素擴散 : 火 -->
+		<perk name="perkElementalProliferation01" parent="attElementResist" name_key="perkElementalProliferation01Name" desc_key="perkElementalProliferation01Desc" icon="ui_game_symbol_infection" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkElementalProliferation01Rank1Desc" long_desc_key="perkElementalProliferation01Rank1LongDesc"/>
+				<effect_description level="2" desc_key="perkElementalProliferation01Rank2Desc" long_desc_key="perkElementalProliferation01Rank2LongDesc"/>
+				<effect_description level="3" desc_key="perkElementalProliferation01Rank3Desc" long_desc_key="perkElementalProliferation01Rank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 元素擴散 : 電 -->
+		<perk name="perkElementalProliferation02" parent="attElementResist" name_key="perkElementalProliferation02Name" desc_key="perkElementalProliferation02Desc" icon="ui_game_symbol_infection" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkElementalProliferation02Rank1Desc" long_desc_key="perkElementalProliferation02Rank1LongDesc"/>
+				<effect_description level="2" desc_key="perkElementalProliferation02Rank2Desc" long_desc_key="perkElementalProliferation02Rank2LongDesc"/>
+				<effect_description level="3" desc_key="perkElementalProliferation02Rank3Desc" long_desc_key="perkElementalProliferation02Rank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 元素擴散 : 放血 -->
+		<perk name="perkElementalProliferation03" parent="attElementResist" name_key="perkElementalProliferation03Name" desc_key="perkElementalProliferation03Desc" icon="ui_game_symbol_infection" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkElementalProliferation03Rank1Desc" long_desc_key="perkElementalProliferation03Rank1LongDesc"/>
+				<effect_description level="2" desc_key="perkElementalProliferation03Rank2Desc" long_desc_key="perkElementalProliferation03Rank2LongDesc"/>
+				<effect_description level="3" desc_key="perkElementalProliferation03Rank3Desc" long_desc_key="perkElementalProliferation03Rank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 元素擴散 : 聖光 -->
+		<perk name="perkElementalProliferation04" parent="attElementResist" name_key="perkElementalProliferation04Name" desc_key="perkElementalProliferation04Desc" icon="ui_game_symbol_infection" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkElementalProliferation04Rank1Desc" long_desc_key="perkElementalProliferation04Rank1LongDesc"/>
+				<effect_description level="2" desc_key="perkElementalProliferation04Rank2Desc" long_desc_key="perkElementalProliferation04Rank2LongDesc"/>
+				<effect_description level="3" desc_key="perkElementalProliferation04Rank3Desc" long_desc_key="perkElementalProliferation04Rank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 元素擴散 : 霜咬 -->
+		<perk name="perkElementalProliferation05" parent="attElementResist" name_key="perkElementalProliferation05Name" desc_key="perkElementalProliferation05Desc" icon="ui_game_symbol_infection" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkElementalProliferation05Rank1Desc" long_desc_key="perkElementalProliferation05Rank1LongDesc"/>
+				<effect_description level="2" desc_key="perkElementalProliferation05Rank2Desc" long_desc_key="perkElementalProliferation05Rank2LongDesc"/>
+				<effect_description level="3" desc_key="perkElementalProliferation05Rank3Desc" long_desc_key="perkElementalProliferation05Rank3LongDesc"/>
+			</effect_group>
+		</perk>
+	</append>
+	<!-- 融合飛躍技術目錄 -->
+	<append xpath="/progression/perks">
+		<!-- 砲陣 -->	
+		<perk name="perkGunArray" parent="skillFusionLeapTechnology" name_key="perkGunArrayName" desc_key="perkGunArrayDesc" icon="ui_game_symbol_electric_turret" min_level="0" max_level="10" base_skill_point_cost="10">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="5" desc_key="reqGenericPoints10"/></level_requirements>
+			<effect_group>
+				<passive_effect name="JunkTurretActiveCount" operation="base_add" level="1,2,3,4,5,6,7,8,9,10" value="1,2,3,4,5,6,7,8,9,10"/>
+				<passive_effect name="JunkTurretActiveRange" operation="base_add" level="1,2,3,4,5,6,7,8,9,10" value="3,6,9,12,15,18,21,24,27,30"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkTurrets"/>
+				<passive_effect name="MagazineSize" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value=".1,.2,.3,.4,.5,.6,.7,.8,.9,1"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value=".1,.2,.3,.4,.5,.6,.7,.8,.9,1"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkGunArrayRank1Desc" long_desc_key="perkGunArrayRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkGunArrayRank2Desc" long_desc_key="perkGunArrayRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkGunArrayRank3Desc" long_desc_key="perkGunArrayRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkGunArrayRank4Desc" long_desc_key="perkGunArrayRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkGunArrayRank5Desc" long_desc_key="perkGunArrayRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkGunArrayRank6Desc" long_desc_key="perkGunArrayRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkGunArrayRank7Desc" long_desc_key="perkGunArrayRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkGunArrayRank8Desc" long_desc_key="perkGunArrayRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkGunArrayRank9Desc" long_desc_key="perkGunArrayRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkGunArrayRank10Desc" long_desc_key="perkGunArrayRank10LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 彈藥兵 -->	
+		<perk name="perkAmmunitionSoldier" parent="skillFusionLeapTechnology" name_key="perkAmmunitionSoldierName" desc_key="perkAmmunitionSoldierDesc" icon="ui_game_symbol_gunslinger" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,2,3,4,5" value=".2,.7,1,1.5,2" tags="ranged"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="1,2,3,4,5" value="1,2,3,4,5" tags="perkAmmunitionSoldier"/><!-- 必須用base_add, 因為是定義各個道具 -->
+			</effect_group>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="perkAmmunitionSoldier"/>
+				<passive_effect name="MagazineSize" operation="perc_add" value=".2,.8,1.4,2.1,3" level="1,2,3,4,5"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAmmunitionSoldierRank1Desc" long_desc_key="perkAmmunitionSoldierRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAmmunitionSoldierRank2Desc" long_desc_key="perkAmmunitionSoldierRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAmmunitionSoldierRank3Desc" long_desc_key="perkAmmunitionSoldierRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkAmmunitionSoldierRank4Desc" long_desc_key="perkAmmunitionSoldierRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkAmmunitionSoldierRank5Desc" long_desc_key="perkAmmunitionSoldierRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 點石成金 -->
+		<perk name="perkTheMidasTouch" parent="skillFusionLeapTechnology" name_key="perkTheMidasTouchName" desc_key="perkTheMidasTouchDesc" icon="ui_game_symbol_workbench" min_level="0" max_level="10" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,10" value="1" tags="perkTheMidasTouch"/>
+				<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5,6,7,8,9,10" value="1,2,3,4,5,6,7,8,9,10" tags="perkTheMidasTouch"/>
+				<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5,6,7,8,9,10" value="1,2,3,4,5,6,6,6,6,6" tags="solar"/>
+				<passive_effect name="CraftingTime" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="0,-.1,-.2,-.3,-.4,-.5,-.6,-.7,-.8,-.9" tags="perkTheMidasTouch"/>
+				<!--<passive_effect name="CraftingTime" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="-.02,-.04,-.06,-.08,-.1,-.12,-.14,-.16,-.18,-.2"/>-->
+			</effect_group>
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,10" value="1" tags="toolBeaker"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,10" value="1" tags="solarCell"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,10" value="1" tags="cntCashRegister,cntFileCabinetTallClosed,cntFileCabinetShortClosed,cntFridgeStainlessSteel,cntRetroFridgeVer1Closed,cntPillCaseClosed,cntMedicineCabinetClosed,cntRollingToolBoxClosed,cntToolBoxClosed,solarbank,cntStoveOldVer1Closed,cntMicrowaveOvenVer1Closed,cntVendingMachine2"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkTheMidasTouchRank1Desc" long_desc_key="perkTheMidasTouchRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkTheMidasTouchRank2Desc" long_desc_key="perkTheMidasTouchRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkTheMidasTouchRank3Desc" long_desc_key="perkTheMidasTouchRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkTheMidasTouchRank4Desc" long_desc_key="perkTheMidasTouchRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkTheMidasTouchRank5Desc" long_desc_key="perkTheMidasTouchRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkTheMidasTouchRank6Desc" long_desc_key="perkTheMidasTouchRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkTheMidasTouchRank7Desc" long_desc_key="perkTheMidasTouchRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkTheMidasTouchRank8Desc" long_desc_key="perkTheMidasTouchRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkTheMidasTouchRank9Desc" long_desc_key="perkTheMidasTouchRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkTheMidasTouchRank10Desc" long_desc_key="perkTheMidasTouchRank10LongDesc"/>
+			</effect_group>
+		</perk>
+	</append>
+	<!-- 改變體質目錄 -->
+	<append xpath="/progression/perks">
+		<!-- 反噬引爆 : 火焰 -->
+		<perk name="perkAntiphasicDetonateBurning" parent="skillChangePhysique" name_key="perkAntiphasicDetonateBurningName" desc_key="perkAntiphasicDetonateBurningDesc" icon="ui_game_symbol_defense" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqERLevel15"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateBurning">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateBurning" operation="Equals" value="1"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateBurning01">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateBurning" operation="Equals" value="2"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateBurning02">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateBurning" operation="Equals" value="3"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAntiphasicDetonateBurningRank1Desc" long_desc_key="perkAntiphasicDetonateBurningRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAntiphasicDetonateBurningRank2Desc" long_desc_key="perkAntiphasicDetonateBurningRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAntiphasicDetonateBurningRank3Desc" long_desc_key="perkAntiphasicDetonateBurningRank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 反噬引爆 : 電擊 -->
+		<perk name="perkAntiphasicDetonateShock" parent="skillChangePhysique" name_key="perkAntiphasicDetonateShockName" desc_key="perkAntiphasicDetonateShockDesc" icon="ui_game_symbol_defense" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqERLevel15"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateShock">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateShock" operation="Equals" value="1"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateShock01">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateShock" operation="Equals" value="2"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateShock02">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateShock" operation="Equals" value="3"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAntiphasicDetonateShockRank1Desc" long_desc_key="perkAntiphasicDetonateShockRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAntiphasicDetonateShockRank2Desc" long_desc_key="perkAntiphasicDetonateShockRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAntiphasicDetonateShockRank3Desc" long_desc_key="perkAntiphasicDetonateShockRank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 反噬引爆 : 放血 -->
+		<perk name="perkAntiphasicDetonateBleed" parent="skillChangePhysique" name_key="perkAntiphasicDetonateBleedName" desc_key="perkAntiphasicDetonateBleedDesc" icon="ui_game_symbol_defense" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqERLevel15"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateBleed">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateBleed" operation="Equals" value="1"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateBleed01">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateBleed" operation="Equals" value="2"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateBleed02">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateBleed" operation="Equals" value="3"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAntiphasicDetonateBleedRank1Desc" long_desc_key="perkAntiphasicDetonateBleedRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAntiphasicDetonateBleedRank2Desc" long_desc_key="perkAntiphasicDetonateBleedRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAntiphasicDetonateBleedRank3Desc" long_desc_key="perkAntiphasicDetonateBleedRank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 反噬引爆 : 麻醉 -->
+		<perk name="perkAntiphasicDetonateNarcosis" parent="skillChangePhysique" name_key="perkAntiphasicDetonateNarcosisName" desc_key="perkAntiphasicDetonateNarcosisDesc" icon="ui_game_symbol_defense" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqERLevel15"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateNarcosis">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateNarcosis" operation="Equals" value="1"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateNarcosis01">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateNarcosis" operation="Equals" value="2"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateNarcosis02">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateNarcosis" operation="Equals" value="3"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAntiphasicDetonateNarcosisRank1Desc" long_desc_key="perkAntiphasicDetonateNarcosisRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAntiphasicDetonateNarcosisRank2Desc" long_desc_key="perkAntiphasicDetonateNarcosisRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAntiphasicDetonateNarcosisRank3Desc" long_desc_key="perkAntiphasicDetonateNarcosisRank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 反噬引爆 : 淨靈 -->
+		<perk name="perkAntiphasicDetonateHolyLight" parent="skillChangePhysique" name_key="perkAntiphasicDetonateHolyLightName" desc_key="perkAntiphasicDetonateHolyLightDesc" icon="ui_game_symbol_defense" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqERLevel15"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateHolyLight">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateHolyLight" operation="Equals" value="1"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateHolyLight01">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateHolyLight" operation="Equals" value="2"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateHolyLight02">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateHolyLight" operation="Equals" value="3"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAntiphasicDetonateHolyLightRank1Desc" long_desc_key="perkAntiphasicDetonateHolyLightRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAntiphasicDetonateHolyLightRank2Desc" long_desc_key="perkAntiphasicDetonateHolyLightRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAntiphasicDetonateHolyLightRank3Desc" long_desc_key="perkAntiphasicDetonateHolyLightRank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 反噬引爆 : 霜咬 -->
+		<perk name="perkAntiphasicDetonateIceBite" parent="skillChangePhysique" name_key="perkAntiphasicDetonateIceBiteName" desc_key="perkAntiphasicDetonateIceBiteDesc" icon="ui_game_symbol_defense" min_level="0" max_level="3" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqERLevel15"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateIceBite">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateIceBite" operation="Equals" value="1"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateIceBite01">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateIceBite" operation="Equals" value="2"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+				</triggered_effect>
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" target_tags="zombie,animal" buff="buffAntiphasicDetonateIceBite02">
+					<requirement name="ProgressionLevel" progression_name="perkAntiphasicDetonateIceBite" operation="Equals" value="3"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAntiphasicDetonateIceBiteRank1Desc" long_desc_key="perkAntiphasicDetonateIceBiteRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAntiphasicDetonateIceBiteRank2Desc" long_desc_key="perkAntiphasicDetonateIceBiteRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAntiphasicDetonateIceBiteRank3Desc" long_desc_key="perkAntiphasicDetonateIceBiteRank3LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 鐵皮 -->
+		<perk name="perkIronSkin" parent="skillChangePhysique" name_key="perkIronSkinName" desc_key="perkIronSkinDesc" icon="ui_game_symbol_armor_iron" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attElementResist" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attElementResist" operation="GTE" value="2" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attElementResist" operation="GTE" value="3" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attElementResist" operation="GTE" value="4" desc_key="reqGenericPoints01"/></level_requirements>
+			<effect_group>
+				<passive_effect name="ElementalDamageResist" operation="perc_add" level="1,2,3,4,5" value=".05,.2,.3,.4,.5" tags="Heat,Cold,Toxic,Electrical,Radiation"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkIronSkinRank1Desc" long_desc_key="perkIronSkinRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkIronSkinRank2Desc" long_desc_key="perkIronSkinRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkIronSkinRank3Desc" long_desc_key="perkIronSkinRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkIronSkinRank4Desc" long_desc_key="perkIronSkinRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkIronSkinRank5Desc" long_desc_key="perkIronSkinRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 一線生機 -->
+		<perk name="perkReturnToLife" parent="skillChangePhysique" name_key="perkReturnToLifeName" desc_key="perkReturnToLifeDesc" icon="ui_game_symbol_healing_factor" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<effect_group>
+				<requirement name="HasBuff" buff="buffInjuryBleeding"/> <!-- 有流血 -->
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/> <!-- 沒有極度口渴 -->
+				<passive_effect name="HealthChangeOT" operation="base_add" value="0.5,0.8,1,2,3" level="1,2,3,4,5"/>
+				<passive_effect name="HealthMaxModifierOT" operation="base_add" value="1,1,2,2,3" level="1,2,3,4,5"/>
+				<passive_effect name="WaterChangeOT" operation="base_subtract" value="1.5,1.5,2,2,3" level="1,2,3,4,5"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".1"  level="1" tags="buffInjuryBleeding"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".2" level="2" tags="buffInjuryBleeding"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".3" level="3" tags="buffInjuryBleeding"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".4" level="4" tags="buffInjuryBleeding"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".5" level="5" tags="buffInjuryBleeding"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkReturnToLifeRank1Desc" long_desc_key="perkReturnToLifeRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkReturnToLifeRank2Desc" long_desc_key="perkReturnToLifeRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkReturnToLifeRank3Desc" long_desc_key="perkReturnToLifeRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkReturnToLifeRank4Desc" long_desc_key="perkReturnToLifeRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkReturnToLifeRank5Desc" long_desc_key="perkReturnToLifeRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 除穢土造 -->
+		<perk name="perkExceptDirtyEarthwork" parent="skillChangePhysique" name_key="perkExceptDirtyEarthworkName" desc_key="perkExceptDirtyEarthworkDesc" icon="ui_game_symbol_near_death_trauma" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="25" desc_key="reqERLevel25"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="45" desc_key="reqERLevel45"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="65" desc_key="reqERLevel65"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<effect_group>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty01"/> <!-- 口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/> <!-- 極度口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusHungry01"/> <!-- 飢餓 -->
+				<requirement name="NotHasBuff" buff="buffStatusHungry02"/> <!-- 極度飢餓 -->
+				<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffRecoverHealth">
+					<requirement name="ProgressionLevel" progression_name="perkExceptDirtyEarthwork" operation="GTE" value="1"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkExceptDirtyEarthworkRank1Desc" long_desc_key="perkExceptDirtyEarthworkRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkExceptDirtyEarthworkRank2Desc" long_desc_key="perkExceptDirtyEarthworkRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkExceptDirtyEarthworkRank3Desc" long_desc_key="perkExceptDirtyEarthworkRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkExceptDirtyEarthworkRank4Desc" long_desc_key="perkExceptDirtyEarthworkRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkExceptDirtyEarthworkRank5Desc" long_desc_key="perkExceptDirtyEarthworkRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 修練成佛 -->
+		<perk name="perkPracticeBuddha" parent="skillChangePhysique" name_key="perkPracticeBuddhaName" desc_key="perkPracticeBuddhaDesc" icon="ui_game_symbol_book" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".5,.75,1,1.5,2" level="1,2,3,4,5"/>
+			</effect_group>
+
+			<effect_group>
+				<effect_description level="1" desc_key="perkPracticeBuddhaRank1Desc" long_desc_key="perkPracticeBuddhaRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkPracticeBuddhaRank2Desc" long_desc_key="perkPracticeBuddhaRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkPracticeBuddhaRank3Desc" long_desc_key="perkPracticeBuddhaRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkPracticeBuddhaRank4Desc" long_desc_key="perkPracticeBuddhaRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkPracticeBuddhaRank5Desc" long_desc_key="perkPracticeBuddhaRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 菩薩不滅 -->
+		<perk name="perkBuddhaImmortal" parent="skillChangePhysique" name_key="perkBuddhaImmortalName" desc_key="perkBuddhaImmortalDesc" icon="ui_game_symbol_stealth2" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqERLevel100"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty01"/> <!-- 口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/> <!-- 極度口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusHungry01"/> <!-- 飢餓 -->
+				<requirement name="NotHasBuff" buff="buffStatusHungry02"/> <!-- 極度飢餓 -->
+				<requirement name="NotHasBuff" buff="buffIllFoodPoisoning01"/><!-- 食物中毒1 -->
+				<triggered_effect trigger="onSelfCrouch" action="AddBuff" target="self" buff="buffOnCrouchRecoverHpStamina">
+					<requirement name="ProgressionLevel" progression_name="perkBuddhaImmortal" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfCrouch" action="AddBuff" target="self" buff="buffOnCrouchRecoverHpStamina01">
+					<requirement name="ProgressionLevel" progression_name="perkBuddhaImmortal" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfCrouch" action="AddBuff" target="self" buff="buffOnCrouchRecoverHpStamina02">
+					<requirement name="ProgressionLevel" progression_name="perkBuddhaImmortal" operation="Equals" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfCrouch" action="AddBuff" target="self" buff="buffOnCrouchRecoverHpStamina03">
+					<requirement name="ProgressionLevel" progression_name="perkBuddhaImmortal" operation="Equals" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfCrouch" action="AddBuff" target="self" buff="buffOnCrouchRecoverHpStamina04">
+					<requirement name="ProgressionLevel" progression_name="perkBuddhaImmortal" operation="Equals" value="5"/>
+				</triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<effect_description level="1" desc_key="perkBuddhaImmortalRank1Desc" long_desc_key="perkBuddhaImmortalRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkBuddhaImmortalRank2Desc" long_desc_key="perkBuddhaImmortalRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkBuddhaImmortalRank3Desc" long_desc_key="perkBuddhaImmortalRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkBuddhaImmortalRank4Desc" long_desc_key="perkBuddhaImmortalRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkBuddhaImmortalRank5Desc" long_desc_key="perkBuddhaImmortalRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 餓鬼當道 -->
+		<perk name="perkHungryGhosts" parent="skillChangePhysique" name_key="perkHungryGhostsName" desc_key="perkHungryGhostsDesc" icon="ui_game_symbol_hunger" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqERLevel100"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkHungryGhostsRank1Desc" long_desc_key="perkHungryGhostsRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkHungryGhostsRank2Desc" long_desc_key="perkHungryGhostsRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkHungryGhostsRank3Desc" long_desc_key="perkHungryGhostsRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkHungryGhostsRank4Desc" long_desc_key="perkHungryGhostsRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkHungryGhostsRank5Desc" long_desc_key="perkHungryGhostsRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 殺戮快感 -->
+		<perk name="perkKillingPleasure" parent="skillChangePhysique" name_key="perkKillingPleasureName" desc_key="perkKillingPleasureDesc" icon="ui_game_symbol_muscle" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<effect_group>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty01"/> <!-- 口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/> <!-- 極度口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusHungry01"/> <!-- 飢餓 -->
+				<requirement name="NotHasBuff" buff="buffStatusHungry02"/> <!-- 極度飢餓 -->
+				<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffPerkKillingPleasureRecoverStamina">
+					<requirement name="ProgressionLevel" progression_name="perkKillingPleasure" operation="GTE" value="1"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkKillingPleasureRank1Desc" long_desc_key="perkKillingPleasureRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkKillingPleasureRank2Desc" long_desc_key="perkKillingPleasureRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkKillingPleasureRank3Desc" long_desc_key="perkKillingPleasureRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkKillingPleasureRank4Desc" long_desc_key="perkKillingPleasureRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkKillingPleasureRank5Desc" long_desc_key="perkKillingPleasureRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 霧化 -->
+		<perk name="perkAtomization" parent="skillChangePhysique" name_key="perkAtomizationName" desc_key="perkAtomizationDesc" icon="ui_game_symbol_ninja" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="35" desc_key="reqERLevel35"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="65" desc_key="reqERLevel65"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="95" desc_key="reqERLevel95"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".05,.1,.15,.2,.25" level="1,2,3,4,5" tags="running"/><!-- 耐力回復 -->
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".07,.14,.21,.28,.35" level="1,2,3,4,5" tags="crouching"/><!-- 耐力回復 -->
+				<passive_effect name="CrouchSpeed" operation="perc_add" value=".1,.15,.2,.25,.3" level="1,2,3,4,5"/><!-- 潛行速度 -->
+				<passive_effect name="DamageBonus" operation="base_set" value=".5,1,1.5,2,2.5" level="1,2,3,4,5" tags="crouching"/> <!-- 潛行狀態增加傷害倍率 -->
+				<passive_effect name="LightMultiplier" operation="perc_subtract" value=".05,.1,.15,.2,.25" level="1,2,3,4,5"><!-- 站在陰暗處時,減少曝光度 -->
+					<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="50"/>
+				</passive_effect>
+				<passive_effect name="NoiseMultiplier" operation="perc_subtract" value=".05,.1,.15,.2,.25" level="1,5"/><!-- 降低噪音 -->
+				<passive_effect name="BuffResistance" operation="base_add" value="10" tags="buffInjuryBleeding,buffLegSprained,buffLegBroken"><!-- 抗流血,斷腿 -->
+					<requirement name="ProgressionLevel" progression_name="perkAtomization" operation="Equals" value="5"/>
+				</passive_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAtomizationRank1Desc" long_desc_key="perkAtomizationRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAtomizationRank2Desc" long_desc_key="perkAtomizationRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAtomizationRank3Desc" long_desc_key="perkAtomizationRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkAtomizationRank4Desc" long_desc_key="perkAtomizationRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkAtomizationRank5Desc" long_desc_key="perkAtomizationRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 屍體吸收 -->
+		<perk name="perkAbsorbCorpse" parent="skillChangePhysique" name_key="perkAbsorbCorpseName" desc_key="perkAbsorbCorpseDesc" icon="ui_game_symbol_water" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqERLevel5"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqERLevel80"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="160" desc_key="reqERLevel160"/></level_requirements>
+			<effect_group>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="water" target="self" operation="add" value="2">
+					<requirement name="ProgressionLevel" progression_name="perkAbsorbCorpse" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="water" target="self" operation="add" value="4">
+					<requirement name="ProgressionLevel" progression_name="perkAbsorbCorpse" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="water" target="self" operation="add" value="6">
+					<requirement name="ProgressionLevel" progression_name="perkAbsorbCorpse" operation="Equals" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="water" target="self" operation="add" value="8">
+					<requirement name="ProgressionLevel" progression_name="perkAbsorbCorpse" operation="Equals" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="water" target="self" operation="add" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkAbsorbCorpse" operation="Equals" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" target="selfAOE" target_tags="ally,party" range="6" buff="buffAbsorbCorpse">
+					<requirement name="ProgressionLevel" progression_name="perkAbsorbCorpse" operation="Equals" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" target="selfAOE" target_tags="ally,party" range="8" buff="buffAbsorbCorpse02">
+					<requirement name="ProgressionLevel" progression_name="perkAbsorbCorpse" operation="Equals" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" target="selfAOE" target_tags="ally,party" range="10" buff="buffAbsorbCorpse03">
+					<requirement name="ProgressionLevel" progression_name="perkAbsorbCorpse" operation="Equals" value="5"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAbsorbCorpseRank1Desc" long_desc_key="perkAbsorbCorpseRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAbsorbCorpseRank2Desc" long_desc_key="perkAbsorbCorpseRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAbsorbCorpseRank3Desc" long_desc_key="perkAbsorbCorpseRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkAbsorbCorpseRank4Desc" long_desc_key="perkAbsorbCorpseRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkAbsorbCorpseRank5Desc" long_desc_key="perkAbsorbCorpseRank5LongDesc"/>
+			</effect_group>
+		</perk>
+	</append>
+	<!-- 蝕化目錄 -->
+	<append xpath="/progression/perks">
+		<!-- 地獄使者 -->
+		<perk name="perkHellMessenger" parent="skillEclipse" name_key="perkHellMessengerName" desc_key="perkHellMessengerDesc" icon="ui_game_symbol_near_death_trauma" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="60" desc_key="reqERLevel60"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqERLevel100"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="130" desc_key="reqERLevel130"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty01"/> <!-- 口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/> <!-- 極度口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusHungry01"/> <!-- 飢餓 -->
+				<requirement name="NotHasBuff" buff="buffStatusHungry02"/> <!-- 極度飢餓 -->
+				<requirement name="NotHasBuff" buff="buffIllFoodPoisoning01"/><!-- 食物中毒1 -->
+				<requirement name="NotHasBuff" buff="buffLegSprained"/> <!-- 扭傷 -->
+				<requirement name="NotHasBuff" buff="buffLegBroken"/> <!-- 斷腿 -->
+				<requirement name="NotHasBuff" buff="buffInjuryBleeding"/> <!-- 流血 -->
+				<requirement name="NotHasBuff" buff="buffInternalBleeding"/> <!-- 內出血 -->
+				<requirement name="NotHasBuff" buff="buffInjuryStunned00"/> <!-- 麻痺1 -->
+				<requirement name="NotHasBuff" buff="buffInjuryStunned01"/> <!-- 麻痺2 -->
+				<requirement name="NotHasBuff" buff="buffInjuryStunned02"/> <!-- 麻痺3 -->
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/> <!-- 著火狀態 -->
+				<requirement name="NotHasBuff" buff="buffInfection01Untreated "/> <!-- 感染1 -->
+				<requirement name="NotHasBuff" buff="buffInfection02Untreated "/> <!-- 感染2 -->
+				<requirement name="NotHasBuff" buff="buffInfection03Untreated "/> <!-- 感染3 -->
+				<requirement name="NotHasBuff" buff="buffDysentery01Untreated"/> <!-- 痢疾 -->
+				<requirement name="NotHasBuff" buff="buffDysentery01UntreatedDiarrhea"/> <!-- 痢疾引發腹瀉 -->
+				<requirement name="NotHasBuff" buff="buffBloodDrawKit01"/> <!-- 貧血1 -->
+				<requirement name="NotHasBuff" buff="buffBloodDrawKit02"/> <!-- 貧血2 -->
+				<requirement name="NotHasBuff" buff="buffBloodDrawKit03"/> <!-- 貧血3 -->
+				<requirement name="NotHasBuff" buff="buffBloodDrawKit04"/> <!-- 貧血4 -->
+				
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffEntityImmediateDeath">
+					<requirement name="ProgressionLevel" progression_name="perkHellMessenger" operation="Equals" value="1"/>
+					<requirement name="HasBuff" target="self" buff="buffPerkHellMessenger"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffEntityImmediateDeath">
+					<requirement name="ProgressionLevel" progression_name="perkHellMessenger" operation="Equals" value="2"/>
+					<requirement name="HasBuff" target="self" buff="buffPerkHellMessenger01"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffEntityImmediateDeath">
+					<requirement name="ProgressionLevel" progression_name="perkHellMessenger" operation="Equals" value="3"/>
+					<requirement name="HasBuff" target="self" buff="buffPerkHellMessenger02"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffPerkHellMessengerDeathSpread">
+					<requirement name="ProgressionLevel" progression_name="perkHellMessenger" operation="Equals" value="4"/>
+					<requirement name="HasBuff" target="self" buff="buffPerkHellMessenger03"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffPerkHellMessengerDeathSpread01">
+					<requirement name="ProgressionLevel" progression_name="perkHellMessenger" operation="Equals" value="5"/>
+					<requirement name="HasBuff" target="self" buff="buffPerkHellMessenger04"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkHellMessengerRank1Desc" long_desc_key="perkHellMessengerRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkHellMessengerRank2Desc" long_desc_key="perkHellMessengerRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkHellMessengerRank3Desc" long_desc_key="perkHellMessengerRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkHellMessengerRank4Desc" long_desc_key="perkHellMessengerRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkHellMessengerRank5Desc" long_desc_key="perkHellMessengerRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 焚燒光環 -->
+		<perk name="perkBurningAura" parent="skillEclipse" name_key="perkBurningAuraName" desc_key="perkBurningAuraDesc" icon="ui_game_symbol_fire" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkBurningAuraRank1Desc" long_desc_key="perkBurningAuraRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkBurningAuraRank2Desc" long_desc_key="perkBurningAuraRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkBurningAuraRank3Desc" long_desc_key="perkBurningAuraRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkBurningAuraRank4Desc" long_desc_key="perkBurningAuraRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkBurningAuraRank5Desc" long_desc_key="perkBurningAuraRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 雷電光環 -->
+		<perk name="perkLightningAura" parent="skillEclipse" name_key="perkLightningAuraName" desc_key="perkLightningAuraDesc" icon="ui_game_symbol_electric_power" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkLightningAuraRank1Desc" long_desc_key="perkLightningAuraRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkLightningAuraRank2Desc" long_desc_key="perkLightningAuraRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkLightningAuraRank3Desc" long_desc_key="perkLightningAuraRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkLightningAuraRank4Desc" long_desc_key="perkLightningAuraRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkLightningAuraRank5Desc" long_desc_key="perkLightningAuraRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 血肉護盾 -->
+		<perk name="perkFleshShield" parent="skillEclipse" name_key="perkFleshShieldName" desc_key="perkFleshShieldDesc" icon="ui_game_symbol_armor_iron" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqERLevel90"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<effect_description level="1" desc_key="perkFleshShieldRank1Desc" long_desc_key="perkFleshShieldRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkFleshShieldRank2Desc" long_desc_key="perkFleshShieldRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkFleshShieldRank3Desc" long_desc_key="perkFleshShieldRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkFleshShieldRank4Desc" long_desc_key="perkFleshShieldRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkFleshShieldRank5Desc" long_desc_key="perkFleshShieldRank5LongDesc"/>
+			</effect_group>
+		</perk>
+	</append>
+	<!-- 苦行僧目錄 (針對空手與拳套可用的技能) -->
+	<append xpath="/progression/perks">
+		<!-- 羚羊的野望 -->
+		<perk name="perkAntelopeAmbition" parent="skillAscetic" name_key="perkAntelopeAmbitionName" desc_key="perkAntelopeAmbitionDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-0.1,-0.15,-0.2,-0.25,-0.3" level="1,2,3,4,5"/> <!-- 降低耐力消耗 -->
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkAntelopeAmbitionRank1Desc" long_desc_key="perkAntelopeAmbitionRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkAntelopeAmbitionRank2Desc" long_desc_key="perkAntelopeAmbitionRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkAntelopeAmbitionRank3Desc" long_desc_key="perkAntelopeAmbitionRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkAntelopeAmbitionRank4Desc" long_desc_key="perkAntelopeAmbitionRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkAntelopeAmbitionRank5Desc" long_desc_key="perkAntelopeAmbitionRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 腹蛇之舌 -->
+		<perk name="perkBellySnakeTongue" parent="skillAscetic" name_key="perkBellySnakeTongueName" desc_key="perkBellySnakeTongueDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.5,0.75,1,1.25,1.5" level="1,2,3,4,5"/> <!-- 增加攻擊速度 -->
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkBellySnakeTongueRank1Desc" long_desc_key="perkBellySnakeTongueRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkBellySnakeTongueRank2Desc" long_desc_key="perkBellySnakeTongueRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkBellySnakeTongueRank3Desc" long_desc_key="perkBellySnakeTongueRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkBellySnakeTongueRank4Desc" long_desc_key="perkBellySnakeTongueRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkBellySnakeTongueRank5Desc" long_desc_key="perkBellySnakeTongueRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 象王的憤怒 -->
+		<perk name="perkElephantKingAnger" parent="skillAscetic" name_key="perkElephantKingAngerName" desc_key="perkElephantKingAngerDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group> <!-- 擊倒率 -->
+				<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkElephantKingAnger" operation="Equals" value="1"/>
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkElephantKingAnger" operation="Equals" value="2"/>
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkElephantKingAnger" operation="Equals" value="3"/>
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkElephantKingAnger" operation="Equals" value="4"/>
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkElephantKingAnger" operation="Equals" value="5"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkElephantKingAngerRank1Desc" long_desc_key="perkElephantKingAngerRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkElephantKingAngerRank2Desc" long_desc_key="perkElephantKingAngerRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkElephantKingAngerRank3Desc" long_desc_key="perkElephantKingAngerRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkElephantKingAngerRank4Desc" long_desc_key="perkElephantKingAngerRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkElephantKingAngerRank5Desc" long_desc_key="perkElephantKingAngerRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 灰熊厲害 -->
+		<perk name="perkGrizzlyBearTerrific" parent="skillAscetic" name_key="perkGrizzlyBearTerrificName" desc_key="perkGrizzlyBearTerrificDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				<passive_effect name="DismemberChance" operation="base_add" value=".1,.3,.5,.8,1" level="1,2,3,4,5" tags="head"/> <!-- 爆頭率 -->
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkGrizzlyBearTerrificRank1Desc" long_desc_key="perkGrizzlyBearTerrificRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkGrizzlyBearTerrificRank2Desc" long_desc_key="perkGrizzlyBearTerrificRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkGrizzlyBearTerrificRank3Desc" long_desc_key="perkGrizzlyBearTerrificRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkGrizzlyBearTerrificRank4Desc" long_desc_key="perkGrizzlyBearTerrificRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkGrizzlyBearTerrificRank5Desc" long_desc_key="perkGrizzlyBearTerrificRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 萬獸之王 -->
+		<perk name="perkKingOfBeasts" parent="skillAscetic" name_key="perkKingOfBeastsName" desc_key="perkKingOfBeastsDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqERLevel30"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqERLevel100"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqERLevel150"/></level_requirements>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.2,0.5,1,1.5,2" level="1,2,3,4,5"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="0.5,1,1.5,2,2.5" level="1,2,3,4,5"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkKingOfBeastsRank1Desc" long_desc_key="perkKingOfBeastsRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkKingOfBeastsRank2Desc" long_desc_key="perkKingOfBeastsRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkKingOfBeastsRank3Desc" long_desc_key="perkKingOfBeastsRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkKingOfBeastsRank4Desc" long_desc_key="perkKingOfBeastsRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkKingOfBeastsRank5Desc" long_desc_key="perkKingOfBeastsRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 獵豹的目標 -->
+		<perk name="perkCheetahsTarget" parent="skillAscetic" name_key="perkCheetahsTargetName" desc_key="perkCheetahsTargetDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqERLevel50"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqERLevel100"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="140" desc_key="reqERLevel140"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="190" desc_key="reqERLevel190"/></level_requirements>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				<requirement name="NotHasBuff" buff="buffLegSprained"/> <!-- 扭傷 -->
+				<requirement name="NotHasBuff" buff="buffLegBroken"/> <!-- 斷腿 -->
+				<requirement name="NotHasBuff" buff="buffStatusThirsty01"/> <!-- 口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/> <!-- 極度口渴 -->
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.18,0.26,0.44,0.62,0.8" level="1,2,3,4,5"/><!-- 跑步速度 -->
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkCheetahsTargetRank1Desc" long_desc_key="perkCheetahsTargetRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkCheetahsTargetRank2Desc" long_desc_key="perkCheetahsTargetRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkCheetahsTargetRank3Desc" long_desc_key="perkCheetahsTargetRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkCheetahsTargetRank4Desc" long_desc_key="perkCheetahsTargetRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkCheetahsTargetRank5Desc" long_desc_key="perkCheetahsTargetRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 蛟龍 -->
+		<perk name="perkXiaolong" parent="skillAscetic" name_key="perkXiaolongName" desc_key="perkXiaolongDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				<requirement name="NotHasBuff" buff="buffLegSprained"/> <!-- 扭傷 -->
+				<requirement name="NotHasBuff" buff="buffLegBroken"/> <!-- 斷腿 -->
+				<passive_effect name="Mobility" operation="perc_add" value="0.2,0.4,0.6,0.8,1" level="1,2,3,4,5" tags="swimming"/><!-- 游泳行動力 -->
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkXiaolongRank1Desc" long_desc_key="perkXiaolongRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkXiaolongRank2Desc" long_desc_key="perkXiaolongRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkXiaolongRank3Desc" long_desc_key="perkXiaolongRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkXiaolongRank4Desc" long_desc_key="perkXiaolongRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkXiaolongRank5Desc" long_desc_key="perkXiaolongRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 行疾如風 -->
+		<perk name="perkRunningLikeWind" parent="skillAscetic" name_key="perkRunningLikeWindName" desc_key="perkRunningLikeWindDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				<requirement name="NotHasBuff" buff="buffLegSprained"/> <!-- 扭傷 -->
+				<requirement name="NotHasBuff" buff="buffLegBroken"/> <!-- 斷腿 -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.2,0.4,0.6,0.8,1" level="1,2,3,4,5" tags="melee,running"/>
+				<passive_effect name="HealthLoss" operation="perc_subtract" value="0.1,0.15,0.2,0.25,0.3" level="1,2,3,4,5" tags="running"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkRunningLikeWindRank1Desc" long_desc_key="perkRunningLikeWindRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkRunningLikeWindRank2Desc" long_desc_key="perkRunningLikeWindRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkRunningLikeWindRank3Desc" long_desc_key="perkRunningLikeWindRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkRunningLikeWindRank4Desc" long_desc_key="perkRunningLikeWindRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkRunningLikeWindRank5Desc" long_desc_key="perkRunningLikeWindRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 渡盡眾生 -->
+		<perk name="perkMakeTheLiving" parent="skillAscetic" name_key="perkMakeTheLivingName" desc_key="perkMakeTheLivingDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				<requirement name="EntityTagCompare" target="other" tags="animal"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.5,0.8,1,1.5,2" level="1,2,3,4,5"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkMakeTheLivingRank1Desc" long_desc_key="perkMakeTheLivingRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkMakeTheLivingRank2Desc" long_desc_key="perkMakeTheLivingRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkMakeTheLivingRank3Desc" long_desc_key="perkMakeTheLivingRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkMakeTheLivingRank4Desc" long_desc_key="perkMakeTheLivingRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkMakeTheLivingRank5Desc" long_desc_key="perkMakeTheLivingRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 修羅不屈 -->
+		<perk name="perkShuraUnyielding" parent="skillAscetic" name_key="perkShuraUnyieldingName" desc_key="perkShuraUnyieldingDesc" icon="ui_game_symbol_hand" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group>
+				<requirement name="ProgressionLevel" progression_name="perkShuraUnyielding" operation="Equals" value="1"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.3"/><!-- 血量低於百分比時 -->
+				<requirement name="NotHasBuff" buff="buffStatusThirsty01"/> <!-- 口渴 -->
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/> <!-- 極度口渴 -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"><!-- 增加對實體的傷害 -->
+					<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手或拳套 -->
+				</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="ProgressionLevel" progression_name="perkShuraUnyielding" operation="Equals" value="2"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.35"/>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty01"/>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/>
+				</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="ProgressionLevel" progression_name="perkShuraUnyielding" operation="Equals" value="3"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.4"/>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty01"/>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+					<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/>
+				</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="ProgressionLevel" progression_name="perkShuraUnyielding" operation="Equals" value="4"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.45"/>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/><!-- 極度口渴 -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".8">
+					<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/>
+				</passive_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="ProgressionLevel" progression_name="perkShuraUnyielding" operation="Equals" value="5"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.5"/>
+				<requirement name="NotHasBuff" buff="buffStatusThirsty02"/><!-- 極度口渴 -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="1">
+					<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/>
+				</passive_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkShuraUnyieldingRank1Desc" long_desc_key="perkShuraUnyieldingRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkShuraUnyieldingRank2Desc" long_desc_key="perkShuraUnyieldingRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkShuraUnyieldingRank3Desc" long_desc_key="perkShuraUnyieldingRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkShuraUnyieldingRank4Desc" long_desc_key="perkShuraUnyieldingRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkShuraUnyieldingRank5Desc" long_desc_key="perkShuraUnyieldingRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 吸血鬼之觸 -->
+		<perk name="perkVampireTouch" parent="skillAscetic" name_key="perkVampireTouchName" desc_key="perkVampireTouchDesc" icon="ui_game_symbol_bat" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqERLevel20"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="110" desc_key="reqERLevel110"/></level_requirements>
+			<effect_group>
+				<requirement name="HasBuff" target="self" buff="buffDraculaBlessing"/><!-- 德古拉的祝福 -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="3"/>
+				<passive_effect name="PhysicalDamageResist" operation="perc_add" value="3"/><!-- 物理抗性 -->
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.5"/><!-- 耐力回復 -->
+				<!-- 生命力持續減少與擊殺會回復生命力的程序在 buffPerkVampireTouchRecoverHealth 執行-->
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffPerkVampireTouchRecoverHealth">
+					<requirement name="IsNight" operation="Equals" value="1"/>
+					<requirement name="ProgressionLevel" progression_name="perkVampireTouch" operation="GTE" value="1"/>
+					<requirement name="HoldingItemHasTags" tags="fists,gloveskill"/><!-- 空手 -->	
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkVampireTouchRank1Desc" long_desc_key="perkVampireTouchRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkVampireTouchRank2Desc" long_desc_key="perkVampireTouchRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkVampireTouchRank3Desc" long_desc_key="perkVampireTouchRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkVampireTouchRank4Desc" long_desc_key="perkVampireTouchRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkVampireTouchRank5Desc" long_desc_key="perkVampireTouchRank5LongDesc"/>
+			</effect_group>
+		</perk>
+	</append>
+	<!-- 破壞美學目錄 (針對大鎚的技能) -->
+	<append xpath="/progression/perks">
+		<!-- 強勢驅動 -->
+		<perk name="perkStrongDrive" parent="skillDestructiveAesthetics" name_key="perkStrongDriveName" desc_key="perkStrongDriveDesc" icon="ui_game_symbol_sledge" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqERLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqERLevel40"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqERLevel70"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqERLevel100"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="sledge"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.5,0.75,1,1.5,2" level="1,2,3,4,5"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-0.1,-0.2,-0.3,-0.4,-0.5" level="1,2,3,4,5"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkStrongDriveRank1Desc" long_desc_key="perkStrongDriveRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkStrongDriveRank2Desc" long_desc_key="perkStrongDriveRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkStrongDriveRank3Desc" long_desc_key="perkStrongDriveRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkStrongDriveRank4Desc" long_desc_key="perkStrongDriveRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkStrongDriveRank5Desc" long_desc_key="perkStrongDriveRank5LongDesc"/>
+			</effect_group>
+		</perk>
+		<!-- 破解機工 -->
+		<perk name="perkCrackMechanic" parent="skillDestructiveAesthetics" name_key="perkCrackMechanicName" desc_key="perkCrackMechanicDesc" icon="ui_game_symbol_sledge" min_level="0" max_level="5" base_skill_point_cost="1">
+			<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqERLevel15"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="45" desc_key="reqERLevel45"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="75" desc_key="reqERLevel75"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqERLevel100"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="120" desc_key="reqERLevel120"/></level_requirements>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="sledge"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="1,1,1,1,1" level="1,2,3,4,5" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="1,1,1,1,1" level="1,2,3,4,5" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="1,1,1,1,1" level="1,2,3,4,5" tags="oreWoodHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="1,1,1,1,1" level="1,2,3,4,5" tags="salvageHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="1,1,1,1,1" level="1,2,3,4,5" tags="butcherHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value="0,1.5,1.75,2,2.5,3" level="0,1,2,3,4,5" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value="0,0.3,0.6,0.9,1.2,1.5" level="0,1,2,3,4,5" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value="0,1.5,1.75,2,2.5,3" level="0,1,2,3,4,5" tags="oreWoodHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value="0,1,1.5,1.8,2.1,2.5" level="0,1,2,3,4,5" tags="salvageHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add" value="0,1.1,1.2,1.5,1.8,2" level="0,1,2,3,4,5" tags="butcherHarvest"/>
+			</effect_group>
+			<effect_group>
+				<effect_description level="1" desc_key="perkCrackMechanicRank1Desc" long_desc_key="perkCrackMechanicRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkCrackMechanicRank2Desc" long_desc_key="perkCrackMechanicRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkCrackMechanicRank3Desc" long_desc_key="perkCrackMechanicRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkCrackMechanicRank4Desc" long_desc_key="perkCrackMechanicRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkCrackMechanicRank5Desc" long_desc_key="perkCrackMechanicRank5LongDesc"/>
+			</effect_group>
+		</perk>
+	</append>
+	<!-- 設定垃圾砲3,4,5級時累加可啟動砲塔的數量 -->
+	<!--
+	<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group[@name='General and deployed turrets']/passive_effect[@name='JunkTurretActiveCount'][@operation='base_add'][@level='5']/@value">4</set>
+	<append xpath="/progression/perks/perk[@name='perkTurrets']/effect_group[@name='General and deployed turrets']">
+		<passive_effect name="JunkTurretActiveCount" operation="base_add" level="2,3,4" value="1,2,3"/>
+	</append>
+	-->
+	<!-- 設定垃圾砲可啟動距離 -->
+	<!--
+	<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group[@name='General and deployed turrets']/passive_effect[@name='JunkTurretActiveRange'][@operation='base_set']/@value">15,16,17,18,19,20</set>
+	-->
+</configs>

@@ -1,0 +1,118 @@
+<configs>
+	<insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT1']">
+		<!-- 增加自訂任務到交易清單裡 -->
+		<trader_item_group name="questCustomChallenge" >
+			<item name="qc_mission0001" count="0,3" prob="0.3"/><!-- 尋找地獄使者契約書的材料(協會任務) -->
+			<item name="qc_mission0002" count="0,3" prob="0.3"/><!-- 德古拉的請託(協會任務) -->
+			<item name="qc_mission0003" count="0,1" prob="0.05"/><!-- 玉米實驗所請託(一般任務) -->
+			<item name="qc_mission0004" count="0,1" prob="0.05"/><!-- 特殊實驗室的請託(一般任務) -->
+			<item name="qc_mission0005" count="0,1" prob="0.05"/><!-- 醫院院長的請託(一般任務) -->
+			<item name="qc_mission0006" count="0,1" prob="0.05"/><!-- 哈雷幫派的請託(一般任務) -->
+			<item name="qc_mission0007" count="0,1" prob="0.05"/><!-- 建築公司的請託(一般任務) -->
+			<item name="qc_mission0008" count="0,1" prob="0.05"/><!-- 國安特勤的請託(一般任務) -->
+			<item name="qc_mission0009" count="0,1" prob="0.05"/><!-- 特種警察的請託(一般任務) -->
+			<item name="qc_mission0010" count="0,1" prob="0.05"/><!-- 消防隊的請託(一般任務) -->
+			<item name="qc_mission0011" count="0,1" prob="0.05"/><!-- 脫衣酒吧的請託(一般任務) -->
+			<item name="qc_mission0012" count="0,1" prob="0.02"/><!-- 羅賓漢的仁慈1(系列任務) -->
+			<item name="qc_mission0012_1" count="0,1" prob="0.02"/><!-- 羅賓漢的仁慈2(系列任務) -->
+			<item name="qc_mission0013" count="0,1" prob="0.05"/><!-- 商人的噪音抱怨(一般任務) -->
+			<item name="qc_mission0014" count="0,1" prob="0.03"/><!-- 白色死神的試煉(限定任務) -->
+			<item name="qc_mission0015" count="0,1" prob="0.05"/><!-- 養蜂人的抱怨(一般任務) -->
+			<item name="qc_mission0016" count="0,1" prob="0.05"/><!-- 銀行的請託(一般任務) -->
+			<item name="qc_mission0017" count="0,1" prob="0.02"/><!-- 命運女神的關注(系列任務) -->
+			<item name="qc_mission0017_1" count="0,1" prob="0.02"/><!-- 命運女神的眷顧(系列任務) -->
+			<item name="qc_mission0017_2" count="0,1" prob="0.02"/><!-- 命運女神的調戲(系列任務) -->
+			<item name="qc_mission0017_3" count="0,1" prob="0.02"/><!-- 命運女神的試煉(系列任務) -->
+			<item name="qc_mission0017_4" count="0,1" prob="0.02"/><!-- 命運女神的偏愛(系列任務) -->
+			<item name="qc_mission0017_5" count="0,1" prob="0.02"/><!-- 命運女神的賞賜(系列任務) -->
+			<item name="qc_mission0018" count="0,1" prob="0.05"/><!-- 煉油廠的請託(一般任務) -->
+			<item name="qc_mission0019" count="0,1" prob="0.05"/><!-- 滑板場的請託(一般任務) -->
+			<item name="qc_mission0020" count="0,1" prob="0.05"/><!-- 鬥狗場的請託(一般任務) -->
+			<item name="qc_mission0021" count="0,1" prob="0.05"/><!-- 熊酒吧的請託(一般任務) -->
+			<item name="qc_mission0022" count="0,1" prob="0.03"/><!-- 附近地主的請託(限定任務) -->
+			<item name="qc_mission0023" count="0,1" prob="0.04"/><!-- 附近學校的請託(連續性任務) -->
+			<item name="qc_mission0024" count="0,1" prob="0.04"/><!-- 礦產公司的請託(連續性任務) -->
+			<item name="qc_mission0025" count="0,1" prob="0.04"/><!-- 附近地主的抱怨(連續性任務) -->
+			<item name="qc_mission0026" count="0,1" prob="0.04"/><!-- 狩獵協會的請託(連續性任務) -->
+			<item name="qc_mission0027" count="0,1" prob="0.03"/><!-- 縱火狂魔的試煉(限定任務) -->
+			<item name="qc_mission0028" count="0,1" prob="0.03"/><!-- 炸彈狂魔的試煉(限定任務) -->
+			<item name="qc_mission0029" count="0,1" prob="0.03"/><!-- 開膛手傑克的試煉(限定任務) -->
+			<item name="qc_mission0030" count="0,1" prob="0.03"/><!-- 德州電鋸殺人魔的試煉(限定任務) -->
+			<item name="qc_mission0031" count="0,1" prob="0.03"/><!-- 西部牛仔威廉邦尼的試煉(限定任務) -->
+			<item name="qc_mission0032" count="0,1" prob="0.05"/><!-- 光頭幫的請託(一般任務) -->
+			<item name="qc_mission0033" count="0,1" prob="0.05"/><!-- 伐木場的請託(一般任務) -->
+			<item name="qc_mission0034" count="0,1" prob="0.05"/><!-- 專業的建築工人(一般任務) -->
+			<item name="qc_mission0035" count="0,1" prob="0.03"/><!-- 食屍鬼的渴望(限定任務) -->
+			<item name="qc_mission0036" count="0,1" prob="0.04"/><!-- 亞馬遜女戰士的試煉(連續性任務) -->
+			<item name="qc_mission0037" count="0,1" prob="0.04"/><!-- 體驗收集各種素材的樂趣(連續性任務) -->
+			<item name="qc_mission0038" count="0,1" prob="0.01"/><!-- 火的起源(協會任務) -->
+			<item name="qc_mission0039" count="0,1" prob="0.01"/><!-- 突生的閃電(協會任務) -->
+			<item name="qc_mission0040" count="0,1" prob="0.01"/><!-- 毒的影響(協會任務) -->
+			<item name="qc_mission0041" count="0,1" prob="0.01"/><!-- 昏睡的起因(協會任務) -->
+			<item name="qc_mission0042" count="0,1" prob="0.01"/><!-- 突然暴斃的原因(協會任務) -->
+			<item name="qc_mission0043" count="0,1" prob="0.01"/><!-- 結霜的起因(協會任務) -->
+			<item name="qc_mission0044" count="0,1" prob="0.01"/><!-- 六首領的動向(協會任務) -->
+			<item name="qc_mission0045" count="0,2" prob="0.03"/><!-- 來自異世界的神秘協會的渴望(限定任務) -->
+		</trader_item_group>
+		<!-- 自訂六級道具兌換任務的圖紙 -->
+		<trader_item_group name="questExchangeLevel6Item" count="5">
+			<item name="qc_crafting0001" count="0,2"/><!-- 6級鐵棒製作書任務圖紙 -->
+			<item name="qc_crafting0002" count="0,2"/><!-- 6級鐵鎚製作書任務圖紙 -->
+			<item name="qc_crafting0003" count="0,2"/><!-- 6級鋼鎚製作書任務圖紙 -->
+			<item name="qc_crafting0004" count="0,2"/><!-- 6級獵刀製作書任務圖紙 -->
+			<item name="qc_crafting0005" count="0,2"/><!-- 6級開山刀製作書任務圖紙 -->
+			<item name="qc_crafting0006" count="0,2"/><!-- 6級致暈棍製作書任務圖紙 -->
+			<item name="qc_crafting0007" count="0,2"/><!-- 6級山羊鎚製作書任務圖紙 -->
+			<item name="qc_crafting0008" count="0,2"/><!-- 6級鋼鎬製作書任務圖紙 -->
+			<item name="qc_crafting0009" count="0,2"/><!-- 6級扳手製作書任務圖紙 -->
+			<item name="qc_crafting0010" count="0,2"/><!-- 6級電鑽製作書任務圖紙 -->
+			<item name="qc_crafting0011" count="0,2"/><!-- 6級電鋸製作書任務圖紙 -->
+			<item name="qc_crafting0012" count="0,2"/><!-- 6級鐵矛製作書任務圖紙 -->
+			<item name="qc_crafting0013" count="0,2"/><!-- 6級鋼矛製作書任務圖紙 -->
+			<item name="qc_crafting0014" count="0,2"/><!-- 6級鐵指節製作書任務圖紙 -->
+			<item name="qc_crafting0015" count="0,2"/><!-- 6級鋼指節製作書任務圖紙 -->
+			<item name="qc_crafting0016" count="0,2"/><!-- 6級複合弓製作書任務圖紙 -->
+			<item name="qc_crafting0017" count="0,2"/><!-- 6級鐵十字弓製作書任務圖紙 -->
+			<item name="qc_crafting0018" count="0,2"/><!-- 6級複合十字弓製作書任務圖紙 -->
+			<item name="qc_crafting0019" count="0,2"/><!-- 6級9mm手槍製作書任務圖紙 -->
+			<item name="qc_crafting0020" count="0,2"/><!-- 6級點44麥格農製作書任務圖紙 -->
+			<item name="qc_crafting0021" count="0,2"/><!-- 6級衝鋒槍製作書任務圖紙 -->
+			<item name="qc_crafting0022" count="0,2"/><!-- 6級雙管散彈槍製作書任務圖紙 -->
+			<item name="qc_crafting0023" count="0,2"/><!-- 6級泵式散彈槍製作書任務圖紙 -->
+			<item name="qc_crafting0024" count="0,2"/><!-- 6級AK47步槍製作書任務圖紙 -->
+			<item name="qc_crafting0025" count="0,2"/><!-- 6級獵槍製作書任務圖紙 -->
+			<item name="qc_crafting0026" count="0,2"/><!-- 6級狙擊槍製作書任務圖紙 -->
+			<item name="qc_crafting0027" count="0,2"/><!-- 6級火箭砲製作書任務圖紙 -->
+			<item name="qc_crafting0028" count="0,2"/><!-- 6級垃圾砲製作書任務圖紙 -->
+			<item name="qc_crafting0029" count="0,2"/><!-- 6級皮革防具製作書任務圖紙 -->
+			<item name="qc_crafting0030" count="0,2"/><!-- 6級軍用防具製作書任務圖紙 -->
+			<item name="qc_crafting0031" count="0,2"/><!-- 6級鐵製防具製作書任務圖紙 -->
+			<item name="qc_crafting0032" count="0,2"/><!-- 6級鋼製防具製作書任務圖紙 -->
+		</trader_item_group>
+	</insertBefore>
+	
+	<!-- 增加元素子彈到商人的交易清單裡 -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']">
+		<item name="ammoFlameBullet" count="0,100"/>
+		<item name="ammoElectricShockBullet" count="0,100"/>
+		<item name="ammoBloodlettingBullet" count="0,100"/>
+		<item name="ammoNarcosisBullet" count="0,100"/>
+		<item name="ammoHolyLightBullet" count="0,100"/>
+		<item name="ammoIceBiteBullet" count="0,100"/>
+	</append>
+	<!-- 更改世界各地的販賣機增加其它販賣項目 -->
+	<append xpath="/traders/trader_info[@id='4']/trader_items">
+		<item name="medicalFirstAidKit" count="0,5"/><!-- 醫療箱 -->
+		<item name="medicalFirstAidBandage" count="0,10"/><!-- 急救繃帶 -->
+		<item group="questCustomChallenge" count="1,5"/> <!-- 自訂的任務圖紙 -->
+		<item name="ammoFlameBullet" count="0,10"/>
+		<item name="ammoElectricShockBullet" count="0,10"/>
+		<item name="ammoBloodlettingBullet" count="0,10"/>
+		<item name="ammoNarcosisBullet" count="0,10"/>
+		<item name="ammoHolyLightBullet" count="0,10"/>
+		<item name="ammoIceBiteBullet" count="0,10"/>
+		<item name="bookMoneyIsPower" count="5" prob="0.01"/><!-- 經驗值卷 -->
+		<item name="ticketLottery" count="1,10"/><!-- 樂透彩券 -->
+		<item group="questExchangeLevel6Item"/> <!-- 自訂六級道具兌換任務的圖紙 -->
+	</append>
+</configs>

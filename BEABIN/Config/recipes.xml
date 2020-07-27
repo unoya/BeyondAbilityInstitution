@@ -1,0 +1,1422 @@
+<configs>
+    <append xpath="/recipes">
+		<!-- 燃燒子彈 -->
+		<recipe name="ammoFlameBullet" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+			<ingredient name="resourceElementFire" count="5"/>
+			<ingredient name="resourceElementWind" count="5"/>
+		</recipe>
+		<!-- 電擊子彈 -->
+		<recipe name="ammoElectricShockBullet" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+			<ingredient name="resourceElementLight" count="5"/>
+			<ingredient name="resourceElementWind" count="5"/>
+		</recipe>
+		<!-- 放血子彈 -->
+		<recipe name="ammoBloodlettingBullet" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+			<ingredient name="resourceElementDark" count="5"/>
+			<ingredient name="resourceElementWind" count="5"/>
+		</recipe>
+		<!-- 麻醉子彈 -->
+		<recipe name="ammoNarcosisBullet" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+			<ingredient name="resourceElementEarth" count="5"/>
+			<ingredient name="resourceElementDark" count="5"/>
+		</recipe>
+		<!-- 聖光彈 -->
+		<recipe name="ammoHolyLightBullet" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+			<ingredient name="resourceElementLight" count="5"/>
+			<ingredient name="resourceElementWater" count="5"/>
+		</recipe>
+		<!-- 霜咬彈 -->
+		<recipe name="ammoIceBiteBullet" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceBulletCasing" count="1"/>
+			<ingredient name="resourceElementEarth" count="5"/>
+			<ingredient name="resourceElementWater" count="5"/>
+		</recipe>
+		<!-- 燃燒模組 -->
+		<recipe name="modBurnDevice" count="1" craft_time="300" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="ammoFlameBullet" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceElementUranium" count="10"/>
+		</recipe>
+		<!-- 電擊模組 -->
+		<recipe name="modElectricShockDevice" count="1" craft_time="300" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="ammoElectricShockBullet" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceElementUranium" count="10"/>
+		</recipe>
+		<!-- 放血模組 -->
+		<recipe name="modBloodlettingDevice" count="1" craft_time="300" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="ammoBloodlettingBullet" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceElementUranium" count="10"/>
+		</recipe>
+		<!-- 麻醉模組 -->
+		<recipe name="modAnesthesiaDevice" count="1" craft_time="300" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="ammoNarcosisBullet" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceElementUranium" count="10"/>
+		</recipe>
+		<!-- 聖光模組 -->
+		<recipe name="modHolyLightDevice" count="1" craft_time="300" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="ammoHolyLightBullet" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceElementUranium" count="10"/>
+		</recipe>
+		<!-- 霜咬彈模組 -->
+		<recipe name="modFrostBiteDevice" count="1" craft_time="300" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="ammoIceBiteBullet" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceElementUranium" count="10"/>
+		</recipe>
+		<!-- 高彈匣模組 -->
+		<recipe name="modHightCapacityMagazineDevice" count="1" craft_time="1800" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="1000"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="modGunMagazineExtender" count="1"/>
+		</recipe>
+		<!-- 長射槍管模組 -->
+		<recipe name="modLongBarrelDevice" count="1" craft_time="1800" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="modGunBarrelExtender" count="1"/>
+		</recipe>
+		<!-- 崩分離析模組 -->
+		<recipe name="modDisintegrationDevice" count="1" craft_time="1800" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="modMeleeSerratedBlade" count="1"/>
+		</recipe>
+		<!-- 機械手模組 -->
+		<recipe name="modMechanicalHand" count="1" craft_time="1800" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="modMeleeWoodSplitter" count="1"/>
+		</recipe>
+		<recipe name="modMechanicalHand" count="1" craft_time="1800" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="modMeleeBunkerBuster" count="1"/>
+		</recipe>
+		<!-- 夜鷹模組 -->
+		<recipe name="modNightEagleDevice" count="1" craft_time="1800" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="modArmorAdvancedMuffledConnectors" count="1"/>
+		</recipe>
+		<!-- 強化型刀片陷阱 -->
+		<recipe name="advancedBladeTrap" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="50"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceElectricParts" count="100"/>
+		</recipe>
+		<!-- 強化型電擊柵欄 -->
+		<recipe name="advancedElecFencepost" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="50"/>
+			<ingredient name="resourceElectricParts" count="100"/>
+		</recipe>
+		<!-- 強化型木尖刺 -->
+		<recipe name="advancedWoodLogSpike" count="1" craft_time="10" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceWood" count="200"/>
+		</recipe>
+		<!-- 強化型有刺鐵線 -->
+		<recipe name="advancedBarbedWireSheet" count="1" craft_time="10" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="200"/>
+		</recipe>
+		<!-- 強化型有刺鐵絲柵欄 -->
+		<recipe name="advancedBarbedFence" count="1" craft_time="10" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="100"/>
+			<ingredient name="resourceWood" count="100"/>
+		</recipe>
+		<!-- 強化型木刺柵欄 -->
+		<recipe name="advancedSpikesBarbedFence" count="1" craft_time="10" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceWood" count="250"/>
+		</recipe>
+		<!-- 強化型鐵刺柵欄 -->
+		<recipe name="advancedSteelSpikesBarbedFence" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="50"/>
+		</recipe>
+		<!-- 強化型電擊感應板 -->
+		<recipe name="advancedElectricPressureplate" count="1" craft_time="10" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceElectricParts" count="100"/>
+			<ingredient name="resourceElementWind" count="10"/>
+			<ingredient name="resourceElementLight" count="10"/>
+		</recipe>
+		<!-- 強化型焰燒感應板 -->
+		<recipe name="advancedFlamePressureplate" count="1" craft_time="10" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceElectricParts" count="100"/>
+			<ingredient name="resourceElementFire" count="10"/>
+			<ingredient name="resourceElementWind" count="10"/>
+		</recipe>
+		<!-- 強化型輪轂地雷 -->
+		<recipe name="advancedMineHubcap" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="150"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+			<ingredient name="resourceHubcap" count="1"/>
+			<ingredient name="resourceSpring" count="1"/>
+			<ingredient name="resourceElementUranium" count="1"/>
+		</recipe>
+		<!-- 電擊型輪轂地雷 -->
+		<recipe name="advancedElectricMineHubcap" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="150"/>
+			<ingredient name="ammoElectricShockBullet" count="1"/>
+			<ingredient name="resourceHubcap" count="1"/>
+			<ingredient name="resourceSpring" count="1"/>
+			<ingredient name="resourceElementUranium" count="5"/>
+		</recipe>
+		<!-- 焰燒型輪轂地雷 -->
+		<recipe name="advancedFlameMineHubcap" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="150"/>
+			<ingredient name="ammoFlameBullet" count="1"/>
+			<ingredient name="resourceHubcap" count="1"/>
+			<ingredient name="resourceSpring" count="1"/>
+			<ingredient name="resourceElementUranium" count="5"/>
+		</recipe>
+		<!-- 毒爆型輪轂地雷 -->
+		<recipe name="advancedPosionMineHubcap" count="1" craft_time="5" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="150"/>
+			<ingredient name="ammoBloodlettingBullet" count="1"/>
+			<ingredient name="resourceHubcap" count="1"/>
+			<ingredient name="resourceSpring" count="1"/>
+			<ingredient name="resourceElementUranium" count="5"/>
+		</recipe>
+		<!-- 元素石頭炸彈 -->
+		<recipe name="elementExplosionStone" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceYuccaFibers" count="10"/>
+			<ingredient name="resourceGunPowder" count="10"/>
+			<ingredient name="resourceRockSmall" count="1"/>
+			<ingredient name="resourceElementWater" count="5"/>
+			<ingredient name="resourceElementFire" count="5"/>
+		</recipe>
+		<!-- 元素型戰矛 -->
+		<recipe name="meleeThrownElementWarSpear" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="meleeThrownSpearStone" count="1"/>
+			<ingredient name="resourceElementFire" count="10"/>
+			<ingredient name="resourceElementWater" count="10"/>
+			<ingredient name="resourceElementDark" count="10"/>
+			<ingredient name="resourceElementLight" count="10"/>
+		</recipe>
+		<!-- 強化型雷管炸彈 -->
+		<recipe name="advancedThrownAmmoPipeBomb" count="1" craft_time="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceYuccaFibers" count="50"/>
+			<ingredient name="resourceGunPowder" count="50"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceElementUranium" count="5"/>
+		</recipe>
+		<!-- 地獄使者的契約書 -->
+		<recipe name="magazinePerkHellMessenger" count="1" craft_time="5">
+			<ingredient name="resourceLeather" count="50"/>
+			<ingredient name="foodRottingFlesh" count="100"/>
+			<ingredient name="resourceBone" count="10"/>
+			<ingredient name="resourceAnimalFat" count="10"/>
+			<ingredient name="medicalBloodBag" count="1"/>
+		</recipe>
+		<!-- 內建的汽油彈, 另一種合成配方 -->
+		<recipe name="thrownAmmoMolotovCocktail" count="1" craft_time="10">
+			<ingredient name="resourceCloth" count="1"/>
+			<ingredient name="ammoGasCan" count="30"/>
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+			<ingredient name="drinkJarEmpty" count="1"/>
+		</recipe>
+		<!-- 內建的輪胎, 另一種合成配方 -->
+		<recipe name="vehicleWheels" count="1" craft_time="10"  craft_area="workbench">
+			<ingredient name="decoCarTireSmallFlat" count="1"/>
+			<ingredient name="resourceHubcap" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="16"/>
+			<ingredient name="resourceGlue" count="2"/>
+			<ingredient name="resourceOil" count="2"/>
+		</recipe>
+		<!-- 新手求生禮盒 -->
+		<recipe name="cntNewbieSurvivalGiftBox" count="1" craft_time="10" >
+			<ingredient name="resourceYuccaFibers" count="100"/>
+			<ingredient name="resourceRockSmall" count="100"/>
+			<ingredient name="resourceWood" count="100"/>
+		</recipe>
+		<!-- 超大容量鋼鐵箱 -->
+		<recipe name="cntLargeCapacitySteelBox" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="120"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+		</recipe>
+		<!-- 鐵製燃氣烤爐 -->
+		<recipe name="IronGasGrill" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="2500"/>
+			<ingredient name="resourceSpring" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="50"/>
+			<ingredient name="cntGasGrillOpen" count="1"/>
+		</recipe>
+		<!-- 葉片式暖氣機 -->
+		<recipe name="VaneTypeHeater" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="800"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="radiatorHouse01" count="1"/>
+		</recipe>
+		<!-- 審判鎚, A級 -->
+		<recipe name="meleeWeaponSledgehammerJudgeA" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting,perkMiner69r" >
+			<ingredient name="meleeWeaponSledgehammerJudge" count="1"/>
+			<ingredient name="thunderHeraldryStele" count="5"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+		</recipe>
+		<!-- 審判鎚, B級 -->
+		<recipe name="meleeWeaponSledgehammerJudgeB" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting,perkMiner69r" >
+			<ingredient name="meleeWeaponSledgehammerJudgeA" count="1"/>
+			<ingredient name="thunderHeraldryStele" count="5"/>
+			<ingredient name="resourceElementUranium" count="200"/>
+		</recipe>
+		<!-- 審判鎚, C級 -->
+		<recipe name="meleeWeaponSledgehammerJudgeC" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting,perkMiner69r" >
+			<ingredient name="meleeWeaponSledgehammerJudgeB" count="1"/>
+			<ingredient name="thunderHeraldryStele" count="5"/>
+			<ingredient name="resourceElementUranium" count="300"/>
+		</recipe>
+    </append>
+	<!-- 點石成金技能合成配方 -->
+    <append xpath="/recipes">
+		<!-- 鍛鐵 -->
+		<recipe name="resourceForgedIron" count="1" craft_time="22" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="10"/>
+			<ingredient name="resourceClayLump" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 鍛鋼 -->
+		<recipe name="resourceForgedSteel" count="1" craft_time="45" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="20"/>
+			<ingredient name="resourceClayLump" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 短鐵管 -->
+		<recipe name="resourceMetalPipe" count="1" craft_time="22" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="10"/>
+			<ingredient name="resourceClayLump" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 空鐵罐 -->
+		<recipe name="drinkCanEmpty" count="1" craft_time="11" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 釘子 -->
+		<recipe name="resourceNail" count="1" craft_time="6" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="1"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<requirement name="ProgressionLevel" progression_name="perkTheMidasTouch" operation="Equals" value="1"/>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 水泥 -->
+		<recipe name="resourceCement" count="1" craft_time="9" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceRockSmall" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceRockSmall"/>
+			</effect_group>
+		</recipe>
+		<!-- 玻璃罐 -->
+		<recipe name="drinkJarEmpty" count="1" craft_time="17" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceCrushedSand" count="10"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceCrushedSand"/>
+			</effect_group>
+		</recipe>
+		<!-- 子彈頭 -->
+		<recipe name="resourceBulletTip" count="1" craft_time="7" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapLead" count="2"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapLead"/>
+			</effect_group>
+		</recipe>
+		<!-- 鐵標頭(彈藥) -->
+		<recipe name="ammoDartIron" count="1" craft_time="8" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="3"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 鐵箭頭 -->
+		<recipe name="resourceArrowHeadIron" count="1" craft_time="7" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="2"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 子彈殼 -->
+		<recipe name="resourceBulletCasing" count="1" craft_time="11" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapBrass" count="5"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapBrass"/>
+			</effect_group>
+		</recipe>
+		<!-- 鉛彈 -->
+		<recipe name="resourceBuckshot" count="1" craft_time="8" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapLead" count="3"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapLead"/>
+			</effect_group>
+		</recipe>
+		<!-- 鋼箭頭 -->
+		<recipe name="resourceArrowHeadSteelAP" count="1" craft_time="12" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 火箭砲殼 -->
+		<recipe name="resourceRocketCasing" count="1" craft_time="102" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="50"/>
+			<ingredient name="resourceClayLump" count="30"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 火箭砲彈頭 -->
+		<recipe name="resourceRocketTip" count="1" craft_time="102" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapLead" count="50"/>
+			<ingredient name="resourceClayLump" count="30"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapLead"/>
+			</effect_group>
+		</recipe>
+		<!-- 烹飪烤架 -->
+		<recipe name="toolCookingGrill" count="1" craft_time="41" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="25"/>
+			<ingredient name="resourceClayLump" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 烹飪鍋 -->
+		<recipe name="toolCookingPot" count="1" craft_time="41" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="25"/>
+			<ingredient name="resourceClayLump" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 鐵砧 -->
+		<recipe name="toolAnvil" count="1" craft_time="1375" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="1000"/>
+			<ingredient name="resourceClayLump" count="100"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 中心鐵柵欄 -->
+		<recipe name="ironBarsCentered" count="1" craft_time="150" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="100"/>
+			<ingredient name="resourceClayLump" count="20"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 鋼筋框架塊 -->
+		<recipe name="rebarFrameBlockVariantHelper" count="1" craft_time="11" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 鐵架塊 -->
+		<recipe name="scrapIronFrameBlockVariantHelper" count="1" craft_time="23" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="15"/>
+			<ingredient name="resourceClayLump" count="4"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 金屬柵欄和欄杆 -->
+		<recipe name="metalFenceRailingTrellisSheetBlockVariantHelper" count="1" craft_time="150" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="15"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 金屬桁架/I形梁 -->
+		<recipe name="metalTrussingIBeamBlockVariantHelper" count="1" craft_time="150" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="40"/>
+			<ingredient name="resourceClayLump" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 鐵片 -->
+		<recipe name="scrapIronSheet" count="1" craft_time="60" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceScrapIron" count="40"/>
+			<ingredient name="resourceClayLump" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 玻璃砌塊 -->
+		<recipe name="glassBlockVariantHelper" count="1" craft_time="31" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceCrushedSand" count="14"/>
+			<ingredient name="resourceScrapLead" count="5"/>
+			<ingredient name="resourceClayLump" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapLead,resourceCrushedSand"/>
+			</effect_group>
+		</recipe>
+		<!-- 磚砌塊 -->
+		<recipe name="brickBlockVariantHelper" count="1" craft_time="87" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceRockSmall" count="10"/>
+			<ingredient name="resourceClayLump" count="60"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceRockSmall"/>
+			</effect_group>
+		</recipe>
+		<!-- 防彈玻璃砌塊 -->
+		<recipe name="glassBulletproofBlockVariantHelper" count="1" craft_time="252" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceCrushedSand" count="110"/>
+			<ingredient name="resourceRockSmall" count="10"/>
+			<ingredient name="resourceScrapLead" count="40"/>
+			<ingredient name="resourceScrapIron" count="20"/>
+			<ingredient name="resourceClayLump" count="20"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron,resourceScrapLead,resourceRockSmall,resourceCrushedSand"/>
+			</effect_group>
+		</recipe>
+		<!-- 燒杯的自訂配方 -->
+		<recipe name="toolBeaker" count="1" craft_time="60" tags="learnable,perkTheMidasTouch">
+			<ingredient name="resourceCrushedSand" count="300"/>
+			<ingredient name="resourceClayLump" count="100"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceCrushedSand"/>
+			</effect_group>
+		</recipe>
+		<!-- 太陽能電池的自訂配方 -->
+		<recipe name="solarCell" count="1" craft_time="120" craft_area="workbench" tags="learnable,solar">
+			<ingredient name="resourceCrushedSand" count="500"/>
+			<ingredient name="resourceScrapLead" count="100"/>
+			<ingredient name="resourceScrapIron" count="200"/>
+			<ingredient name="resourceClayLump" count="100"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value="20,18,16,14,12,10,7,5,2,0" tags="resourceClayLump,resourceScrapIron,resourceScrapLead,resourceCrushedSand"/>
+			</effect_group>
+		</recipe>
+    </append>
+	<!-- 醫療藥品類 -->
+	<append xpath="/recipes">
+		<!-- 破魔水 -->
+		<recipe name="drinkBrokenMagicWater" count="1" craft_time="180" craft_area="chemistryStation">
+			<ingredient name="foodRottingFlesh" count="100"/>
+			<ingredient name="resourceBone" count="10"/>
+			<ingredient name="resourceElementLight" count="1"/>
+			<ingredient name="medicalDecayBloodBag" count="1"/>
+			<ingredient name="drinkJarEmpty" count="1"/>
+		</recipe>
+		<!-- 夜靈之眼 -->
+		<recipe name="drinkJarEyeOfTheNightSpirit" count="1" craft_time="10" craft_area="chemistryStation">
+			<ingredient name="resourceCropAloeLeaf" count="2"/>
+			<ingredient name="resourceBone" count="10"/>
+			<ingredient name="resourceElementLight" count="1"/>
+			<ingredient name="drinkJarEmpty" count="1"/>
+		</recipe>
+		<!-- 血袋 -->
+		<recipe name="medicalBloodBag" count="1" craft_time="60" craft_area="chemistryStation">
+			<ingredient name="medicalDecayBloodBag" count="10"/>
+		</recipe>
+		<!-- 強化型醫療箱 -->
+		<recipe name="advancedFirstAidKit" count="1" craft_time="15" craft_area="chemistryStation" tags="learnable" >
+			<ingredient name="medicalFirstAidKit" count="1"/>
+			<ingredient name="resourceElementFire" count="1"/>
+			<ingredient name="resourceElementWater" count="1"/>
+			<ingredient name="resourceElementLight" count="1"/>
+		</recipe>
+		<!-- 孟婆湯(技能洗點水) -->
+		<recipe name="drinkJarGrandpasForgettingElixir" count="1" craft_time="300" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,chemStationCrafting">
+			<ingredient name="medicalDecayBloodBag" count="100"/>
+			<ingredient name="resourceElementWater" count="100"/>
+			<ingredient name="resourceElementDark" count="100"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+		<!-- 超負荷電壓藥水 -->
+		<recipe name="drinkOverload" count="1" craft_time="180" craft_area="chemistryStation">
+			<ingredient name="resourceElementWind" count="100"/>
+			<ingredient name="resourceElementLight" count="100"/>
+			<ingredient name="resourceSnowBall" count="100"/>
+			<ingredient name="drinkBrokenMagicWater" count="1"/>
+		</recipe>
+		<!-- 炙熱藥水 -->
+		<recipe name="drinkScorchingPotion" count="1" craft_time="10" craft_area="chemistryStation">
+			<ingredient name="resourceElementFire" count="7"/>
+			<ingredient name="resourceElementLight" count="15"/>
+			<ingredient name="resourceElementWater" count="30"/>
+			<ingredient name="resourceSnowBall" count="100"/>
+			<ingredient name="drinkBrokenMagicWater" count="1"/>
+		</recipe>
+		<!-- 電氣聚合藥水 -->
+		<recipe name="drinkElectricAggregationPotion" count="1" craft_time="10" craft_area="chemistryStation">
+			<ingredient name="resourceElementWind" count="7"/>
+			<ingredient name="resourceElementLight" count="15"/>
+			<ingredient name="resourceElementWater" count="30"/>
+			<ingredient name="resourceSnowBall" count="100"/>
+			<ingredient name="drinkBrokenMagicWater" count="1"/>
+		</recipe>
+		<!-- 元素之護藥水簡易型 -->
+		<recipe name="drinkElementProtectionPotionSimple" count="1" craft_time="180" craft_area="chemistryStation">
+			<ingredient name="resourceElementFire" count="10"/>
+			<ingredient name="resourceElementWater" count="10"/>
+			<ingredient name="resourceElementEarth" count="10"/>
+			<ingredient name="resourceElementWind" count="10"/>
+			<ingredient name="medicalBloodBag" count="10"/>
+		</recipe>
+		<!-- 元素之護藥水普通型 -->
+		<recipe name="drinkElementProtectionPotionNormal" count="1" craft_time="180" craft_area="chemistryStation">
+			<ingredient name="resourceElementFire" count="20"/>
+			<ingredient name="resourceElementWater" count="20"/>
+			<ingredient name="resourceElementEarth" count="20"/>
+			<ingredient name="resourceElementWind" count="20"/>
+			<ingredient name="medicalBloodBag" count="20"/>
+		</recipe>
+		<!-- 元素之護藥水強化型 -->
+		<recipe name="drinkElementProtectionPotionEnhanced" count="1" craft_time="180" craft_area="chemistryStation">
+			<ingredient name="resourceElementFire" count="30"/>
+			<ingredient name="resourceElementWater" count="30"/>
+			<ingredient name="resourceElementEarth" count="30"/>
+			<ingredient name="resourceElementWind" count="30"/>
+			<ingredient name="medicalBloodBag" count="30"/>
+		</recipe>
+		<!-- 元素之護藥水多重型 -->
+		<recipe name="drinkElementProtectionPotionDiverse" count="1" craft_time="180" craft_area="chemistryStation">
+			<ingredient name="resourceElementFire" count="40"/>
+			<ingredient name="resourceElementWater" count="40"/>
+			<ingredient name="resourceElementEarth" count="40"/>
+			<ingredient name="resourceElementWind" count="40"/>
+			<ingredient name="medicalBloodBag" count="40"/>
+		</recipe>
+		<!-- 元素之護藥水極限型 -->
+		<recipe name="drinkElementProtectionPotionExtreme" count="1" craft_time="180" craft_area="chemistryStation">
+			<ingredient name="resourceElementFire" count="50"/>
+			<ingredient name="resourceElementWater" count="50"/>
+			<ingredient name="resourceElementEarth" count="50"/>
+			<ingredient name="resourceElementWind" count="50"/>
+			<ingredient name="medicalBloodBag" count="50"/>
+		</recipe>
+		<!-- 感知藥水 -->
+		<recipe name="drinkEPerceptionPotion" count="1" craft_time="10" craft_area="chemistryStation">
+			<ingredient name="resourceElementUranium" count="15"/>
+			<ingredient name="resourceElementLight" count="7"/>
+			<ingredient name="resourceElementDark" count="7"/>
+			<ingredient name="resourceSnowBall" count="100"/>
+			<ingredient name="drugVitamins" count="5"/>
+		</recipe>
+		<!-- 力量藥水 -->
+		<recipe name="drinkEStrengthPotion" count="1" craft_time="10" craft_area="chemistryStation">
+			<ingredient name="resourceElementFire" count="15"/>
+			<ingredient name="resourceElementLight" count="7"/>
+			<ingredient name="resourceElementDark" count="7"/>
+			<ingredient name="resourceSnowBall" count="100"/>
+			<ingredient name="drugVitamins" count="5"/>
+		</recipe>
+		<!-- 堅毅藥水 -->
+		<recipe name="drinkEFortitudePotion" count="1" craft_time="10" craft_area="chemistryStation">
+			<ingredient name="resourceElementEarth" count="15"/>
+			<ingredient name="resourceElementLight" count="7"/>
+			<ingredient name="resourceElementDark" count="7"/>
+			<ingredient name="resourceSnowBall" count="100"/>
+			<ingredient name="drugVitamins" count="5"/>
+		</recipe>
+		<!-- 敏捷藥水 -->
+		<recipe name="drinkEAgilityPotion" count="1" craft_time="10" craft_area="chemistryStation">
+			<ingredient name="resourceElementWind" count="15"/>
+			<ingredient name="resourceElementLight" count="7"/>
+			<ingredient name="resourceElementDark" count="7"/>
+			<ingredient name="resourceSnowBall" count="100"/>
+			<ingredient name="drugVitamins" count="5"/>
+		</recipe>
+		<!-- 智力藥水 -->
+		<recipe name="drinkEIntellectPotion" count="1" craft_time="10" craft_area="chemistryStation">
+			<ingredient name="resourceElementWater" count="15"/>
+			<ingredient name="resourceElementLight" count="7"/>
+			<ingredient name="resourceElementDark" count="7"/>
+			<ingredient name="resourceSnowBall" count="100"/>
+			<ingredient name="drugVitamins" count="5"/>
+		</recipe>
+		<!-- 血肉護盾藥水 -->
+		<recipe name="drinkFleshShieldPotion" count="1" craft_time="10" craft_area="chemistryStation">
+			<ingredient name="foodBodyPartsOfVictims" count="15"/>
+			<ingredient name="foodRottingFlesh" count="15"/>
+			<ingredient name="resourceBone" count="15"/>
+			<ingredient name="medicalDecayBloodBag" count="15"/>
+			<ingredient name="resourceElementDark" count="15"/>
+		</recipe>
+	</append>
+	<!-- 強化型鐵絲網 -->
+    <append xpath="/recipes">
+		<recipe name="advancedChainLinkBlockVariantHelper" count="1" craft_time="10" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="1000"/>
+			<ingredient name="unit_clay" count="500"/>
+		</recipe>
+		<!--
+		<recipe name="advancedChainLink" count="1" craft_time="10" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="1000"/>
+			<ingredient name="unit_clay" count="500"/>
+		</recipe>
+		<recipe name="advancedChainLinkFenceBottomPole" count="1" craft_time="10" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="1000"/>
+			<ingredient name="unit_clay" count="500"/>
+		</recipe>
+		<recipe name="advancedChainLinkFenceTop" count="1" craft_time="10" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="1000"/>
+			<ingredient name="unit_clay" count="500"/>
+		</recipe>
+		<recipe name="advancedChainLinkFenceTopPole" count="1" craft_time="10" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="1000"/>
+			<ingredient name="unit_clay" count="500"/>
+		</recipe>
+		<recipe name="advancedChainLinkPole" count="1" craft_time="10" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="1000"/>
+			<ingredient name="unit_clay" count="500"/>
+		</recipe>
+		<recipe name="advancedChainLinkCornerTop" count="1" craft_time="10" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="1000"/>
+			<ingredient name="unit_clay" count="500"/>
+		</recipe>
+		<recipe name="advancedChainLinkCornerBottom" count="1" craft_time="10" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="1000"/>
+			<ingredient name="unit_clay" count="500"/>
+		</recipe>
+		<recipe name="advancedChainLinkFenceTopPole2" count="1" craft_time="10" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="1000"/>
+			<ingredient name="unit_clay" count="500"/>
+		</recipe>
+		-->
+    </append>
+	<!-- 強化型X型建築方塊集合群組 -->
+	<append xpath="/recipes">
+		<!-- 木頭 -->
+		<recipe name="woodAdvancedCrossBlockVariantHelper" count="1" craft_time="5" tags="perkTheMidasTouch">
+			<ingredient name="resourceWood" count="100"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4,5,6,7,8,9,10" value="0,-.01,-.02,-.04,-.06,-.08,-.1,-.2,-.3,-.4,-.5" tags="resourceWood"/>
+			</effect_group>
+		</recipe>
+		<!-- 石頭 -->
+		<recipe name="stoneAdvancedCrossBlockVariantHelper" count="1" craft_time="5" tags="perkTheMidasTouch">
+			<ingredient name="resourceRockSmall" count="100"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4,5,6,7,8,9,10" value="0,-.01,-.02,-.04,-.06,-.08,-.1,-.2,-.3,-.4,-.5" tags="resourceRockSmall"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!-- 不可使用的方塊類物件變成可使用的合成配方, 配合點石成金 -->
+    <append xpath="/recipes">
+		<!-- 收銀機 -->
+		<recipe name="cntCashRegister" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntCashRegisterEmpty" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceElectricParts,resourceMechanicalParts"/>
+			</effect_group>
+		</recipe>
+		<!-- 高型文件櫃 -->
+		<recipe name="cntFileCabinetTallClosed" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntFileCabinetTallOpen" count="1"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceForgedIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 矮型文件櫃 -->
+		<recipe name="cntFileCabinetShortClosed" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntFileCabinetShortOpen" count="1"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceForgedIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 不銹鋼冰箱 -->
+		<recipe name="cntFridgeStainlessSteel" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntFridgeStainlessSteelVer2Open" count="1"/>
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceMechanicalParts,resourceForgedSteel"/>
+			</effect_group>
+		</recipe>
+		<!-- 復古冰箱 -->
+		<recipe name="cntRetroFridgeVer1Closed" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntRetroFridgeVer2Open" count="1"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceMechanicalParts,resourceForgedIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 藥櫃 -->
+		<recipe name="cntPillCaseClosed" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntPillCaseEmpty" count="1"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceWood"/>
+			</effect_group>
+		</recipe>
+		<!-- 鏡面藥品櫃 -->
+		<recipe name="cntMedicineCabinetClosed" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntMedicineCabinetOpen" count="1"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceBrokenGlass" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceBrokenGlass,resourceWood"/>
+			</effect_group>
+		</recipe>
+		<!-- 移動式工具箱 -->
+		<recipe name="cntRollingToolBoxClosed" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntRollingToolBoxOpen" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceMechanicalParts"/>
+			</effect_group>
+		</recipe>
+		<!-- 小工具箱 -->
+		<recipe name="cntToolBoxClosed" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntToolBoxOpen" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceMechanicalParts"/>
+			</effect_group>
+		</recipe>
+		<!-- 太陽能板容器 -->
+		<recipe name="solarbank" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntCollapsedSolarbank" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceMechanicalParts"/>
+			</effect_group>
+		</recipe>
+		<!-- 舊爐子 -->
+		<recipe name="cntStoveOldVer1Closed" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntStoveOldVer2Open" count="1"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceMechanicalParts,resourceForgedIron"/>
+			</effect_group>
+		</recipe>
+		<!-- 微波爐 -->
+		<recipe name="cntMicrowaveOvenVer1Closed" count="1" craft_time="60" craft_area="workbench" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntMicrowaveOvenVer1Open" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceElectricParts,resourceMechanicalParts"/>
+			</effect_group>
+		</recipe>
+		<!-- 自動販賣機 -->
+		<recipe name="cntVendingMachine2" count="1" craft_time="60" tags="learnable,perkTheMidasTouch">
+			<ingredient name="cntVendingMachine2Broken" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="500"/>
+			<ingredient name="resourceElectricParts" count="500"/>
+			<ingredient name="resourceGlue" count="100"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="5,6,7,8,9,10" value="20,18,10,7,4,0" tags="resourceGlue,resourceElectricParts,resourceMechanicalParts"/>
+			</effect_group>
+		</recipe>
+    </append>
+	<!-- 石碑合成配方 -->
+    <append xpath="/recipes">
+		<!--火紋石碑-->
+		<recipe name="flameHeraldryStele" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceElementFire" count="500"/>
+			<ingredient name="resourceElementWind" count="500"/>
+			<ingredient name="resourceRockSmall" count="5000"/>
+			<ingredient name="resourceGlue" count="100"/>
+		</recipe>
+		<!-- 雷紋石碑 -->
+		<recipe name="thunderHeraldryStele" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceElementLight" count="500"/>
+			<ingredient name="resourceElementWind" count="500"/>
+			<ingredient name="resourceRockSmall" count="5000"/>
+			<ingredient name="resourceGlue" count="100"/>
+		</recipe>
+		<!-- 血痕石碑 -->
+		<recipe name="bloodMarksStele" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceElementDark" count="500"/>
+			<ingredient name="resourceElementFire" count="500"/>
+			<ingredient name="resourceRockSmall" count="5000"/>
+			<ingredient name="resourceGlue" count="100"/>
+		</recipe>
+		<!-- 沈睡石碑 -->
+		<recipe name="deepSleepStele" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceElementEarth" count="500"/>
+			<ingredient name="resourceElementDark" count="500"/>
+			<ingredient name="resourceRockSmall" count="5000"/>
+			<ingredient name="resourceGlue" count="100"/>
+		</recipe>
+		<!-- 淨靈石碑 -->
+		<recipe name="cleanSoulStele" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceElementLight" count="500"/>
+			<ingredient name="resourceElementWater" count="500"/>
+			<ingredient name="resourceRockSmall" count="5000"/>
+			<ingredient name="resourceGlue" count="100"/>
+		</recipe>
+		<!-- 霜紋石碑 -->
+		<recipe name="iceHeraldryStele" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceElementEarth" count="500"/>
+			<ingredient name="resourceElementWater" count="500"/>
+			<ingredient name="resourceRockSmall" count="5000"/>
+			<ingredient name="resourceGlue" count="100"/>
+		</recipe>
+		<!--火紋擴散石碑-->
+		<recipe name="flameHeraldryProliferationStele" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="flameHeraldryStele" count="5"/>
+			<ingredient name="resourceElementFire" count="50"/>
+			<ingredient name="resourceElementWind" count="50"/>
+			<ingredient name="resourceElementUranium" count="50"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!--雷紋擴散石碑-->
+		<recipe name="thunderHeraldryProliferationStele" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="thunderHeraldryStele" count="5"/>
+			<ingredient name="resourceElementLight" count="50"/>
+			<ingredient name="resourceElementWind" count="50"/>
+			<ingredient name="resourceElementUranium" count="50"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!--血痕擴散石碑-->
+		<recipe name="bloodMarksProliferationStele" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="bloodMarksStele" count="5"/>
+			<ingredient name="resourceElementDark" count="50"/>
+			<ingredient name="resourceElementWind" count="50"/>
+			<ingredient name="resourceElementUranium" count="50"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!--淨靈擴散石碑-->
+		<recipe name="cleanSoulProliferationStele" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="cleanSoulStele" count="5"/>
+			<ingredient name="resourceElementLight" count="50"/>
+			<ingredient name="resourceElementWater" count="50"/>
+			<ingredient name="resourceElementUranium" count="50"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!--霜紋擴散石碑-->
+		<recipe name="iceHeraldryProliferationStele" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="iceHeraldryStele" count="5"/>
+			<ingredient name="resourceElementEarth" count="50"/>
+			<ingredient name="resourceElementWater" count="50"/>
+			<ingredient name="resourceElementUranium" count="50"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!--反噬火紋石碑-->
+		<recipe name="flameHeraldryAntiphasicDetonateStele" count="1" craft_time="15" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="flameHeraldryStele" count="5"/>
+			<ingredient name="resourceElementFire" count="25"/>
+			<ingredient name="resourceElementWind" count="25"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!--反噬雷紋石碑-->
+		<recipe name="thunderHeraldryAntiphasicDetonateStele" count="1" craft_time="15" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="thunderHeraldryStele" count="5"/>
+			<ingredient name="resourceElementLight" count="25"/>
+			<ingredient name="resourceElementWind" count="25"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!--反噬血痕石碑-->
+		<recipe name="bloodMarksAntiphasicDetonateStele" count="1" craft_time="15" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="bloodMarksStele" count="5"/>
+			<ingredient name="resourceElementDark" count="25"/>
+			<ingredient name="resourceElementWind" count="25"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!-- 反噬沈睡石碑 -->
+		<recipe name="deepSleepAntiphasicDetonateStele" count="1" craft_time="15" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="deepSleepStele" count="5"/>
+			<ingredient name="resourceElementEarth" count="25"/>
+			<ingredient name="resourceElementDark" count="25"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!--反噬淨靈石碑-->
+		<recipe name="cleanSoulAntiphasicDetonateStele" count="1" craft_time="15" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="cleanSoulStele" count="5"/>
+			<ingredient name="resourceElementLight" count="25"/>
+			<ingredient name="resourceElementWater" count="25"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!--反噬霜紋石碑-->
+		<recipe name="iceHeraldryAntiphasicDetonateStele" count="1" craft_time="15" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="iceHeraldryStele" count="5"/>
+			<ingredient name="resourceElementEarth" count="25"/>
+			<ingredient name="resourceElementWater" count="25"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+		<!-- 感知石碑2級 -->
+		<recipe name="perceptionStele02" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="perceptionStele" count="2"/>
+			<ingredient name="drinkEPerceptionPotion" count="2"/>
+		</recipe>
+		<!-- 感知石碑3級 -->
+		<recipe name="perceptionStele03" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="perceptionStele02" count="2"/>
+			<ingredient name="drinkEPerceptionPotion" count="3"/>
+		</recipe>
+		<!-- 感知石碑4級 -->
+		<recipe name="perceptionStele04" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="perceptionStele03" count="2"/>
+			<ingredient name="drinkEPerceptionPotion" count="4"/>
+		</recipe>
+		<!-- 感知石碑5級 -->
+		<recipe name="perceptionStele05" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="perceptionStele04" count="2"/>
+			<ingredient name="drinkEPerceptionPotion" count="5"/>
+		</recipe>
+		<!-- 力量石碑2級 -->
+		<recipe name="strengthStele02" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="strengthStele" count="2"/>
+			<ingredient name="drinkEStrengthPotion" count="2"/>
+		</recipe>
+		<!-- 力量石碑3級 -->
+		<recipe name="strengthStele03" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="strengthStele02" count="2"/>
+			<ingredient name="drinkEStrengthPotion" count="3"/>
+		</recipe>
+		<!-- 力量石碑4級 -->
+		<recipe name="strengthStele04" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="strengthStele03" count="2"/>
+			<ingredient name="drinkEStrengthPotion" count="4"/>
+		</recipe>
+		<!-- 力量石碑5級 -->
+		<recipe name="strengthStele05" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="strengthStele04" count="2"/>
+			<ingredient name="drinkEStrengthPotion" count="5"/>
+		</recipe>
+		<!-- 堅毅石碑2級 -->
+		<recipe name="fortitudeStele02" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="fortitudeStele" count="2"/>
+			<ingredient name="drinkEFortitudePotion" count="2"/>
+		</recipe>
+		<!-- 堅毅石碑3級 -->
+		<recipe name="fortitudeStele03" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="fortitudeStele02" count="2"/>
+			<ingredient name="drinkEFortitudePotion" count="3"/>
+		</recipe>
+		<!-- 堅毅石碑4級 -->
+		<recipe name="fortitudeStele04" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="fortitudeStele03" count="2"/>
+			<ingredient name="drinkEFortitudePotion" count="4"/>
+		</recipe>
+		<!-- 堅毅石碑5級 -->
+		<recipe name="fortitudeStele05" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="fortitudeStele04" count="2"/>
+			<ingredient name="drinkEFortitudePotion" count="5"/>
+		</recipe>
+		<!-- 敏捷石碑2級 -->
+		<recipe name="agilityStele02" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="agilityStele" count="2"/>
+			<ingredient name="drinkEAgilityPotion" count="2"/>
+		</recipe>
+		<!-- 敏捷石碑3級 -->
+		<recipe name="agilityStele03" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="agilityStele02" count="2"/>
+			<ingredient name="drinkEAgilityPotion" count="3"/>
+		</recipe>
+		<!-- 敏捷石碑4級 -->
+		<recipe name="agilityStele04" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="agilityStele03" count="2"/>
+			<ingredient name="drinkEAgilityPotion" count="4"/>
+		</recipe>
+		<!-- 敏捷石碑5級 -->
+		<recipe name="agilityStele05" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="agilityStele04" count="2"/>
+			<ingredient name="drinkEAgilityPotion" count="5"/>
+		</recipe>
+		<!-- 智力石碑2級 -->
+		<recipe name="intellectStele02" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="intellectStele" count="2"/>
+			<ingredient name="drinkEIntellectPotion" count="2"/>
+		</recipe>
+		<!-- 智力石碑3級 -->
+		<recipe name="intellectStele03" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="intellectStele02" count="2"/>
+			<ingredient name="drinkEIntellectPotion" count="3"/>
+		</recipe>
+		<!-- 智力石碑4級 -->
+		<recipe name="intellectStele04" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="intellectStele03" count="2"/>
+			<ingredient name="drinkEIntellectPotion" count="4"/>
+		</recipe>
+		<!-- 智力石碑5級 -->
+		<recipe name="intellectStele05" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="intellectStele04" count="2"/>
+			<ingredient name="drinkEIntellectPotion" count="5"/>
+		</recipe>
+    </append>
+	<!-- 自訂給鐵製燃氣烤爐要用的 -->
+	<append xpath="/recipes">
+			<!-- 孟婆湯(技能洗點水) -->
+		<recipe name="drinkJarGrandpasForgettingElixir" count="1" craft_time="60" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef,chemStationCrafting">
+			<ingredient name="medicalDecayBloodBag" count="200"/>
+			<ingredient name="resourceElementWater" count="200"/>
+			<ingredient name="resourceElementDark" count="200"/>
+			<ingredient name="drinkJarRiverWater" count="100"/>
+		</recipe>
+		<!-- 乾淨水瓶 -->
+		<recipe name="drinkJarBoiledWater" count="1" craft_area="IronGasGrill" craft_time="20" tags="perkMasterChef,perkChefBoiledWater,boiledWater">
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+		<!-- 純礦泉水 -->
+		<recipe name="drinkJarPureMineralWater" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="drinkJarRiverWater" count="2"/>
+			<ingredient name="resourceCoal" count="2"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="2"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+		</recipe>
+		<!-- 咖啡 -->
+		<recipe name="drinkJarCoffee" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="resourceCropCoffeeBeans" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 黑糖咖啡 -->
+		<recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="resourceCropCoffeeBeans" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+			<ingredient name="resourceGunPowder" count="10"/>
+		</recipe>
+		<!-- 秋麒麟茶 -->
+		<recipe name="drinkJarGoldenRodTea" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="resourceCropGoldenrodPlant" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 酒精 -->
+		<recipe name="drinkJarGrainAlcohol" count="1" craft_area="IronGasGrill" craft_tool="toolBeaker">
+			<ingredient name="foodCornMeal" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<!-- 祖父的美味醬 -->
+		<recipe name="drinkJarGrandpasAwesomeSauce" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="casinoCoin" count="100"/>
+			<ingredient name="foodHoney" count="10"/>
+			<ingredient name="foodCropMushrooms" count="10"/>
+			<ingredient name="ammoGasCan" count="20"/>
+		</recipe>
+		<!-- 祖父的學習妙藥 -->
+		<recipe name="drinkJarGrandpasLearningElixir" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCanDogfood" count="4"/>
+			<ingredient name="drinkJarRedTea" count="4"/>
+			<ingredient name="resourceAcid" count="2"/>
+			<ingredient name="drinkJarBeer" count="2"/>
+		</recipe>
+		<!-- 祖父的私釀酒 -->
+		<recipe name="drinkJarGrandpasMoonshine" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCornMeal" count="10"/>
+			<ingredient name="drinkJarGrainAlcohol" count="2"/>
+			<ingredient name="foodCropBlueberries" count="10"/>
+			<ingredient name="resourceAcid" count="2"/>
+		</recipe>
+		<!-- 紅茶 -->
+		<recipe name="drinkJarRedTea" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 混濁的水瓶 -->
+		<recipe name="drinkJarRiverWater" count="1" craft_area="IronGasGrill" tags="perkMasterChef">
+			<ingredient name="resourceSnowBall" count="1"/>
+			<ingredient name="drinkJarEmpty" count="1"/>
+		</recipe>
+		<!-- 抗生素 -->
+		<recipe name="drugAntibiotics" count="1" craft_area="IronGasGrill" craft_tool="toolBeaker" >
+			<ingredient name="foodMoldyBread" count="8"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="6"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 草藥抗生素 -->
+		<recipe name="drugHerbalAntibiotics" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" >
+			<ingredient name="foodCropBlueberries" count="10"/>
+			<ingredient name="foodCropMushrooms" count="6"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="6"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="6"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 培根煎蛋 -->
+		<recipe name="foodBaconAndEggs" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="foodEgg" count="4"/>
+		</recipe>
+		<!-- 烤馬鈴薯 -->
+		<recipe name="foodBakedPotato" count="1" craft_area="IronGasGrill" tags="perkMasterChef">
+			<ingredient name="foodCropPotato" count="2"/>
+		</recipe>
+		<!-- 藍莓派 -->
+		<recipe name="foodBlueberryPie" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCropBlueberries" count="10"/>
+			<ingredient name="foodEgg" count="2"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 南瓜派 -->
+		<recipe name="foodPumpkinPie" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCropPumpkin" count="4"/>
+			<ingredient name="foodEgg" count="2"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 南瓜起司蛋糕 -->
+		<recipe name="foodPumpkinCheesecake" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCropPumpkin" count="2"/>
+			<ingredient name="foodEgg" count="2"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="drinkJarGrainAlcohol" count="2"/>
+		</recipe>
+		<!-- 南瓜麵包 -->
+		<recipe name="foodPumpkinBread" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCropPumpkin" count="2"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 水煮肉 -->
+		<recipe name="foodBoiledMeat" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 罐裝假火腿 -->
+		<recipe name="foodCanSham" count="5" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="drinkCanEmpty" count="10"/>
+			<ingredient name="foodRottingFlesh" count="10"/>
+			<ingredient name="resourceBone" count="10"/>
+			<ingredient name="resourceAnimalFat" count="10"/>
+			<ingredient name="resourceAcid" count="2"/>
+		</recipe>
+		<!-- 燒焦的肉 -->
+		<recipe name="foodCharredMeat" count="1" craft_area="IronGasGrill" tags="perkMasterChef">
+			<ingredient name="foodRawMeat" count="5"/>
+		</recipe>
+		<!-- 辣味熱狗 -->
+		<recipe name="foodChiliDog" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCanChili" count="2"/>
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="foodCornBread" count="2"/>
+		</recipe>
+		<!-- 玉米麵包 -->
+		<recipe name="foodCornBread" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 煮玉米棒 -->
+		<recipe name="foodCornOnTheCob" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!--水煮蛋  -->
+		<recipe name="foodEggBoiled" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<!-- 魚肉玉米卷, 不需要烤架 -->
+		<recipe name="foodFishTacos" count="1" craft_area="IronGasGrill" tags="perkMasterChef">
+			<ingredient name="foodCanSalmon" count="2"/>
+			<ingredient name="foodCornMeal" count="4"/>
+		</recipe>
+		<!-- 烤肉, 不需要烤架 -->
+		<recipe name="foodGrilledMeat" count="1" craft_area="IronGasGrill" tags="perkMasterChef">
+			<ingredient name="foodRawMeat" count="10"/>
+		</recipe>
+		<!-- 蔬菜燉肉 -->
+		<recipe name="foodHoboStew" count="1"  craft_time="30" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodRottingFlesh" count="20"/>
+			<ingredient name="foodCropPotato" count="4"/>
+			<ingredient name="foodCropCorn" count="4"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 燉肉 -->
+		<recipe name="foodMeatStew" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="foodCropPotato" count="4"/>
+			<ingredient name="foodCropCorn" count="4"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 假雜燴 -->
+		<recipe name="foodShamChowder" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCanSham" count="2"/>
+			<ingredient name="foodCropPotato" count="4"/>
+			<ingredient name="foodCropCorn" count="4"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 牛肉排馬鈴薯, 不需要烤架 -->
+		<recipe name="foodSteakAndPotato" count="1" craft_area="IronGasGrill" tags="perkMasterChef">
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="foodCropPotato" count="4"/>
+			<ingredient name="foodCropMushrooms" count="4"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+		</recipe>
+		<!-- 燉蔬菜 -->
+		<recipe name="foodVegetableStew" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCropPotato" count="4"/>
+			<ingredient name="foodCropCorn" count="4"/>
+			<ingredient name="foodCropMushrooms" count="4"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+		</recipe>
+		<!-- 膠水 -->
+		<recipe name="resourceGlue" count="1" craft_area="IronGasGrill" craft_tool="toolCookingPot">
+			<ingredient name="resourceBone" count="3"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+	</append>
+		<!-- 子彈轉換配方 -->
+	<append xpath="/recipes">
+		<recipe name="ammo9mmBulletHP" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo9mmBulletBall" count="2"/>
+			<ingredient name="resourceElementUranium" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+		</recipe>
+		<recipe name="ammo9mmBulletAP" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo9mmBulletBall" count="2"/>
+			<ingredient name="resourceElementUranium" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+		</recipe>
+		<recipe name="ammo44MagnumBulletHP" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletBall" count="2"/>
+			<ingredient name="resourceElementUranium" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+		</recipe>
+		<recipe name="ammo44MagnumBulletAP" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletBall" count="2"/>
+			<ingredient name="resourceElementUranium" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+		</recipe>
+		<recipe name="ammo762mmBulletHP" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo762mmBulletBall" count="2"/>
+			<ingredient name="resourceElementUranium" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+		</recipe>
+		<recipe name="ammo762mmBulletAP" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo762mmBulletBall" count="2"/>
+			<ingredient name="resourceElementUranium" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+		</recipe>
+		<recipe name="ammoShotgunSlug" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoShotgunShell" count="2"/>
+			<ingredient name="resourceElementUranium" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+		</recipe>
+		<recipe name="ammoShotgunBreachingSlug" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoShotgunShell" count="2"/>
+			<ingredient name="resourceElementUranium" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoBundle9mmBulletBall" count="1"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoBundle9mmBulletBall" count="1"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoBundle44MagnumBulletBall" count="1"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoBundle44MagnumBulletBall" count="1"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoBundle762mmBulletBall" count="1"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoBundle762mmBulletBall" count="1"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunSlug" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoBundleShotgunShell" count="1"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunBreachingSlug" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoBundleShotgunShell" count="1"/>
+			<ingredient name="resourceElementUranium" count="100"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+		</recipe>
+	</append>
+</configs>

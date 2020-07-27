@@ -1,0 +1,5 @@
+<configs>
+	<!-- 為了配合超大容量鋼鐵儲存箱的查詢, 一定要做這個調整 -->
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@rows">12</set><!-- 行(直) -->
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cols">10</set><!-- 列(橫) -->
+</configs>

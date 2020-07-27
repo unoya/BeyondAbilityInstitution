@@ -1,0 +1,207 @@
+<configs>
+	<append xpath="/materials">
+		<!-- 木釘 -->
+		<material id="MhardWoodLogSpike">
+			<property name="damage_category" value="wood"/>
+			<property name="surface_category" value="wood"/>
+			<property name="forge_category" value="wood"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="wood"/>
+			<property name="stability_glue" value="40"/>
+			<property name="Mass" type="int" value="5"/>
+			<property name="MaxDamage" value="22500"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<!-- 有刺鐵絲 -->
+		<material id="MhardBarbedWire">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="10"/>
+			<property name="Mass" type="int" value="1"/>
+			<property name="MaxDamage" value="2000"/>
+			<property name="movement_factor" value="0.2"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<!-- 有刺鐵絲柵欄 -->
+		<material id="MhardBarbedFence">
+			<property name="damage_category" value="wood"/>
+			<property name="surface_category" value="wood"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="20"/>
+			<property name="Mass" type="int" value="5"/>
+			<property name="MaxDamage" value="2000"/>
+			<property name="movement_factor" value="0.18"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<!-- 木刺柵欄 -->
+		<material id="MhardSpikesBarbedFence">
+			<property name="damage_category" value="wood"/>
+			<property name="surface_category" value="wood"/>
+			<property name="forge_category" value="wood"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="wood"/>
+			<property name="stability_glue" value="20"/>
+			<property name="Mass" type="int" value="5"/>
+			<property name="MaxDamage" value="990"/>
+			<property name="movement_factor" value="0.18"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<!-- 鐵刺柵欄 -->
+		<material id="MhardSteelSpikesBarbedFence">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="explosionresistance" value="1.5"/>
+			<property name="MaxDamage" value="3960"/>
+			<property name="Experience" value="6"/>
+		</material>
+		<!-- X型方塊專用：一般木頭 -->
+		<material id="MadvancedWood">
+			<property name="damage_category" value="wood"/>
+			<property name="surface_category" value="wood"/>
+			<property name="forge_category" value="wood"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="wood"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="1.4"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<!-- X型方塊專用：強化木塊 -->
+		<material id="MadvancedStrengthenedWood">
+			<property name="damage_category" value="wood"/>
+			<property name="surface_category" value="wood"/>
+			<property name="forge_category" value="wood"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="wood"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="1.6"/>
+			<property name="MaxDamage" value="700"/>
+			<property name="Experience" value="2"/>
+		</material>
+		<!-- X型方塊專用：金屬補強木材 -->
+		<material id="MadvancedMetalReinforcement">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="1.8"/>
+			<property name="MaxDamage" value="900"/>
+			<property name="Experience" value="4"/>
+		</material>
+		<!-- X型方塊專用：強化鐵 -->
+		<material id="MadvancedStrengthenedIron">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="2"/>
+			<property name="MaxDamage" value="5000"/>
+			<property name="Experience" value="4"/>
+		</material>
+		<!-- X型方塊專用：鋼塊 -->
+		<material id="MadvancedSteel">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="3"/>
+			<property name="MaxDamage" value="15000"/>
+			<property name="Experience" value="4"/>
+		</material>
+		<!-- X型方塊專用：不鏽鋼 -->
+		<material id="MadvancedStainlessSteel">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="4"/>
+			<property name="MaxDamage" value="20000"/>
+			<property name="Experience" value="4"/>
+		</material>
+		<!-- X型方塊專用：石板 -->
+		<material id="MadvancedStone">
+			<property name="damage_category" value="stone"/>
+			<property name="surface_category" value="stone"/>
+			<property name="forge_category" value="stone"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="stone"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="Experience" value="3"/>
+		</material>
+		<!-- X型方塊專用：鵝卵石 -->
+		<material id="MadvancedCobblestone">
+			<property name="damage_category" value="stone"/>
+			<property name="surface_category" value="stone"/>
+			<property name="forge_category" value="stone"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="stone"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="MaxDamage" value="2200"/>
+			<property name="Experience" value="3"/>
+		</material>
+		<!-- X型方塊專用：紅磚 -->
+		<material id="MadvancedBrick">
+			<property name="damage_category" value="stone"/>
+			<property name="surface_category" value="stone"/>
+			<property name="forge_category" value="stone"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="stone"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="MaxDamage" value="4000"/>
+			<property name="Experience" value="3"/>
+		</material>
+		<!-- X型方塊專用：混凝土 -->
+		<material id="MadvancedConcrete">
+			<property name="damage_category" value="stone"/>
+			<property name="surface_category" value="stone"/>
+			<property name="forge_category" value="stone"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="stone"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="1.2"/>
+			<property name="MaxDamage" value="10000"/>
+			<property name="Experience" value="3"/>
+		</material>
+		<!-- X型方塊專用：複合金屬 -->
+		<material id="MadvancedCompositeMetal">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="2"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="500"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="explosionresistance" value="5"/>
+			<property name="MaxDamage" value="50000"/>
+			<property name="Experience" value="10"/>
+		</material>
+	</append>
+</configs>
