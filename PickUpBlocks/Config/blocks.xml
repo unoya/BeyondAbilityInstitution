@@ -1,0 +1,344 @@
+<configs>
+	<!-- 2020/6/28  By 無云 -->
+	<!-- 地上的小廢輪胎 -->
+	<append xpath="/blocks/block[@name='decoCarTireSmallFlat']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<!-- 地上的冷氣機的室外機,風扇,雙風扇 -->
+	<append xpath="/blocks/block[@name='airConditioner']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<append xpath="/blocks/block[@name='airConditionVentFan']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 地上的水泥包 -->
+	<append xpath="/blocks/block[@name='palletWhiteBagsBase']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="10"/>
+	</append>
+	<!-- 地上的綑綁沙包 -->
+	<append xpath="/blocks/block[@name='palletBlueTarpBase']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="20"/>
+	</append>
+	<!-- 控制面板 -->
+	<append xpath="/blocks/block[@name='controlPanelBase01']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<!-- 煤渣磚 -->
+	<append xpath="/blocks/block[@name='cinderBlocks01']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="5"/>
+	</append>
+	<!-- 棧板磚塊 -->
+	<append xpath="/blocks/block[@name='palletBricksBase']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="10"/>
+	</append>
+	<!-- 棧板棕色箱 -->
+	<append xpath="/blocks/block[@name='palletBrownBoxesBase']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="10"/>
+	</append>
+	<!-- 酒吧椅子 -->
+	<append xpath="/blocks/block[@name='barStool']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的收銀機 -->
+	<append xpath="/blocks/block[@name='cntCashRegisterEmpty']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的高型,矮型文件櫃 -->
+	<append xpath="/blocks/block[@name='cntFileCabinetTallOpen']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntFileCabinetShortOpen']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的不銹鋼冰箱 -->
+	<append xpath="/blocks/block[@name='cntFridgeStainlessSteelVer2Open']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的復古冰箱 -->
+	<append xpath="/blocks/block[@name='cntRetroFridgeVer2Open']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的藥櫃 -->
+	<append xpath="/blocks/block[@name='cntPillCaseEmpty']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="5"/>
+	</append>
+	<!-- 損壞的鏡面藥品櫃 -->
+	<append xpath="/blocks/block[@name='cntMedicineCabinetOpen']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="10"/>
+	</append>
+	<!-- 空的小工具箱 -->
+	<append xpath="/blocks/block[@name='cntToolBoxOpen']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="10"/>
+	</append>
+	<!-- 空的移動式工具箱 -->
+	<append xpath="/blocks/block[@name='cntRollingToolBoxOpen']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="40"/>
+	</append>
+	<!-- 損壞的太陽能板容器 -->
+	<append xpath="/blocks/block[@name='cntCollapsedSolarbank']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="500"/>
+	</append>
+	<!-- 空的舊爐子 -->
+	<append xpath="/blocks/block[@name='cntStoveOldVer2Open']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 散熱器 -->
+	<append xpath="/blocks/block[@name='radiatorHouse01']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<!--空的燃氣烤爐-->
+	<append xpath="/blocks/block[@name='cntGasGrillOpen']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="250"/>
+	</append>
+	<!-- 木酒桶 -->
+	<append xpath="/blocks/block[@name='wineBarrel']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="30"/>
+	</append>
+	<!-- 空的微波爐 -->
+	<append xpath="/blocks/block[@name='cntMicrowaveOvenVer1Open']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 舊床 -->
+	<append xpath="/blocks/block[@name='bed01']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 加大雙人床 -->
+	<append xpath="/blocks/block[@name='bed02']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 担架床 -->
+	<append xpath="/blocks/block[@name='gurneyBed']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 病床 -->
+	<append xpath="/blocks/block[@name='hospitalBed']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 床墊 -->
+	<append xpath="/blocks/block[@name='mattressFlat']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 床墊(彎曲) -->
+	<append xpath="/blocks/block[@name='mattress']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 壞掉的販賣機 -->
+	<append xpath="/blocks/block[@name='cntVendingMachine2Broken']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 茶几 -->
+	<append xpath="/blocks/block[@name='endTable']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 茶几燈 -->
+	<append xpath="/blocks/block[@name='endTableLamp']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的烘衣機 -->
+	<append xpath="/blocks/block[@name='cntDryerOpen']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的洗衣機 -->
+	<append xpath="/blocks/block[@name='cntWasherOpen']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 學生桌椅 -->
+	<append xpath="/blocks/block[@name='schoolDesk']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="20"/>
+	</append>
+	<!-- 空的鐵辦公桌 -->
+	<append xpath="/blocks/block[@name='cntMetalDesk02Open']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<!-- 空的木辦公桌 -->
+	<append xpath="/blocks/block[@name='cntWoodDesk01Open']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<!-- 公用水槽 -->
+	<append xpath="/blocks/block[@name='utilitySink']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的儲物櫃 -->
+	<append xpath="/blocks/block[@name='cntLockersShortOpen']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 電視 -->
+	<append xpath="/blocks/block[@name='tv']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="1000"/>
+	</append>
+	<!-- 空的床頭櫃 -->
+	<append xpath="/blocks/block[@name='cntNightstandOpen']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<!-- 烤麵包機 -->
+	<append xpath="/blocks/block[@name='cntToaster']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="200"/>
+	</append>
+	<!-- 燃燒桶 -->
+	<append xpath="/blocks/block[@name='burningBarrel']">
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<!-- 附燈吊扇 -->
+	<append xpath="/blocks/block[@name='ceilingFanLight']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="1200"/>
+	</append>
+	<!-- 水晶吊燈 -->
+	<append xpath="/blocks/block[@name='chandelierLight']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="2400"/>
+	</append>
+	<!-- 空的塑膠垃圾桶 -->
+	<append xpath="/blocks/block[@name='cntBruteStyleTrashCanEmpty']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的木炭烤爐 -->
+	<append xpath="/blocks/block[@name='cntCharcoalGrillOpen']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="300"/>
+	</append>
+	<!-- 空的冷藏箱 -->
+	<append xpath="/blocks/block[@name='cntCoolerOpen']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<!-- 空的圓頂垃圾桶 -->
+	<append xpath="/blocks/block[@name='cntDomedTrashCanEmpty']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的行李箱 -->
+	<append xpath="/blocks/block[@name='cntLuggageMediumOpen']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="250"/>
+	</append>
+	<!-- 空的購物車 -->
+	<append xpath="/blocks/block[@name='cntShoppingCartEmpty']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的傾斜斗車 -->
+	<append xpath="/blocks/block[@name='cntTiltTruckEmpty']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的小推車 -->
+	<append xpath="/blocks/block[@name='cntUtilityCartEmpty']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 鳥浴花台 -->
+	<append xpath="/blocks/block[@name='birdBathPlanter']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="2000"/>
+	</append>
+	<!-- 舊沙發 -->
+	<append xpath="/blocks/block[@name='sectionalPlaidCouchSofaMiddle']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 皮沙發 -->
+	<append xpath="/blocks/block[@name='leatherChairCouchSofa2']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="200"/>
+	</append>
+	<!-- 皮沙發(長) -->
+	<append xpath="/blocks/block[@name='leatherCouchSofa2']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="300"/>
+	</append>
+	<!-- 仰臥推舉健身器材 -->
+	<append xpath="/blocks/block[@name='decoBenchPress']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="5000"/>
+	</append>
+	<!-- 舉重槓鈴 -->
+	<append xpath="/blocks/block[@name='decoWeightBar']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="2200"/>
+	</append>
+	<!-- 健身車 -->
+	<append xpath="/blocks/block[@name='decoStationaryBike']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="3500"/>
+	</append>
+	<!-- 跑步機 -->
+	<append xpath="/blocks/block[@name='decoTreadmill']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="3100"/>
+	</append>
+	<!-- 獅爪浴缸	-->
+	<append xpath="/blocks/block[@name='decoClawFootBathTub']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="10000"/>
+	</append>
+	<!-- 桌上型電腦主機	-->
+	<append xpath="/blocks/block[@name='decoComputerDeskTopPC']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="6000"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitorKeyboardMousePC']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="22000"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitorKeyboardMouse']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="8000"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitor']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="2000"/>
+	</append>
+	<!-- 手推車 -->
+	<append xpath="/blocks/block[@name='decoHandTruck']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="1200"/>
+	</append>
+	<!-- 大型寵物籠 -->
+	<append xpath="/blocks/block[@name='decoLargePetCage']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<!-- 撞球桌 -->
+	<append xpath="/blocks/block[@name='decoPoolTable']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="3500"/>
+	</append>
+	<!-- 衛星天線 -->
+	<append xpath="/blocks/block[@name='satelliteDish']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 空的洗衣籃 -->
+	<append xpath="/blocks/block[@name='cntLaundryBasketVer1Empty']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<!-- 空書櫃 -->
+	<append xpath="/blocks/block[@name='cntBookcaseEmpty']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<!-- 椅背長板凳 -->
+	<append xpath="/blocks/block[@name='pew_segment01']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="10"/>
+	</append>
+	<!-- 燃燒桶 -->
+	<set xpath="/blocks/block[@name='burningBarrel']/property[@name='CanPickup']/@value">true</set>
+</configs>
